@@ -1,0 +1,267 @@
+:root {
+    --primary-color: #9857D3;
+    --background-color: linear-gradient(to right, #11071F, #1A0B2E);
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #11071F, #1A0B2E);
+    color: #FFFFFF;
+    scroll-behavior: smooth;
+}
+
+.header {
+    position: fixed;
+    width: 100%;
+    top: -80px;
+    transition: top 0.5s ease-in-out, opacity 0.5s;
+    background: rgba(26, 11, 46, 0.3);
+    padding: 15px 0;
+    text-align: center;
+    z-index: 1000;
+    backdrop-filter: blur(15px);
+    opacity: 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.scrolled {
+    top: 0 !important;
+    opacity: 1 !important;
+}
+
+.lightbox {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(5px);
+    justify-content: center;
+    align-items: center;
+    z-index: 2000;
+}
+
+.nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    padding: 0;
+    margin: 0;
+}
+
+.nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 20px;
+}
+
+.nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 10px 15px;
+    transition: all 0.3s ease-in-out;
+    position: relative;
+}
+
+.nav a::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 50%;
+    background: #9857D3;
+    transition: width 0.3s ease-in-out, left 0.3s ease-in-out;
+    color: #9857D3;
+    font-weight: 700;
+    text-shadow: 0px 0px 10px rgba(152, 87, 211, 0.6);
+}
+
+.nav a:hover::after {
+    width: 100%;
+    left: 0;
+}
+
+.nav a:hover {
+    color: #9857D3;
+    transform: translateY(-2px);
+}
+
+.nav a:focus {
+    outline: 2px solid var(--primary-color);
+    outline-offset: 3px;
+}
+
+.button {
+    background-color: transparent;
+    color: white;
+    border: 2px solid var(--primary-color);
+    padding: 12px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: all 0.3s ease-in-out;
+    display: inline-block;
+    text-align: center;
+}
+
+.button:hover {
+    background-color: var(--primary-color);
+    box-shadow: 0px 0px 15px rgba(152, 87, 211, 0.8);
+}
+
+button:focus {
+    outline: 3px solid var(--primary-color);
+    outline-offset: 3px;
+}
+
+.nav li {
+    list-style: none;
+}
+
+@media (max-width: 768px) {
+    .nav {
+        flex-direction: column;
+        gap: 15px;
+        padding: 10px;
+    }
+
+    .nav a {
+        font-size: 16px;
+    }
+}
+
+.container {
+    max-width: 900px;
+    margin: auto;
+    text-align: center;
+}
+
+h1,
+h2 {
+    text-transform: uppercase;
+    text-shadow: 0px 0px 8px rgba(152, 87, 211, 0.8);
+    animation: fadeInUp 1.2s ease-in-out;
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.8;
+    animation: fadeIn 1.2s ease-in-out;
+}
+
+img {
+    width: 100%;
+    border-radius: 8px;
+    margin: 20px 0;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+img:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 0px 15px rgba(152, 87, 211, 0.4);
+}
+
+button {
+    background-color: transparent;
+    color: white;
+    border: 2px solid #9857D3;
+    padding: 12px 24px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+    background-color: #6726a3;
+    color: black;
+    box-shadow: 0px 0px 15px rgba(152, 87, 211, 0.8);
+}
+
+.contact {
+    text-align: center;
+    padding: 50px;
+    background: rgba(26, 11, 46, 0.8);
+    margin-top: 40px;
+    box-shadow: 0px -4px 20px rgba(152, 87, 211, 0.3);
+}
+
+@media (max-width: 768px) {
+    .nav {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .container {
+        padding: 100px 20px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.contact-email {
+    color: rgb(210, 174, 245);
+}
+
+.logo {
+    width: 100px;
+    height: 100px;
+    display: inline-block
+}
+
+.pdf {
+    display: inline-block;
+    font-size: 2em;
+    color: rgb(210, 174, 245);
+    margin-left: 10px;
+    outline-offset: 10px;
+    outline: thin solid rgb(210, 174, 245);
+}
+
+.pdf:hover {
+    color: rgb(152, 87, 211);
+
+}

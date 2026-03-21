@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Restaurant UI Redesigned. A usability-focused case study applying Nielsen's heuristics to improve a self-ordering interface.">
+    <title>Restaurant UI Redesigned | Elijah Oliver Larsson</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="case-styles.css">
+</head>
+<body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+
+    <header class="site-header" role="banner">
+        <div class="header-inner">
+            <a class="brand" href="index.html" aria-label="Back to portfolio home">
+                <img src="loggos.png" alt="Elijah Oliver Larsson logo" width="56" height="56">
+                <span class="brand-copy">
+                    <span class="brand-name">Elijah Oliver Larsson</span>
+                    <span class="brand-role">UI/UX and Interaction Designer</span>
+                </span>
+            </a>
+            <a class="header-link" href="index.html">Back to Portfolio</a>
+        </div>
+    </header>
+
+    <nav class="breadcrumb page-shell" aria-label="Breadcrumb">
+        <ol>
+            <li><a href="index.html">Portfolio</a></li>
+            <li><span aria-current="page">Restaurant UI Redesigned</span></li>
+        </ol>
+    </nav>
+
+    <main id="main-content" class="page-shell">
+        <div class="case-grid">
+            <div class="content-column">
+                <section class="hero-card" id="overview">
+                    <h1>Restaurant UI Redesigned</h1>
+                    <p class="subtitle">Improving a self-ordering interface with Nielsen's 10 usability heuristics</p>
+                    <p>This case study focused on identifying friction in a restaurant self-ordering flow and redesigning the interface to feel clearer, more predictable, and less error-prone. The work centered on usability problems that interrupted ordering confidence, especially around pricing, category navigation, and system feedback.</p>
+                </section>
+
+                <section class="content-card" id="issues">
+                    <h2>Key Usability Problems</h2>
+                    <figure>
+                        <img src="okel.png" alt="Restaurant interface redesign overview showing the improved ordering experience" class="interactive-image">
+                        <figcaption>Overview of the redesigned self-ordering interface.</figcaption>
+                    </figure>
+
+                    <div class="issue-list">
+                        <article class="issue-item">
+                            <h3>Pricing clarity and consistency</h3>
+                            <p>Unclear pricing, including the confusing "0 kr" state, made it harder for users to understand what they were paying for and when extra costs applied.</p>
+                        </article>
+                        <article class="issue-item">
+                            <h3>Navigation that caused detours</h3>
+                            <p>Users had to tap categories repeatedly or ended up in the wrong section, which broke flow and increased frustration.</p>
+                        </article>
+                        <article class="issue-item">
+                            <h3>Side-scrolling made discovery harder</h3>
+                            <p>The category bar required unnecessary scanning and slowed down access to the area users actually wanted.</p>
+                        </article>
+                        <article class="issue-item">
+                            <h3>Weak error feedback</h3>
+                            <p>When something failed in the backend, users were left without enough explanation to recover confidently.</p>
+                        </article>
+                    </div>
+                </section>
+
+                <section class="content-card" id="process">
+                    <h2>Design Process</h2>
+                    <p>The redesign used heuristic evaluation as the main structure for identifying and prioritizing issues. The goal was not just to make the interface look better, but to remove hesitation points and make the ordering flow easier to understand on the first try.</p>
+                    <ul>
+                        <li><strong>Visibility of system status:</strong> Improved progress and feedback so users can tell what the interface is doing.</li>
+                        <li><strong>Recognition over recall:</strong> Reworked navigation so categories are easier to spot without extra memory load.</li>
+                        <li><strong>Error prevention and recovery:</strong> Added clearer messaging to help users understand what went wrong and what to do next.</li>
+                        <li><strong>Aesthetic and minimalist design:</strong> Reduced clutter so the ordering choices are easier to scan.</li>
+                    </ul>
+
+                    <div class="image-gallery">
+                        <figure>
+                            <img src="restaurantsketch.png" alt="Initial sketch concepts for the restaurant ordering redesign" class="interactive-image">
+                            <figcaption>Early sketching used to explore different layout and navigation fixes.</figcaption>
+                        </figure>
+                        <figure>
+                            <img src="restaurantsketch2.png" alt="Refined restaurant redesign sketches showing interaction patterns" class="interactive-image">
+                            <figcaption>Refined interaction ideas focused on clearer movement through the flow.</figcaption>
+                        </figure>
+                    </div>
+
+                    <figure>
+                        <img src="restaurantsketch3.png" alt="Additional sketch iterations for the restaurant ordering interface" class="interactive-image">
+                        <figcaption>Additional iterations that clarified information hierarchy and user actions.</figcaption>
+                    </figure>
+                </section>
+
+                <section class="content-card" id="solution">
+                    <h2>What Changed</h2>
+                    <p>The redesign aimed to make the interface easier to learn and easier to recover from when something goes wrong.</p>
+                    <ul>
+                        <li>Pricing became more transparent by showing base prices and additional size costs more consistently.</li>
+                        <li>Category navigation became more static and visible, reducing unnecessary taps and scrolling.</li>
+                        <li>Error states became easier to understand with clearer messages and recovery guidance.</li>
+                        <li>Dismissible feedback replaced more restrictive timing behavior, giving users more control.</li>
+                        <li>Progress cues such as scroll indicators improved awareness of where users were in the menu.</li>
+                    </ul>
+
+                    <div class="image-gallery">
+                        <figure>
+                            <img src="scrolling.png" alt="Wireframe with improved scrolling indicator and progress feedback" class="interactive-image">
+                            <figcaption>Progress feedback helps users understand where they are in the menu.</figcaption>
+                        </figure>
+                        <figure>
+                            <img src="redesign.png" alt="First redesign iteration of the restaurant ordering interface" class="interactive-image">
+                            <figcaption>First redesign pass focused on hierarchy and navigation clarity.</figcaption>
+                        </figure>
+                    </div>
+
+                    <figure>
+                        <img src="redesign2.png" alt="Final redesign of the restaurant ordering interface" class="interactive-image">
+                        <figcaption>Final direction combining clearer pricing, navigation, and error handling.</figcaption>
+                    </figure>
+                </section>
+
+                <section class="content-card" id="outcome">
+                    <h2>Outcome</h2>
+                    <p>This redesign shows how heuristic-based iteration can improve more than just surface visuals. By clarifying system feedback, reducing recall demands, and simplifying navigation, the interface became easier to trust and easier to use efficiently.</p>
+                    <a class="button" href="case2.pdf" target="_blank" rel="noopener noreferrer">Open Full Case Study PDF</a>
+                </section>
+
+                <div class="back-to-top-container">
+                    <button id="back-to-top" class="back-to-top-btn" type="button">Back to Top</button>
+                </div>
+
+                <nav class="case-nav" aria-label="Other case studies">
+                    <h2>Explore Other Projects</h2>
+                    <ul>
+                        <li><a href="case1.html">Coffee Machine - Done Right</a></li>
+                        <li><a href="case3.html">Scent-Driven Storytelling</a></li>
+                        <li><a href="index.html">Back to Portfolio</a></li>
+                    </ul>
+                </nav>
+
+                <section class="contact-card" id="contact">
+                    <h2>Let's Connect</h2>
+                    <p>I'm looking for opportunities in UI/UX and interaction design where thoughtful usability work makes a visible difference.</p>
+                    <p class="contact-detail"><strong>Email</strong><a href="mailto:Elijaholiverlarsson@gmail.com">Elijaholiverlarsson@gmail.com</a></p>
+                </section>
+            </div>
+
+            <aside class="sidebar">
+                <section class="meta-card" aria-labelledby="project-meta-title">
+                    <h2 id="project-meta-title">Project Snapshot</h2>
+                    <dl>
+                        <div>
+                            <dt>Role</dt>
+                            <dd>UI/UX designer</dd>
+                        </div>
+                        <div>
+                            <dt>Project type</dt>
+                            <dd>Usability redesign</dd>
+                        </div>
+                        <div>
+                            <dt>Method</dt>
+                            <dd>Nielsen's 10 usability heuristics</dd>
+                        </div>
+                        <div>
+                            <dt>Focus</dt>
+                            <dd>Pricing clarity, navigation, and error handling</dd>
+                        </div>
+                    </dl>
+                </section>
+
+                <nav class="toc-card" aria-labelledby="toc-title">
+                    <h2 id="toc-title">On This Page</h2>
+                    <ul>
+                        <li><a href="#overview">Overview</a></li>
+                        <li><a href="#issues">Issues</a></li>
+                        <li><a href="#process">Process</a></li>
+                        <li><a href="#solution">Solution</a></li>
+                        <li><a href="#outcome">Outcome</a></li>
+                    </ul>
+                    <p class="reading-time">About 4 min read</p>
+                </nav>
+            </aside>
+        </div>
+    </main>
+
+    <div id="lightbox" class="lightbox" role="dialog" aria-modal="true" aria-labelledby="lightbox-title" aria-hidden="true">
+        <div class="lightbox-dialog">
+            <h2 id="lightbox-title" class="sr-only">Expanded project image</h2>
+            <button class="lightbox-close" type="button" aria-label="Close image viewer">&times;</button>
+            <img id="lightbox-img" alt="">
+            <p class="lightbox-hint">Press Escape to close or click outside the image.</p>
+        </div>
+    </div>
+
+    <script src="case-script.js"></script>
+</body>
+</html>

@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio of Elijah Oliver Larsson, an interaction design student focused on UI, UX, prototyping, and research-led digital experiences.">
+    <title>Elijah Oliver Larsson | UI/UX and Interaction Design Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+
+    <header class="site-header" role="banner">
+        <div class="header-inner">
+            <a class="brand" href="#home" aria-label="Elijah Oliver Larsson home">
+                <img src="loggos.png" alt="Elijah Oliver Larsson logo" width="56" height="56">
+                <span class="brand-copy">
+                    <span class="brand-name">Elijah Oliver Larsson</span>
+                    <span class="brand-role">UI/UX and Interaction Designer</span>
+                </span>
+            </a>
+
+            <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open navigation">
+                <span aria-hidden="true"></span>
+            </button>
+
+            <nav id="site-nav" class="site-nav" aria-label="Primary">
+                <ul>
+                    <li><a href="#home" class="is-current">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#heuristics">Design Approach</a></li>
+                    <li><a href="#portfolio">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main-content" class="main-shell">
+        <section id="home" class="hero">
+            <div class="section-inner hero-grid">
+                <div class="hero-copy">
+                    <span class="eyebrow">Interaction Design Portfolio</span>
+                    <h1>Designing interfaces that feel clear, calm, and easy to trust.</h1>
+                    <p>I am an interaction design student focused on turning research and usability insights into practical interfaces, stronger flows, and more confident user experiences.</p>
+                    <div class="hero-actions">
+                        <a class="button" href="#portfolio">View Projects</a>
+                        <a class="button-secondary" href="mailto:Elijaholiverlarsson@gmail.com">Email Me</a>
+                    </div>
+                </div>
+
+                <aside class="hero-panel" aria-label="Quick portfolio summary">
+                    <div class="status-list">
+                        <div class="status-item">
+                            <span class="status-label">Current focus</span>
+                            <strong>UI/UX, prototyping, and usability improvements</strong>
+                        </div>
+                        <div class="status-item">
+                            <span class="status-label">Best fit</span>
+                            <strong>Internships and junior design opportunities</strong>
+                        </div>
+                        <div class="status-item">
+                            <span class="status-label">Strengths</span>
+                            <strong>Research synthesis, interface structure, and heuristic-based iteration</strong>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+        </section>
+
+        <section id="about" class="section" aria-labelledby="about-title">
+            <div class="section-inner">
+                <div class="section-card">
+                    <div class="section-heading">
+                        <h2 id="about-title">About Me</h2>
+                        <p>Designed for quick scanning, clear expectations, and recognition over recall.</p>
+                    </div>
+                    <p class="section-intro">I enjoy improving digital experiences by finding where users hesitate, get confused, or lose momentum, then redesigning those moments into something clearer and more supportive. My work sits at the intersection of interface design, interaction design, user research, and prototyping.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="heuristics" class="section" aria-labelledby="heuristics-title">
+            <div class="section-inner">
+                <div class="section-card">
+                    <div class="section-heading">
+                        <h2 id="heuristics-title">Design Approach</h2>
+                        <p>This site is structured to be clearer, calmer, and easier to move through using Nielsen's usability heuristics as a guide.</p>
+                    </div>
+                    <div class="principles-grid">
+                        <article class="principle">
+                            <h3>Visibility and feedback</h3>
+                            <p>Navigation states, section labels, and stronger calls to action make it easier to understand where you are and what to do next.</p>
+                        </article>
+                        <article class="principle">
+                            <h3>Consistency and standards</h3>
+                            <p>A shared layout, button style, spacing system, and case-study structure reduce friction across the portfolio.</p>
+                        </article>
+                        <article class="principle">
+                            <h3>Recognition over recall</h3>
+                            <p>Project cards, page summaries, and case-study sidebars help visitors find information quickly without hunting for it.</p>
+                        </article>
+                        <article class="principle">
+                            <h3>User control and minimalism</h3>
+                            <p>Skip links, back-to-top controls, lighter visual noise, and a calmer palette make the experience easier to scan and easier to trust.</p>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="portfolio" class="section" aria-labelledby="portfolio-title">
+            <div class="section-inner">
+                <div class="section-card">
+                    <div class="section-heading">
+                        <h2 id="portfolio-title">Selected Projects</h2>
+                        <p>Each case study explains the problem, process, and usability improvements in a clearer structure.</p>
+                    </div>
+
+                    <div class="portfolio-grid">
+                        <article class="project-card">
+                            <img src="cof.png" alt="Coffee machine interface redesign preview">
+                            <div class="project-body">
+                                <div class="project-meta">
+                                    <span>UI redesign</span>
+                                    <span>Wireframing</span>
+                                </div>
+                                <h3>Coffee Machine - Done Right</h3>
+                                <p>A coffee-machine interface redesign focused on guidance, user feedback, and reducing interaction uncertainty.</p>
+                                <div class="project-links">
+                                    <a class="button" href="case1.html">Read Case Study</a>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="project-card">
+                            <img src="yas.png" alt="Restaurant self-order redesign preview">
+                            <div class="project-body">
+                                <div class="project-meta">
+                                    <span>Nielsen heuristics</span>
+                                    <span>Usability</span>
+                                </div>
+                                <h3>Restaurant UI Redesigned</h3>
+                                <p>A self-ordering restaurant interface improved through clearer pricing, better navigation, and stronger error feedback.</p>
+                                <div class="project-links">
+                                    <a class="button" href="case2.html">Read Case Study</a>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="project-card">
+                            <img src="IMG_1331.jpg" alt="Scent-driven storytelling prototype preview">
+                            <div class="project-body">
+                                <div class="project-meta">
+                                    <span>Prototype</span>
+                                    <span>Research</span>
+                                </div>
+                                <h3>Scent-Driven Storytelling</h3>
+                                <p>An experimental journaling concept exploring how scent cues can support reflection, memory, and more immersive writing rituals.</p>
+                                <div class="project-links">
+                                    <a class="button" href="case3.html">Read Case Study</a>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="project-card">
+                            <img src="proto.png" alt="Prototype collection preview from Notion portfolio">
+                            <div class="project-body">
+                                <div class="project-meta">
+                                    <span>Prototype archive</span>
+                                    <span>External</span>
+                                </div>
+                                <h3>Prototype Collection</h3>
+                                <p>A broader set of concept explorations covering Arduino, 3D-printed prototyping, and interactive low-fidelity design work.</p>
+                                <div class="project-links">
+                                    <a class="button-secondary" href="https://swift-wilderness-b97.notion.site/MAP-IxD-Elijah-13d3fa8d596d80ee93a4dbe6de561295" target="_blank" rel="noopener noreferrer">Open Notion Portfolio</a>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact" aria-labelledby="contact-title">
+            <div class="footer-inner">
+                <div class="contact-card">
+                    <h2 id="contact-title">Let's Connect</h2>
+                    <p>I'm currently looking for UI/UX design, interaction design, and internship opportunities where I can keep learning while contributing thoughtful design work.</p>
+                    <div class="contact-details">
+                        <p class="contact-detail"><strong>Email</strong><a href="mailto:Elijaholiverlarsson@gmail.com">Elijaholiverlarsson@gmail.com</a></p>
+                    </div>
+                    <p class="footer-note">If you'd like to talk about a role, a project, or my process, feel free to reach out.</p>
+                    <div class="contact-actions">
+                        <a class="button" href="mailto:Elijaholiverlarsson@gmail.com">Send an Email</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

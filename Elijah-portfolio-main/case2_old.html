@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Case Study: Restaurant Self-order Redesign</title>
+    <link rel="stylesheet" href="Casestylescase2.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <header class="header">
+          <a href="index.html">
+            <div class="logo">
+                <img src="loggos.png" alt="Logo" height="100px" width="100px">
+            </div>
+        </a>
+        <nav class="nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section class="intro">
+            <h1>Restaurant Self-order UI Redesign</h1>
+            <hr>
+            <p><b>Overview</b><br>
+                In this project, I applied usability principles to enhance a graphical user interface (GUI) by
+                identifying and resolving key usability issues. Using Nielsen’s 10 usability heuristics as a foundation,
+                I focused on improving system visibility, error prevention, and overall efficiency to create a more
+                intuitive and user-friendly experience.
+            </p>
+
+        </section>
+
+        <section class="sketches">
+            <h2>Identified Issues & Solutions</h2>
+            <img src="okel.png" alt="Whole redesign" onclick="openLightbox(this)">
+            <p>
+                <br><br>
+                1. Pricing Clarity & Consistency
+
+                Problem: Users encountered confusion due to unclear pricing, particularly the "0kr" display and lack of
+                structured cost breakdowns.
+
+                Solution: Implemented consistent pricing information in the menu, displaying base prices along with
+                additional costs per size. This ensures transparency and reduces unnecessary steps if users wish to
+                change their selections.
+                <br><br>
+
+                2. Navigation & Menu Functionality
+
+                Problem: Users had to press categories multiple times or ended up in unintended sections, increasing
+                frustration.
+
+                Solution: Improved the menu by making it more intuitive and implementing a recognition-based approach
+                instead of recall. This minimizes user effort by presenting all categories clearly at once.
+                <br><br>
+                3. Side-Scrolling Issues
+
+                Problem: The side-scrolling navigation made it difficult for users to find specific categories, leading
+                to inefficiency.
+
+                Solution: Designed a static category menu that eliminates the need for excessive scrolling, ensuring
+                users can quickly access relevant options.
+                <br><br>
+                4. Error Feedback & Prevention
+
+                Problem: Users were not informed when backend issues occurred, leading to confusion about selection
+                errors.
+
+                Solution: Introduced a pop-up notification that explicitly informs users when an error occurs, guiding
+                them to redo their selection instead of leaving them uncertain.
+            </p>
+            <br>
+
+        </section>
+
+        <section class="interaction-principles">
+            <h2>Design Process - Sketching & Ideation</h2>
+            <p>
+                Before implementing changes, I analyzed the impact of each issue on user experience. My sketches focused
+                on reducing cognitive overload, adding visual cues, and ensuring seamless error prevention.
+
+                Key improvements:
+
+                Clearer category navigation to eliminate excessive scrolling.
+
+                Pricing adjustments to streamline user decisions.
+
+                Pop-up notifications for instant user feedback.
+            </p>
+        </section>
+
+        <img src="restaurantsketch.png" alt="Sketch Details" onclick="openLightbox(this)">
+        <img src="restaurantsketch2.png" alt="Sketch Details" onclick="openLightbox(this)">
+        <img src="restaurantsketch3.png" alt="Sketch Details" onclick="openLightbox(this)">
+        <section class="interaction-principles">
+            <p>
+            <section class="interaction-principles">
+                <h2>Design Process - Wireframing & Refinements</h2>
+                <p>
+
+
+                    The transition from sketches to wireframes maintained the core design concepts with minor
+                    refinements for better usability:
+
+                    Consistency & Standards: The layout remained familiar to users, reducing the learning curve.
+
+                    User Control & Freedom: A timer-based error message was replaced with a dismissible button, allowing
+                    users to control when to close notifications.
+
+                    Minimalist Design: Sizing labels were simplified to initials to reduce visual clutter.
+
+                    Enhanced System Status Visibility: Added a scroll bar to indicate user progress through the menu,
+                    improving navigation awareness.
+                </p>
+                <img src="scrolling.png" alt="Sketch Details" onclick="openLightbox(this)">
+                <img src="redesign.png" alt="Sketch Details" onclick="openLightbox(this)">
+                <img src="redesign2.png" alt="Sketch Details" onclick="openLightbox(this)">
+
+                <a href="case2.pdf" target="_blank">
+                    <p class="pdf"> You can look at the PDF if you want the whole case</p>
+                </a>
+
+    </main>
+                
+    <footer class="contact">
+        <h2>Contact</h2>
+        <p>I'm looking for new opportunities. Let's connect!</p>
+        <p>Email: <a href="mailto:Elijaholiverlarsson@gmail.com" class="contact-email">Elijaholiverlarsson@gmail.com</a>
+        </p>
+    </footer>
+
+    <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+        <span class="close">&times;</span>
+        <img id="lightbox-img">
+    </div>
+
+    <script>
+  
+        function openLightbox(imgElement) {
+            const lightbox = document.getElementById("lightbox");
+            const lightboxImg = document.getElementById("lightbox-img");
+
+            lightbox.style.display = "flex";
+            lightboxImg.src = imgElement.src;
+        }
+
+        function closeLightbox() {
+            document.getElementById("lightbox").style.display = "none";
+        }
+
+      
+        document.addEventListener("DOMContentLoaded", function () {
+            const header = document.querySelector(".header");
+            let scrolling;
+
+            window.addEventListener("scroll", () => {
+                clearTimeout(scrolling);
+
+                if (window.scrollY > 50) {
+                    header.classList.add("scrolled");
+                }
+
+                scrolling = setTimeout(() => {
+                    header.classList.remove("scrolled");
+                }, 1500);
+            });
+        });
+    </script>
+
+</body>
+
+</html>
