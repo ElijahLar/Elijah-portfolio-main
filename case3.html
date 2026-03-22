@@ -39,7 +39,7 @@
                 <section class="hero-card" id="overview">
                     <h1>Scent-Driven Storytelling</h1>
                     <p class="subtitle">Designing an olfactory journaling experience for deeper reflection</p>
-                    <p>This project explored whether scent could act as a softer, more atmospheric journaling prompt than written questions. Instead of directing users with text, the concept used curated scent cues to help people ease into reflection, access memory more organically, and develop stronger narrative flow while writing.</p>
+                    <p>This project explored whether scent could act as a softer and more atmospheric journaling prompt than written questions. Instead of directing users with text, the concept used curated scent cues to help people ease into reflection, access memory more organically, and develop stronger narrative flow while writing.</p>
 
                     <div class="image-gallery">
                         <figure>
@@ -55,52 +55,102 @@
 
                 <section class="content-card" id="opportunity">
                     <h2>The Design Opportunity</h2>
-                    <p>Many journaling tools depend on visual prompts or written instructions. Those can be useful, but they can also feel effortful or overly directive. Because smell is strongly connected to emotion and autobiographical memory, we saw an opportunity to design an experience that supported reflection more indirectly and more personally.</p>
+                    <p>Many journaling tools rely on written prompts or visual interfaces. Those can be useful, but they can also feel effortful and overly directive. Because smell is strongly connected to emotion and autobiographical memory, our group saw an opportunity to design an experience that supported reflection in a more indirect and personal way.</p>
 
                     <div class="issue-list">
                         <article class="issue-item">
                             <h3>Why scent?</h3>
-                            <p>Scent can trigger memory and emotion in a way that feels immediate and personal, making it a promising prompt for reflective writing.</p>
+                            <p>Scent can trigger memory and emotion in a way that feels immediate and personal, making it a strong candidate for reflective writing.</p>
                         </article>
                         <article class="issue-item">
                             <h3>Designing for reflection</h3>
-                            <p>The experience needed to feel calm and open-ended rather than task-driven, because reflective writing is easy to interrupt.</p>
+                            <p>The experience needed to feel calm and open-ended rather than task-driven, since reflective writing is easy to interrupt.</p>
                         </article>
                         <article class="issue-item">
                             <h3>Balancing physical and digital interaction</h3>
-                            <p>The interface had to support scent selection without letting the digital layer overpower the tactile journaling ritual.</p>
+                            <p>The interface had to support the experience without overpowering the tactile ritual of sitting down, smelling, and journaling.</p>
                         </article>
                     </div>
 
                     <figure>
                         <img src="IMG_2231.png" alt="User flow and mobile interface for scent selection and journaling steps" class="interactive-image">
-                        <figcaption>The supporting mobile flow introduced scents while keeping the journaling ritual central.</figcaption>
+                        <figcaption>The supporting digital flow introduced scents while keeping the journaling ritual central.</figcaption>
                     </figure>
+                </section>
+
+                <section class="content-card" id="role">
+                    <h2>My Role and Contribution</h2>
+                    <p>This was a group project, but I had a strong hands-on role in both the physical and technical implementation. Together with another group member, I built the early cardboard prototype to test whether the enclosure could realistically fit the Arduino, fan, wires, and breadboard before we moved into the final version.</p>
+
+                    <p>I also programmed the Arduino system myself, handled the wiring, and helped shape how scent would actually be diffused through the prototype. Later in the process, I built the website version of the digital component and set up the NFC tag interaction so users could scan the journal and access the web experience directly.</p>
+
+                    <ul>
+                        <li>Co-built the early physical prototype to test size, form, and component fit</li>
+                        <li>Programmed and wired the Arduino setup</li>
+                        <li>Helped define the scent diffusion method</li>
+                        <li>Influenced the shift toward a book-like form factor</li>
+                        <li>Implemented NFC linking from the physical journal to the website</li>
+                        <li>Contributed to the final physical-digital interaction flow</li>
+                    </ul>
+                </section>
+
+                <section class="content-card" id="decisions">
+                    <h2>Key Design Decisions</h2>
+                    <p>One of the earliest concept discussions focused on the form of the prototype. Initial sketches explored larger cylindrical enclosures that would function more like a device. I pushed for a book-like form instead, since it better matched the context of journaling and made the prototype feel more intimate, familiar, and less technical.</p>
+
+                    <p>I also influenced the technical interaction. Since scent perception differs from person to person, I suggested using a potentiometer so users could control fan speed and, in turn, scent intensity. This gave users more control over the experience and made the interaction more adaptable.</p>
+
+                    <p>Another important decision was how to make the scent noticeable without making the system feel complicated. While discussing how the scent should be blown out and experienced, I helped shape the diffusion approach so that it supported the ritual rather than distracting from it.</p>
                 </section>
 
                 <section class="content-card" id="process">
                     <h2>Process and Prototyping</h2>
-                    <p>The project treated scent as an interaction element instead of a decorative add-on. Early prototypes explored simple delivery methods such as jars and cotton swabs. Later iterations moved toward Arduino-controlled diffusion to reduce friction and create a more seamless transition into writing.</p>
-                    <ul>
-                        <li>Different scent blends were developed for different moods and times of day.</li>
-                        <li>Manual delivery methods were tested before moving toward automated diffusion.</li>
-                        <li>The final concept combined a physical journaling box, scent hardware, and a lightweight mobile interface.</li>
-                    </ul>
+                    <p>The project treated scent as an interaction element rather than a decorative add-on. Early prototypes explored simple methods of delivery and low-fidelity enclosure concepts. Before committing to the final build, we created a cardboard prototype to test the internal layout and make sure the physical concept was feasible.</p>
+
+                    <p>This step was important because it let us quickly understand spatial constraints and interaction logic before investing more time in the final laser-cut version. It also helped us evaluate whether the book metaphor worked physically, not just conceptually.</p>
+
+                    <div class="image-gallery">
+                        <figure>
+                            <img src="IMG_2244.png" alt="Early cardboard prototype of the journaling box with fan cutout" class="interactive-image">
+                            <figcaption>Early enclosure prototype used to test the overall size, structure, and component placement.</figcaption>
+                        </figure>
+                        <figure>
+                            <img src="IMG_2245.png" alt="Inside of the cardboard prototype showing Arduino, breadboard, and wiring" class="interactive-image">
+                            <figcaption>Low-fidelity internal layout used to check whether the technical components would fit inside the form.</figcaption>
+                        </figure>
+                    </div>
+
+                    <p>Later iterations moved toward a laser-cut final prototype that more clearly resembled a book. This made the object feel more aligned with journaling and helped strengthen the narrative of the experience.</p>
 
                     <figure>
                         <img src="IMG_1327.jpg" alt="Internal hardware setup with Arduino, diffusion mechanism, wiring, and scent cartridges" class="interactive-image">
-                        <figcaption>The technical setup that enabled automated scent diffusion in the prototype.</figcaption>
+                        <figcaption>The technical setup that enabled automated scent diffusion in the final prototype.</figcaption>
+                    </figure>
+                </section>
+
+                <section class="content-card" id="technical">
+                    <h2>Technical Implementation</h2>
+                    <p>I programmed the Arduino system and wired the electronics that powered the diffusion mechanism. The fan became a key interaction component, since it controlled how the scent was introduced into the experience. Adding the potentiometer made it possible to vary fan speed, which also changed the perceived scent intensity.</p>
+
+                    <p>I also worked on bridging the physical and digital parts of the project. One group member designed the journal and the web app concept, while I made the digital part function as a real website and connected it to the physical artifact through NFC tags. By scanning the journal, users could move directly from the physical experience into the digital layer.</p>
+
+                    <figure>
+                        <img src="IMG_2243.png" alt="NFC tags used to connect the physical journaling prototype to the website" class="interactive-image">
+                        <figcaption>NFC tags used to connect the physical journal to the digital experience.</figcaption>
                     </figure>
                 </section>
 
                 <section class="content-card" id="testing">
                     <h2>Testing and Findings</h2>
-                    <p>The prototype was evaluated through a small exploratory study with six participants. Some journaled with scent cues while others journaled without them, which allowed the team to compare the experience across both conditions.</p>
+                    <p>The prototype was evaluated through a small exploratory study with six participants. Some participants journaled with scent cues while others journaled without them, which allowed us to compare the experience across both conditions.</p>
+
                     <ul>
                         <li><strong>Narrative flow:</strong> Participants often entered writing flow faster with scent-supported journaling.</li>
                         <li><strong>Emotional depth:</strong> Entries tended to contain richer emotional language and more detailed memory recall.</li>
                         <li><strong>Ritual and transition:</strong> The scent cue helped mark the beginning of reflective time and created a clearer mental shift into journaling.</li>
                     </ul>
+
+                    <p>The testing also made clear that scent is difficult to control consistently. Intensity, timing, and individual sensitivity all affected how the experience was perceived, which made adjustability and careful diffusion especially important.</p>
 
                     <figure>
                         <img src="emowheel.png" alt="Emotional analysis visualization comparing scented and non-scented journaling sessions" class="interactive-image">
@@ -108,9 +158,19 @@
                     </figure>
                 </section>
 
+                <section class="content-card" id="impact">
+                    <h2>Impact and Recognition</h2>
+                    <p>Because of its unusual combination of olfactory interaction, journaling, and physical computing, the project was selected to be shown during open house events. That recognition reinforced that the concept stood out not only as a research project, but also as a memorable interaction design experience.</p>
+                </section>
+
                 <section class="content-card" id="reflection">
                     <h2>Reflection</h2>
-                    <p>One of the clearest lessons was that even small interruptions can weaken reflective experiences. Manual scent handling introduced just enough friction to pull attention away from writing, which made the move toward automation especially valuable. The project reinforced how interaction design can shape mood, attention, and emotional engagement, not just task completion.</p>
+                    <p>One of the clearest lessons from this project was that even small interruptions can weaken reflective experiences. Manual scent handling introduced enough friction to pull attention away from writing, which made automation much more valuable than it first seemed.</p>
+
+                    <p>For me, the project was a strong lesson in designing beyond screens. It showed how form, technical constraints, atmosphere, and interaction timing all shape the user experience. It also strengthened my confidence in working across both physical prototyping and digital implementation.</p>
+
+                    <p>If I continued the project, I would improve consistency in scent delivery, refine the physical finish of the enclosure further, and test the experience with a broader range of users to better understand how different people interpret scent cues during reflection.</p>
+
                     <a class="button" href="Group7_Scented_Storytelling_ACM_Report (1).pdf" target="_blank" rel="noopener noreferrer">Open Full Research Paper</a>
                 </section>
 
@@ -140,7 +200,7 @@
                     <dl>
                         <div>
                             <dt>Role</dt>
-                            <dd>Interaction designer, prototyping, and research</dd>
+                            <dd>Interaction design, Arduino prototyping, web implementation, and research</dd>
                         </div>
                         <div>
                             <dt>Project type</dt>
@@ -148,11 +208,11 @@
                         </div>
                         <div>
                             <dt>Duration</dt>
-                            <dd>5 weeks</dd>
+                            <dd>~5 weeks</dd>
                         </div>
                         <div>
                             <dt>Focus</dt>
-                            <dd>Olfactory interaction, journaling, and reflective design</dd>
+                            <dd>Olfactory interaction, journaling, physical computing, and reflective design</dd>
                         </div>
                     </dl>
                 </section>
@@ -162,11 +222,15 @@
                     <ul>
                         <li><a href="#overview">Overview</a></li>
                         <li><a href="#opportunity">Opportunity</a></li>
+                        <li><a href="#role">My Role</a></li>
+                        <li><a href="#decisions">Key Decisions</a></li>
                         <li><a href="#process">Process</a></li>
+                        <li><a href="#technical">Technical Work</a></li>
                         <li><a href="#testing">Testing</a></li>
+                        <li><a href="#impact">Impact</a></li>
                         <li><a href="#reflection">Reflection</a></li>
                     </ul>
-                    <p class="reading-time">About 4 min read</p>
+                    <p class="reading-time">About 5 min read</p>
                 </nav>
             </aside>
         </div>
