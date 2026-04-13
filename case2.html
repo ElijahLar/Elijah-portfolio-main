@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Restaurant UI Redesigned. A usability-focused case study applying Nielsen's heuristics to improve a real self-ordering interface used at Pong in Sweden.">
+    <title>Restaurant UI Redesigned | Elijah Oliver Larsson</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Figtree:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="case-styles.css">
+</head>
+<body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+
+    <header class="site-header" role="banner">
+        <div class="header-inner">
+            <a class="brand" href="index.html" aria-label="Back to portfolio home">
+                <img src="loggos.png" alt="Elijah Oliver Larsson logo" width="56" height="56">
+                <span class="brand-copy">
+                    <span class="brand-name">Elijah Oliver Larsson</span>
+                    <span class="brand-role">UI/UX and Interaction Designer</span>
+                </span>
+            </a>
+            <a class="header-link" href="index.html">Back to Portfolio</a>
+        </div>
+    </header>
+
+    <nav class="breadcrumb page-shell" aria-label="Breadcrumb">
+        <ol>
+            <li><a href="index.html">Portfolio</a></li>
+            <li><span aria-current="page">Restaurant UI Redesigned</span></li>
+        </ol>
+    </nav>
+
+    <main id="main-content" class="page-shell">
+        <div class="case-grid">
+            <div class="content-column">
+                <section class="hero-card" id="overview">
+                    <h1>Restaurant UI Redesigned</h1>
+                    <p class="subtitle">Using usability heuristics to redesign a real self-ordering interface at Pong</p>
+                    <p>This project focused on redesigning a restaurant self-checkout interface I used myself at Pong in Sweden. After experiencing friction in the ordering flow firsthand, I documented the interface through photos and video, identified key usability issues, and redesigned the system using Nielsen's 10 usability heuristics as a guiding framework.</p>
+                    <p>The main goal was not simply to make the interface look better, but to make ordering feel clearer, faster, and more predictable in a real environment where people are standing in line and trying to complete a transaction without confusion.</p>
+                </section>
+
+                <section class="content-card" id="challenge">
+                    <h2>Design Challenge</h2>
+                    <p>Self-ordering systems have to work quickly and clearly. In this context, users are often making decisions under time pressure, sometimes while other people are waiting behind them. That makes even small usability issues feel much more frustrating.</p>
+                    <p>When I used the Pong self-checkout, I noticed that several parts of the ordering flow created unnecessary friction. These issues affected confidence, slowed people down, and made the interface feel less reliable than it should in a transactional setting.</p>
+                </section>
+
+                <section class="content-card" id="issues">
+                    <h2>Key Issues Identified</h2>
+
+                    <figure>
+                        <img src="okel.png" alt="Annotated screenshots of the Pong self-ordering interface showing key usability issues" class="interactive-image">
+                        <figcaption>Annotated documentation of the real interface, used to identify where the experience broke down.</figcaption>
+                    </figure>
+
+                    <div class="issue-list">
+                        <article class="issue-item">
+                            <h3>1. Pricing looked misleading</h3>
+                            <p>One issue was the drink pricing. The interface showed a "0 kr" state before size selection, which could easily make users think the drink was included or free. The actual cost only became clear later, which weakened pricing clarity and predictability.</p>
+                        </article>
+
+                        <article class="issue-item">
+                            <h3>2. Menu selection felt unreliable</h3>
+                            <p>This was the most frustrating issue in practice. Users had to press categories multiple times, and sometimes the wrong category appeared. In a queue-based context, this slows people down and makes the system feel unreliable.</p>
+                        </article>
+
+                        <article class="issue-item">
+                            <h3>3. Side-scrolling navigation made discovery harder</h3>
+                            <p>The horizontal category menu forced users to scroll and search for sections rather than immediately recognizing what was available. This increased effort and made navigation less efficient than it needed to be.</p>
+                        </article>
+
+                        <article class="issue-item">
+                            <h3>4. Error feedback was too weak</h3>
+                            <p>When the system failed to register a choice correctly, users did not receive enough guidance to understand what happened or how to recover. Rather than trying to "fix the backend" in a redesign exercise, I focused on improving feedback and recovery behavior from a UX perspective.</p>
+                        </article>
+                    </div>
+                </section>
+
+                <section class="content-card" id="approach">
+                    <h2>My Approach</h2>
+                    <p>I used Nielsen's heuristics as a way to evaluate the interface and explain why these problems were harmful to usability. Instead of treating the issues as isolated annoyances, I connected them to broader principles such as visibility of system status, consistency and standards, error prevention, recognition rather than recall, and user control.</p>
+                    <p>This helped me move from simple critique into design reasoning. Rather than asking "how can I make this prettier?", I focused on questions like: Why is this interaction confusing? What is the user expected to remember? Where does the system fail to communicate clearly? How can the design reduce hesitation and improve trust?</p>
+                </section>
+
+                <section class="content-card" id="sketches">
+                    <h2>Sketches and Iteration</h2>
+                    <p>After identifying the issues, I explored the design space through sketching. I created three sketches for each of the three main issues, nine in total, before deciding which directions to develop further. This was important because it prevented me from jumping straight to one solution too early.</p>
+
+                    <div class="image-gallery">
+                        <figure>
+                            <img src="restaurantsketch.png" alt="Early sketch concepts exploring redesign directions for the restaurant self-ordering interface" class="interactive-image">
+                            <figcaption>Initial sketches used to explore different ways of improving navigation, pricing clarity, and recovery.</figcaption>
+                        </figure>
+                        <figure>
+                            <img src="restaurantsketch2.png" alt="Additional sketch explorations for the Pong self-ordering redesign" class="interactive-image">
+                            <figcaption>Further concept exploration helped compare multiple approaches rather than settling on the first idea.</figcaption>
+                        </figure>
+                    </div>
+
+                    <figure>
+                        <img src="restaurantsketch3.png" alt="Sketches showing continued iteration of the restaurant ordering flow" class="interactive-image">
+                        <figcaption>Later sketching focused on clearer hierarchy, reduced cognitive load, and stronger visual guidance.</figcaption>
+                    </figure>
+
+                    <p>The side-scrolling issue turned out to be the most fruitful in terms of redesign. It opened up broader questions about how users find categories, how much the interface asks them to remember, and how visible the overall menu structure should be from the beginning.</p>
+                </section>
+
+                <section class="content-card" id="redesign">
+                    <h2>Final Redesign Direction</h2>
+                    <p>The redesign aimed to make the ordering experience feel more predictable, easier to scan, and more transparent. The changes were not only visual. They were meant to reduce uncertainty and improve flow in a real public-use setting.</p>
+
+                    <ul>
+                        <li><strong>Clearer pricing:</strong> Instead of showing a confusing "0 kr" state, the redesign presents size-based pricing directly in the menu so users can understand the cost immediately.</li>
+                        <li><strong>More visible navigation:</strong> Categories were made easier to recognize without unnecessary side-scrolling, reducing the effort needed to find the right section.</li>
+                        <li><strong>Better recovery from system issues:</strong> Since the interface could misregister choices, I redesigned the feedback so users get a clear message when something goes wrong.</li>
+                        <li><strong>More user control:</strong> A timed popup was replaced with a dismissible interaction, allowing users to decide when to close the message instead of being forced to follow the system's timing.</li>
+                        <li><strong>Stronger awareness of menu position:</strong> I added a scrollbar and clearer progress cues so users can better understand where they are in the menu structure.</li>
+                    </ul>
+
+                    <div class="image-gallery">
+                        <figure>
+                            <img src="scrolling.png" alt="Wireframe showing clearer menu visibility and progress feedback" class="interactive-image">
+                            <figcaption>Progress feedback helps users understand where they are in the menu and reduces the need to guess.</figcaption>
+                        </figure>
+                        <figure>
+                            <img src="redesign.png" alt="First redesign pass of the Pong self-ordering interface" class="interactive-image">
+                            <figcaption>Redesign improvements for clearer pricing and better category visibility.</figcaption>
+                        </figure>
+                    </div>
+
+                    <figure>
+                        <img src="redesign2.png" alt="Final redesign direction for the Pong restaurant self-ordering system" class="interactive-image">
+                        <figcaption>Redesign regarding Error Handling and User Recovery.</figcaption>
+                    </figure>
+                </section>
+
+                <section class="content-card" id="role">
+                    <h2>My Role</h2>
+                    <p>This was an individual usability redesign project. I used the self-checkout myself, documented the interface through real photos and video, identified and annotated the issues, applied theory to explain why the problems damaged usability, and then produced the sketches, redesign concepts, and wireframes myself.</p>
+                </section>
+
+                <section class="content-card" id="reflection">
+                    <h2>Reflection</h2>
+                    <p>This was one of my first major GUI projects, and it taught me how to use heuristic theory as a practical design tool rather than just as something to reference academically. It helped me understand how small interface details can have a large effect on trust, speed, and confidence when users are completing a real task.</p>
+                    <p>I also learned that usability work is not just about finding faults. It is about translating friction into design decisions that reduce confusion and make the system easier to understand in context. In this case, that meant thinking about queues, pressure, visibility, and user recovery rather than only visual polish.</p>
+                    <p>This project strengthened my ability to analyse a real interface in the wild, connect problems to theory, and turn those observations into concrete redesign decisions.</p>
+                    <a class="button" href="case2.pdf" target="_blank" rel="noopener noreferrer">Open Full Case Study PDF</a>
+                </section>
+
+                <div class="back-to-top-container">
+                    <button id="back-to-top" class="back-to-top-btn" type="button">Back to Top</button>
+                </div>
+
+                <nav class="case-nav" aria-label="Other case studies">
+                    <h2>Explore Other Projects</h2>
+                    <ul>
+                        <li><a href="case1.html">Coffee Machine - Done Right</a></li>
+                        <li><a href="case3.html">Scent-Driven Storytelling</a></li>
+                        <li><a href="index.html">Back to Portfolio</a></li>
+                    </ul>
+                </nav>
+
+                <section class="contact-card" id="contact">
+                    <h2>Let's Connect</h2>
+                    <p>I'm looking for opportunities in UI/UX and interaction design where thoughtful usability work makes a visible difference.</p>
+                    <p class="contact-detail"><strong>Email</strong><a href="mailto:Elijaholiverlarsson@gmail.com">Elijaholiverlarsson@gmail.com</a></p>
+                </section>
+            </div>
+
+            <aside class="sidebar">
+                <section class="meta-card" aria-labelledby="project-meta-title">
+                    <h2 id="project-meta-title">Project Snapshot</h2>
+                    <dl>
+                        <div>
+                            <dt>Role</dt>
+                            <dd>UI/UX designer</dd>
+                        </div>
+                        <div>
+                            <dt>Project type</dt>
+                            <dd>Individual usability redesign</dd>
+                        </div>
+                        <div>
+                            <dt>Context</dt>
+                            <dd>Real self-ordering interface at Pong, Sweden</dd>
+                        </div>
+                        <div>
+                            <dt>Method</dt>
+                            <dd>Heuristic evaluation, sketching, and wireframing</dd>
+                        </div>
+                        <div>
+                            <dt>Focus</dt>
+                            <dd>Pricing clarity, navigation, error recovery, and menu visibility</dd>
+                        </div>
+                    </dl>
+                </section>
+
+                <nav class="toc-card" aria-labelledby="toc-title">
+                    <h2 id="toc-title">On This Page</h2>
+                    <ul>
+                        <li><a href="#overview">Overview</a></li>
+                        <li><a href="#challenge">Design Challenge</a></li>
+                        <li><a href="#issues">Key Issues</a></li>
+                        <li><a href="#approach">My Approach</a></li>
+                        <li><a href="#sketches">Sketches</a></li>
+                        <li><a href="#redesign">Final Redesign</a></li>
+                        <li><a href="#role">My Role</a></li>
+                        <li><a href="#reflection">Reflection</a></li>
+                    </ul>
+                    <p class="reading-time">About 5 min read</p>
+                </nav>
+            </aside>
+        </div>
+    </main>
+
+    <div id="lightbox" class="lightbox" role="dialog" aria-modal="true" aria-labelledby="lightbox-title" aria-hidden="true">
+        <div class="lightbox-dialog">
+            <h2 id="lightbox-title" class="sr-only">Expanded project image</h2>
+            <button class="lightbox-close" type="button" aria-label="Close image viewer">&times;</button>
+            <img id="lightbox-img" alt="">
+            <p class="lightbox-hint">Press Escape to close or click outside the image.</p>
+        </div>
+    </div>
+
+    <script src="case-script.js"></script>
+</body>
+</html>
