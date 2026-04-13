@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 900" role="img" aria-labelledby="title desc">
+<title id="title">AfterKop dashboard visual</title>
+<desc id="desc">A simplified dashboard visual for the AfterKop case study.</desc>
+<defs>
+  <linearGradient id="sidebar" x1="0" x2="0" y1="0" y2="1">
+    <stop offset="0" stop-color="#252b47"/>
+    <stop offset="1" stop-color="#1c2137"/>
+  </linearGradient>
+  <linearGradient id="hero" x1="0" x2="1">
+    <stop offset="0" stop-color="#315af2"/>
+    <stop offset="1" stop-color="#4769ef"/>
+  </linearGradient>
+</defs>
+
+<rect width="1400" height="900" fill="#f6f3ee"/>
+<rect x="26" y="26" width="190" height="848" rx="28" fill="url(#sidebar)"/>
+<circle cx="60" cy="78" r="24" fill="#cad6ff"/>
+<text x="46" y="86" fill="#111111" font-family="Outfit, sans-serif" font-size="24" font-weight="700">AK</text>
+<rect x="104" y="50" width="98" height="42" rx="17" fill="#efff5d"/>
+<text x="127" y="78" fill="#111111" font-family="Figtree, sans-serif" font-size="16" font-weight="700">Log out</text>
+<rect x="34" y="142" width="162" height="50" rx="18" fill="#d9ff7c"/>
+<text x="52" y="174" fill="#111111" font-family="Figtree, sans-serif" font-size="18" font-weight="700">Dashboard</text>
+<text x="52" y="236" fill="#ced7e8" font-family="Figtree, sans-serif" font-size="18">Dossier</text>
+<text x="52" y="294" fill="#ced7e8" font-family="Figtree, sans-serif" font-size="18">Settings</text>
+
+<rect x="238" y="26" width="1136" height="118" rx="30" fill="#fffdf9" stroke="#e4ddd0"/>
+<rect x="262" y="54" width="126" height="34" rx="16" fill="#3a5be7"/>
+<text x="282" y="76" fill="#ffffff" font-family="Outfit, sans-serif" font-size="18" font-weight="700" letter-spacing="3">DASHBOARD</text>
+<text x="262" y="118" fill="#111111" font-family="Outfit, sans-serif" font-size="52" font-weight="700">AfterK&#246;p workspace</text>
+<rect x="1092" y="66" width="122" height="34" rx="16" fill="#ffffff" stroke="#ddd8cd"/>
+<rect x="1230" y="66" width="116" height="34" rx="16" fill="#ffffff" stroke="#ddd8cd"/>
+<text x="1110" y="88" fill="#61708c" font-family="Figtree, sans-serif" font-size="16">1 active case</text>
+<text x="1250" y="88" fill="#61708c" font-family="Figtree, sans-serif" font-size="16">Free 10/20 AI</text>
+
+<rect x="238" y="170" width="458" height="136" rx="34" fill="url(#hero)"/>
+<text x="264" y="212" fill="#ffffff" font-family="Figtree, sans-serif" font-size="20">Active cases</text>
+<text x="264" y="272" fill="#ffffff" font-family="Outfit, sans-serif" font-size="68" font-weight="700">1</text>
+<rect x="716" y="170" width="174" height="136" rx="34" fill="#fffdf9" stroke="#e4ddd0"/>
+<rect x="908" y="170" width="174" height="136" rx="34" fill="#f5f6fb" stroke="#e4ddd0"/>
+<rect x="1100" y="170" width="274" height="136" rx="34" fill="#eff4ff" stroke="#d9e1f1"/>
+<text x="742" y="212" fill="#71809d" font-family="Figtree, sans-serif" font-size="18">New</text>
+<text x="742" y="272" fill="#111111" font-family="Outfit, sans-serif" font-size="56" font-weight="700">0</text>
+<text x="934" y="212" fill="#71809d" font-family="Figtree, sans-serif" font-size="18">Closed</text>
+<text x="934" y="272" fill="#111111" font-family="Outfit, sans-serif" font-size="56" font-weight="700">0</text>
+<text x="1126" y="212" fill="#71809d" font-family="Figtree, sans-serif" font-size="18">Needs attention</text>
+<text x="1126" y="272" fill="#111111" font-family="Outfit, sans-serif" font-size="56" font-weight="700">1</text>
+
+<rect x="238" y="334" width="376" height="530" rx="28" fill="#fffdf9" stroke="#e4ddd0"/>
+<rect x="634" y="334" width="740" height="530" rx="28" fill="#fffdf9" stroke="#e4ddd0"/>
+
+<text x="264" y="392" fill="#111111" font-family="Outfit, sans-serif" font-size="30" font-weight="700">Inbox</text>
+<text x="264" y="430" fill="#71809d" font-family="Figtree, sans-serif" font-size="18">Review incoming support cases</text>
+<rect x="264" y="466" width="64" height="38" rx="16" fill="#141b27"/>
+<rect x="338" y="466" width="74" height="38" rx="16" fill="#f4f1eb" stroke="#ddd8cd"/>
+<rect x="422" y="466" width="132" height="38" rx="16" fill="#f4f1eb" stroke="#ddd8cd"/>
+<text x="281" y="491" fill="#ffffff" font-family="Figtree, sans-serif" font-size="16" font-weight="700">All</text>
+<text x="360" y="491" fill="#61708c" font-family="Figtree, sans-serif" font-size="16">New</text>
+<text x="444" y="491" fill="#61708c" font-family="Figtree, sans-serif" font-size="16">Under review</text>
+
+<rect x="264" y="540" width="320" height="164" rx="24" fill="#eef6ff" stroke="#aad2ff"/>
+<text x="288" y="588" fill="#111111" font-family="Outfit, sans-serif" font-size="24" font-weight="700">Eljonk</text>
+<text x="288" y="624" fill="#70809d" font-family="Figtree, sans-serif" font-size="18">Refund request</text>
+<rect x="288" y="654" width="202" height="8" rx="4" fill="#bfd3eb"/>
+<rect x="288" y="672" width="228" height="8" rx="4" fill="#bfd3eb"/>
+<rect x="288" y="690" width="162" height="8" rx="4" fill="#bfd3eb"/>
+
+<text x="666" y="392" fill="#111111" font-family="Outfit, sans-serif" font-size="34" font-weight="700">Refund request</text>
+<text x="666" y="432" fill="#71809d" font-family="Figtree, sans-serif" font-size="18">Case details, policy basis, and AI recommendation stay together.</text>
+<rect x="666" y="470" width="116" height="30" rx="15" fill="#eff8ff" stroke="#89c9ff"/>
+<rect x="796" y="470" width="148" height="30" rx="15" fill="#fff9ef" stroke="#d8d1bf"/>
+<rect x="958" y="470" width="146" height="30" rx="15" fill="#fff1f2" stroke="#ffc0cb"/>
+<text x="690" y="490" fill="#0f67b3" font-family="Figtree, sans-serif" font-size="14">Return case</text>
+<text x="820" y="490" fill="#57524a" font-family="Figtree, sans-serif" font-size="14">Support form</text>
+<text x="982" y="490" fill="#c6304a" font-family="Figtree, sans-serif" font-size="14">ARN risk</text>
+
+<rect x="666" y="530" width="420" height="278" rx="24" fill="#ffffff" stroke="#ddd8cd"/>
+<rect x="1106" y="530" width="236" height="278" rx="24" fill="#f8fbdf" stroke="#bfd84f"/>
+<text x="692" y="576" fill="#111111" font-family="Outfit, sans-serif" font-size="24" font-weight="700">Case context</text>
+<text x="692" y="614" fill="#71809d" font-family="Figtree, sans-serif" font-size="18">Message, order state, and timeline at a glance.</text>
+<rect x="692" y="654" width="120" height="8" rx="4" fill="#d7deea"/>
+<rect x="692" y="674" width="208" height="8" rx="4" fill="#d7deea"/>
+<rect x="692" y="694" width="180" height="8" rx="4" fill="#d7deea"/>
+<rect x="692" y="736" width="308" height="8" rx="4" fill="#d7deea"/>
+<rect x="692" y="756" width="272" height="8" rx="4" fill="#d7deea"/>
+
+<text x="1130" y="576" fill="#2b3516" font-family="Outfit, sans-serif" font-size="24" font-weight="700">Why this recommendation</text>
+<rect x="1130" y="624" width="154" height="28" rx="14" fill="#ffffff" stroke="#bfd84f"/>
+<rect x="1130" y="662" width="176" height="28" rx="14" fill="#ffffff" stroke="#bfd84f"/>
+<rect x="1130" y="700" width="164" height="28" rx="14" fill="#ffffff" stroke="#bfd84f"/>
+<text x="1150" y="642" fill="#617a21" font-family="Figtree, sans-serif" font-size="13">Merchant support policy</text>
+<text x="1150" y="680" fill="#617a21" font-family="Figtree, sans-serif" font-size="13">Consumer law guidance</text>
+<text x="1150" y="718" fill="#617a21" font-family="Figtree, sans-serif" font-size="13">Return time limits</text>
+</svg>

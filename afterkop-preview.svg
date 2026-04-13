@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 720" role="img" aria-labelledby="title desc">
+<title id="title">AfterKop product cover</title>
+<desc id="desc">A clean branded cover visual for the AfterKop case study.</desc>
+<defs>
+  <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+    <stop offset="0" stop-color="#0d1830"/>
+    <stop offset="0.55" stop-color="#152544"/>
+    <stop offset="1" stop-color="#d8e9fb"/>
+  </linearGradient>
+  <linearGradient id="lime" x1="0" x2="1">
+    <stop offset="0" stop-color="#d9ff7c"/>
+    <stop offset="1" stop-color="#f2ff75"/>
+  </linearGradient>
+</defs>
+
+<rect width="1200" height="720" fill="url(#bg)"/>
+<rect x="36" y="30" width="1128" height="54" rx="14" fill="none" stroke="#314767"/>
+<text x="62" y="64" fill="#ffffff" font-family="Outfit, sans-serif" font-size="30" font-weight="700">AfterK&#246;p</text>
+<rect x="972" y="40" width="154" height="34" rx="17" fill="url(#lime)"/>
+<text x="1008" y="62" fill="#111111" font-family="Figtree, sans-serif" font-size="17" font-weight="700">Book a demo</text>
+
+<text x="60" y="210" fill="#d8e6fb" font-family="Outfit, sans-serif" font-size="18" letter-spacing="4">SWEDISH SHOPIFY SUPPORT SAAS</text>
+<text x="60" y="302" fill="#ffffff" font-family="Outfit, sans-serif" font-size="92" font-weight="700">AfterK&#246;p</text>
+<text x="60" y="370" fill="#e7eefc" font-family="Figtree, sans-serif" font-size="31">Returns, refunds, support cases, and AI-assisted replies</text>
+<text x="60" y="412" fill="#e7eefc" font-family="Figtree, sans-serif" font-size="31">for Swedish Shopify stores in one calmer workflow.</text>
+
+<rect x="60" y="484" width="236" height="64" rx="22" fill="#ffffff"/>
+<text x="111" y="525" fill="#111111" font-family="Figtree, sans-serif" font-size="22" font-weight="700">Case Study</text>
+
+<g transform="translate(582 138)">
+  <rect width="560" height="430" rx="34" fill="#121d2e" stroke="#2d3d55"/>
+  <rect x="30" y="28" width="500" height="66" rx="24" fill="#17263b"/>
+  <text x="52" y="54" fill="#9fb1ce" font-family="Outfit, sans-serif" font-size="14" letter-spacing="4">WORKFLOW OVERVIEW</text>
+  <text x="52" y="82" fill="#ffffff" font-family="Outfit, sans-serif" font-size="28" font-weight="700">Three steps across one case</text>
+
+  <rect x="30" y="122" width="154" height="74" rx="22" fill="#263547"/>
+  <rect x="204" y="122" width="154" height="74" rx="22" fill="#1d2939"/>
+  <rect x="378" y="122" width="152" height="74" rx="22" fill="#1d2939"/>
+  <circle cx="60" cy="159" r="15" fill="url(#lime)"/>
+  <text x="87" y="154" fill="#ffffff" font-family="Figtree, sans-serif" font-size="16" font-weight="700">Case intake</text>
+  <text x="87" y="176" fill="#b9c7de" font-family="Figtree, sans-serif" font-size="13">Message plus order context</text>
+  <text x="230" y="154" fill="#ffffff" font-family="Figtree, sans-serif" font-size="16" font-weight="700">Risk review</text>
+  <text x="230" y="176" fill="#b9c7de" font-family="Figtree, sans-serif" font-size="13">Policy basis and next step</text>
+  <text x="404" y="154" fill="#ffffff" font-family="Figtree, sans-serif" font-size="16" font-weight="700">Dossier export</text>
+  <text x="404" y="176" fill="#b9c7de" font-family="Figtree, sans-serif" font-size="13">Timeline and documentation</text>
+
+  <rect x="30" y="228" width="120" height="164" rx="26" fill="#101926" stroke="#263547"/>
+  <circle cx="62" cy="262" r="18" fill="url(#lime)"/>
+  <text x="52" y="268" fill="#152032" font-family="Outfit, sans-serif" font-size="18" font-weight="700">AK</text>
+  <rect x="44" y="306" width="92" height="36" rx="16" fill="url(#lime)"/>
+  <text x="64" y="329" fill="#111111" font-family="Figtree, sans-serif" font-size="15" font-weight="700">Dashboard</text>
+  <text x="62" y="366" fill="#9cb0cc" font-family="Figtree, sans-serif" font-size="14">Dossier</text>
+
+  <rect x="170" y="228" width="360" height="164" rx="26" fill="#fbfaf7"/>
+  <text x="194" y="262" fill="#8ea1be" font-family="Outfit, sans-serif" font-size="13" letter-spacing="4">CASE VIEW</text>
+  <text x="194" y="300" fill="#111111" font-family="Outfit, sans-serif" font-size="30" font-weight="700">Wrong size, wants to exchange</text>
+  <rect x="194" y="330" width="124" height="30" rx="15" fill="#eff8ff" stroke="#89c9ff"/>
+  <rect x="332" y="330" width="126" height="30" rx="15" fill="#f6fbdd" stroke="#bfd84f"/>
+  <text x="218" y="350" fill="#0f67b3" font-family="Figtree, sans-serif" font-size="14">Return case</text>
+  <text x="356" y="350" fill="#657a10" font-family="Figtree, sans-serif" font-size="14">Shopify synced</text>
+  <rect x="194" y="374" width="134" height="8" rx="4" fill="#d7deea"/>
+  <rect x="194" y="392" width="208" height="8" rx="4" fill="#d7deea"/>
+  <rect x="194" y="410" width="176" height="8" rx="4" fill="#d7deea"/>
+  <rect x="430" y="374" width="74" height="8" rx="4" fill="#d7deea"/>
+  <rect x="430" y="392" width="86" height="8" rx="4" fill="#d7deea"/>
+  <rect x="430" y="410" width="62" height="8" rx="4" fill="#d7deea"/>
+</g>
+</svg>

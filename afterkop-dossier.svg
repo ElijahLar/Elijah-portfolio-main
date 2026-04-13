@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 860" role="img" aria-labelledby="title desc">
+<title id="title">AfterKop dossier export visual</title>
+<desc id="desc">A simplified PDF dossier visual for the AfterKop case study.</desc>
+
+<rect width="1200" height="860" fill="#2b2b2b"/>
+<rect x="86" y="84" width="176" height="246" rx="8" fill="#ffffff"/>
+<rect x="86" y="360" width="176" height="246" rx="8" fill="#ffffff"/>
+<rect x="86" y="636" width="176" height="140" rx="8" fill="#ffffff"/>
+<text x="171" y="348" fill="#ffffff" font-family="Figtree, sans-serif" font-size="22">1</text>
+<text x="171" y="624" fill="#ffffff" font-family="Figtree, sans-serif" font-size="22">2</text>
+<text x="171" y="794" fill="#ffffff" font-family="Figtree, sans-serif" font-size="22">3</text>
+
+<rect x="442" y="42" width="628" height="776" fill="#ffffff"/>
+<text x="500" y="112" fill="#2e5be5" font-family="Outfit, sans-serif" font-size="28" font-weight="700">AfterK&#246;p</text>
+<text x="500" y="156" fill="#111111" font-family="Outfit, sans-serif" font-size="54" font-weight="700">Case dossier / export</text>
+<rect x="500" y="196" width="460" height="8" rx="4" fill="#7a8aa7" opacity=".45"/>
+<rect x="500" y="216" width="420" height="8" rx="4" fill="#7a8aa7" opacity=".45"/>
+
+<line x1="500" y1="258" x2="1012" y2="258" stroke="#d8dce7"/>
+<text x="500" y="308" fill="#111111" font-family="Outfit, sans-serif" font-size="34" font-weight="700">Summary</text>
+<text x="500" y="354" fill="#6f7f9d" font-family="Figtree, sans-serif" font-size="22">Case</text>
+<text x="500" y="384" fill="#111111" font-family="Figtree, sans-serif" font-size="22">Refund request</text>
+<text x="500" y="434" fill="#6f7f9d" font-family="Figtree, sans-serif" font-size="22">Status</text>
+<text x="500" y="464" fill="#111111" font-family="Figtree, sans-serif" font-size="22">Awaiting return</text>
+<text x="500" y="514" fill="#6f7f9d" font-family="Figtree, sans-serif" font-size="22">Category</text>
+<text x="500" y="544" fill="#111111" font-family="Figtree, sans-serif" font-size="22">Return</text>
+<text x="500" y="594" fill="#6f7f9d" font-family="Figtree, sans-serif" font-size="22">Risk level</text>
+<text x="500" y="624" fill="#111111" font-family="Figtree, sans-serif" font-size="22">Low risk</text>
+
+<line x1="500" y1="670" x2="1012" y2="670" stroke="#d8dce7"/>
+<text x="500" y="718" fill="#111111" font-family="Outfit, sans-serif" font-size="34" font-weight="700">Timeline</text>
+<rect x="500" y="748" width="384" height="8" rx="4" fill="#7a8aa7" opacity=".5"/>
+<rect x="500" y="770" width="446" height="8" rx="4" fill="#7a8aa7" opacity=".5"/>
+<rect x="500" y="792" width="342" height="8" rx="4" fill="#7a8aa7" opacity=".5"/>
+</svg>
