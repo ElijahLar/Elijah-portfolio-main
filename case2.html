@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Restaurant UI Redesigned. A usability-focused case study applying Nielsen's heuristics to improve a real self-ordering interface used at Pong in Sweden.">
-    <title>Restaurant UI Redesigned | Elijah Oliver Larsson</title>
+    <meta name="description" content="EloEcho. A League companion concept focused on clearer post-match feedback, live coaching cues, and helping players understand why they lost.">
+    <title>EloEcho | Elijah Oliver Larsson</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Figtree:wght@300;400;500;600&display=swap" rel="stylesheet">
@@ -29,7 +29,7 @@
     <nav class="breadcrumb page-shell" aria-label="Breadcrumb">
         <ol>
             <li><a href="index.html">Portfolio</a></li>
-            <li><span aria-current="page">Restaurant UI Redesigned</span></li>
+            <li><span aria-current="page">EloEcho</span></li>
         </ol>
     </nav>
 
@@ -37,118 +37,96 @@
         <div class="case-grid">
             <div class="content-column">
                 <section class="hero-card" id="overview">
-                    <h1>Restaurant UI Redesigned</h1>
-                    <p class="subtitle">Using usability heuristics to redesign a real self-ordering interface at Pong</p>
-                    <p>This project focused on redesigning a restaurant self-checkout interface I used myself at Pong in Sweden. After experiencing friction in the ordering flow firsthand, I documented the interface through photos and video, identified key usability issues, and redesigned the system using Nielsen's 10 usability heuristics as a guiding framework.</p>
-                    <p>The main goal was not simply to make the interface look better, but to make ordering feel clearer, faster, and more predictable in a real environment where people are standing in line and trying to complete a transaction without confusion.</p>
-                </section>
-
-                <section class="content-card" id="challenge">
-                    <h2>Design Challenge</h2>
-                    <p>Self-ordering systems have to work quickly and clearly. In this context, users are often making decisions under time pressure, sometimes while other people are waiting behind them. That makes even small usability issues feel much more frustrating.</p>
-                    <p>When I used the Pong self-checkout, I noticed that several parts of the ordering flow created unnecessary friction. These issues affected confidence, slowed people down, and made the interface feel less reliable than it should in a transactional setting.</p>
-                </section>
-
-                <section class="content-card" id="issues">
-                    <h2>Key Issues Identified</h2>
-
+                    <h1>EloEcho</h1>
+                    <p class="subtitle">A solo concept prototype for clearer League coaching</p>
+                    <p>EloEcho is a solo concept prototype for clearer League of Legends coaching. I designed it around one question: after a ranked loss, how can a player understand the most important reason they lost without being buried in stats?</p>
+                    <p>This case explores a landing page, a speculative live overlay, and a companion dashboard built around one core principle: less feedback, but better feedback. The current version uses mocked and redacted match examples to show the coaching flow clearly. It is not yet a live Riot-integrated product.</p>
                     <figure>
-                        <img src="okel.png" alt="Annotated screenshots of the Pong self-ordering interface showing key usability issues" class="interactive-image">
-                        <figcaption>Annotated documentation of the real interface, used to identify where the experience broke down.</figcaption>
+                        <img src="eloecho-cover-real.png" alt="EloEcho website landing page" class="interactive-image">
+                        <figcaption>The landing page frames EloEcho as a focused tool for understanding losses instead of just collecting more stats.</figcaption>
                     </figure>
+                </section>
 
+                <section class="content-card" id="scope">
+                    <h2>My Role and Scope</h2>
+                    <p>I defined the product direction, wrote the framing, designed the landing page, shaped the live overlay concept, and built the companion dashboard layout and feedback hierarchy. I used Codex to speed up parts of the prototype build, then edited and tightened the result myself.</p>
+                    <p>The value of the project is not that it is fully shipped. It is that it shows how I think through product scope, feedback design, interface hierarchy, and tradeoffs across multiple surfaces.</p>
+                </section>
+
+                <section class="content-card" id="problem">
+                    <h2>Design Challenge</h2>
+                    <p>A lot of gaming tools show huge amounts of data, but that does not always help the player understand what actually went wrong. League players often leave a loss with numbers, graphs, and timelines, but still no clear sense of what they should fix first.</p>
+                    <p>The design question became: how might I reduce post-match analysis into one useful takeaway and one next action while the game is still fresh in the player's mind?</p>
                     <div class="issue-list">
                         <article class="issue-item">
-                            <h3>1. Pricing looked misleading</h3>
-                            <p>One issue was the drink pricing. The interface showed a "0 kr" state before size selection, which could easily make users think the drink was included or free. The actual cost only became clear later, which weakened pricing clarity and predictability.</p>
+                            <h3>Too much data, not enough direction</h3>
+                            <p>Players often get plenty of numbers but not a clear read on which mistake mattered most.</p>
                         </article>
-
                         <article class="issue-item">
-                            <h3>2. Menu selection felt unreliable</h3>
-                            <p>This was the most frustrating issue in practice. Users had to press categories multiple times, and sometimes the wrong category appeared. In a queue-based context, this slows people down and makes the system feel unreliable.</p>
+                            <h3>Post-game learning fades fast</h3>
+                            <p>If feedback comes too late or feels too abstract, it is easy to queue again without learning anything useful.</p>
                         </article>
-
                         <article class="issue-item">
-                            <h3>3. Side-scrolling navigation made discovery harder</h3>
-                            <p>The horizontal category menu forced users to scroll and search for sections rather than immediately recognizing what was available. This increased effort and made navigation less efficient than it needed to be.</p>
-                        </article>
-
-                        <article class="issue-item">
-                            <h3>4. Error feedback was too weak</h3>
-                            <p>When the system failed to register a choice correctly, users did not receive enough guidance to understand what happened or how to recover. Rather than trying to "fix the backend" in a redesign exercise, I focused on improving feedback and recovery behavior from a UX perspective.</p>
+                            <h3>Coaching needs focus</h3>
+                            <p>The strongest version of this product is not about saying everything. It is about surfacing one clear thing to fix while the game is still fresh.</p>
                         </article>
                     </div>
                 </section>
 
-                <section class="content-card" id="approach">
-                    <h2>My Approach</h2>
-                    <p>I used Nielsen's heuristics as a way to evaluate the interface and explain why these problems were harmful to usability. Instead of treating the issues as isolated annoyances, I connected them to broader principles such as visibility of system status, consistency and standards, error prevention, recognition rather than recall, and user control.</p>
-                    <p>This helped me move from simple critique into design reasoning. Rather than asking "how can I make this prettier?", I focused on questions like: Why is this interaction confusing? What is the user expected to remember? Where does the system fail to communicate clearly? How can the design reduce hesitation and improve trust?</p>
+                <section class="content-card" id="website">
+                    <h2>Website Direction</h2>
+                    <p>The site leads with a very direct promise: stop guessing why you lost. I wanted the product to feel specific from the first screen, not like another generic AI helper or stat tracker.</p>
+                    <p>Visually, I leaned into contrast, atmosphere, and a more serious competitive tone. The goal was to make it feel native to the game space while keeping the layout readable enough that the product message stayed clear.</p>
                 </section>
 
-                <section class="content-card" id="sketches">
-                    <h2>Sketches and Iteration</h2>
-                    <p>After identifying the issues, I explored the design space through sketching. I created three sketches for each of the three main issues, nine in total, before deciding which directions to develop further. This was important because it prevented me from jumping straight to one solution too early.</p>
-
-                    <div class="image-gallery">
-                        <figure>
-                            <img src="restaurantsketch.png" alt="Early sketch concepts exploring redesign directions for the restaurant self-ordering interface" class="interactive-image">
-                            <figcaption>Initial sketches used to explore different ways of improving navigation, pricing clarity, and recovery.</figcaption>
-                        </figure>
-                        <figure>
-                            <img src="restaurantsketch2.png" alt="Additional sketch explorations for the Pong self-ordering redesign" class="interactive-image">
-                            <figcaption>Further concept exploration helped compare multiple approaches rather than settling on the first idea.</figcaption>
-                        </figure>
-                    </div>
-
+                <section class="content-card" id="live">
+                    <h2>Live Read and In-Game Feedback</h2>
+                    <p>I explored the live overlay as a speculative direction for faster feedback. During or around the match, the player sees a lightweight read of what is happening: champion, timing, core stats, warnings, and one coaching note that points to the most relevant problem.</p>
+                    <p>The idea is interesting, but it also comes with real product questions around distraction, usefulness, and feasibility. Because of that, I see the overlay as the riskier direction and the post-game companion as the stronger product path, where the feedback can be more reflective and less disruptive.</p>
                     <figure>
-                        <img src="restaurantsketch3.png" alt="Sketches showing continued iteration of the restaurant ordering flow" class="interactive-image">
-                        <figcaption>Later sketching focused on clearer hierarchy, reduced cognitive load, and stronger visual guidance.</figcaption>
-                    </figure>
-
-                    <p>The side-scrolling issue turned out to be the most fruitful in terms of redesign. It opened up broader questions about how users find categories, how much the interface asks them to remember, and how visible the overall menu structure should be from the beginning.</p>
-                </section>
-
-                <section class="content-card" id="redesign">
-                    <h2>Final Redesign Direction</h2>
-                    <p>The redesign aimed to make the ordering experience feel more predictable, easier to scan, and more transparent. The changes were not only visual. They were meant to reduce uncertainty and improve flow in a real public-use setting.</p>
-
-                    <ul>
-                        <li><strong>Clearer pricing:</strong> Instead of showing a confusing "0 kr" state, the redesign presents size-based pricing directly in the menu so users can understand the cost immediately.</li>
-                        <li><strong>More visible navigation:</strong> Categories were made easier to recognize without unnecessary side-scrolling, reducing the effort needed to find the right section.</li>
-                        <li><strong>Better recovery from system issues:</strong> Since the interface could misregister choices, I redesigned the feedback so users get a clear message when something goes wrong.</li>
-                        <li><strong>More user control:</strong> A timed popup was replaced with a dismissible interaction, allowing users to decide when to close the message instead of being forced to follow the system's timing.</li>
-                        <li><strong>Stronger awareness of menu position:</strong> I added a scrollbar and clearer progress cues so users can better understand where they are in the menu structure.</li>
-                    </ul>
-
-                    <div class="image-gallery">
-                        <figure>
-                            <img src="scrolling.png" alt="Wireframe showing clearer menu visibility and progress feedback" class="interactive-image">
-                            <figcaption>Progress feedback helps users understand where they are in the menu and reduces the need to guess.</figcaption>
-                        </figure>
-                        <figure>
-                            <img src="redesign.png" alt="First redesign pass of the Pong self-ordering interface" class="interactive-image">
-                            <figcaption>Redesign improvements for clearer pricing and better category visibility.</figcaption>
-                        </figure>
-                    </div>
-
-                    <figure>
-                        <img src="redesign2.png" alt="Final redesign direction for the Pong restaurant self-ordering system" class="interactive-image">
-                        <figcaption>Redesign regarding Error Handling and User Recovery.</figcaption>
+                        <img src="eloecho-live-overlay.png" alt="EloEcho live overlay with in-game read and coaching note" class="interactive-image">
+                        <figcaption>The live overlay explores how little feedback is needed before the player can act on it.</figcaption>
                     </figure>
                 </section>
 
-                <section class="content-card" id="role">
-                    <h2>My Role</h2>
-                    <p>This was an individual usability redesign project. I used the self-checkout myself, documented the interface through real photos and video, identified and annotated the issues, applied theory to explain why the problems damaged usability, and then produced the sketches, redesign concepts, and wireframes myself.</p>
+                <section class="content-card" id="companion">
+                    <h2>Companion App and Command Deck</h2>
+                    <p>The companion view pushes the idea further by gathering match context into one command deck. It shows key stats, the current read on the player, an enemy dossier, lightweight rules, and a coaching panel that turns the analysis into one practical instruction.</p>
+                    <p>This became the strongest part of the concept for me. Instead of acting like a full analysis suite, the interface tries to connect raw match information to one coaching takeaway, which makes it feel more purposeful than a standard stat tracker.</p>
+                    <figure>
+                        <img src="eloecho-companion-redacted.png" alt="EloEcho companion command deck with redacted summoner feed" class="interactive-image">
+                        <figcaption>The companion dashboard pulls together context, opponent signals, and one focused coaching read.</figcaption>
+                    </figure>
+                </section>
+
+                <section class="content-card" id="decisions">
+                    <h2>Key Design Decisions</h2>
+                    <div class="issue-list">
+                        <article class="issue-item">
+                            <h3>One takeaway over a stat dump</h3>
+                            <p>I prioritized a single coaching read instead of trying to summarize everything that happened in the match.</p>
+                        </article>
+                        <article class="issue-item">
+                            <h3>Separate live feedback from review</h3>
+                            <p>I split the concept across a live overlay and a companion view so the player is not asked to process too much in the middle of play.</p>
+                        </article>
+                        <article class="issue-item">
+                            <h3>Command-deck layout for fast scanning</h3>
+                            <p>I used boxed panels, short labels, and clear hierarchy because this product needs fast reading more than long-form explanation.</p>
+                        </article>
+                    </div>
+                </section>
+
+                <section class="content-card" id="design">
+                    <h2>What Changed During the Process</h2>
+                    <p>The main shift was moving away from the idea of giving the player more information and toward giving them less, but better. Early on, the concept risked becoming another dense analysis tool. The stronger direction was reducing everything into one useful next action.</p>
+                    <p>That decision affected the whole case: the website became sharper, the overlay became lighter, and the companion dashboard became more about prioritization than completeness.</p>
                 </section>
 
                 <section class="content-card" id="reflection">
                     <h2>Reflection</h2>
-                    <p>This was one of my first major GUI projects, and it taught me how to use heuristic theory as a practical design tool rather than just as something to reference academically. It helped me understand how small interface details can have a large effect on trust, speed, and confidence when users are completing a real task.</p>
-                    <p>I also learned that usability work is not just about finding faults. It is about translating friction into design decisions that reduce confusion and make the system easier to understand in context. In this case, that meant thinking about queues, pressure, visibility, and user recovery rather than only visual polish.</p>
-                    <p>This project strengthened my ability to analyse a real interface in the wild, connect problems to theory, and turn those observations into concrete redesign decisions.</p>
-                    <a class="button" href="case2.pdf" target="_blank" rel="noopener noreferrer">Open Full Case Study PDF</a>
+                    <p>EloEcho earns its place in the portfolio because it shows product thinking, interface direction, and information hierarchy in a space that is easy to overdesign. The challenge was not adding more features. It was deciding what to leave out so the player gets one clear read instead of a wall of analysis.</p>
+                    <p>For recruiters, I think the strongest part of the case is the judgment behind it: choosing one useful takeaway over more data, separating live feedback from post-game review, and shaping a concept that feels specific instead of generic.</p>
                 </section>
 
                 <div class="back-to-top-container">
@@ -159,6 +137,7 @@
                     <h2>Explore Other Projects</h2>
                     <ul>
                         <li><a href="case4.html">AfterKöp</a></li>
+                        <li><a href="case5.html">Exhausted AI</a></li>
                         <li><a href="case1.html">Coffee Machine - Done Right</a></li>
                         <li><a href="case3.html">Scent-Driven Storytelling</a></li>
                         <li><a href="index.html">Back to Portfolio</a></li>
@@ -167,7 +146,7 @@
 
                 <section class="contact-card" id="contact">
                     <h2>Let's Connect</h2>
-                    <p>I'm looking for opportunities in UI/UX and interaction design where thoughtful usability work makes a visible difference.</p>
+                    <p>I'm interested in products where interface clarity and strong feedback can genuinely change how people perform or decide.</p>
                     <p class="contact-detail"><strong>Email</strong><a href="mailto:Elijaholiverlarsson@gmail.com">Elijaholiverlarsson@gmail.com</a></p>
                 </section>
             </div>
@@ -178,23 +157,23 @@
                     <dl>
                         <div>
                             <dt>Role</dt>
-                            <dd>UI/UX designer</dd>
+                            <dd>Solo concept: product direction, interface design, and prototype shaping</dd>
                         </div>
                         <div>
                             <dt>Project type</dt>
-                            <dd>Individual usability redesign</dd>
+                            <dd>Solo concept prototype for a League coaching companion</dd>
                         </div>
                         <div>
-                            <dt>Context</dt>
-                            <dd>Real self-ordering interface at Pong, Sweden</dd>
-                        </div>
-                        <div>
-                            <dt>Method</dt>
-                            <dd>Heuristic evaluation, sketching, and wireframing</dd>
+                            <dt>Status</dt>
+                            <dd>Concept prototype with mocked and redacted match examples</dd>
                         </div>
                         <div>
                             <dt>Focus</dt>
-                            <dd>Pricing clarity, navigation, error recovery, and menu visibility</dd>
+                            <dd>Post-match clarity, live feedback, focused coaching, and interface hierarchy</dd>
+                        </div>
+                        <div>
+                            <dt>Surfaces</dt>
+                            <dd>Marketing website, live overlay view, and companion command deck</dd>
                         </div>
                     </dl>
                 </section>
@@ -203,15 +182,16 @@
                     <h2 id="toc-title">On This Page</h2>
                     <ul>
                         <li><a href="#overview">Overview</a></li>
-                        <li><a href="#challenge">Design Challenge</a></li>
-                        <li><a href="#issues">Key Issues</a></li>
-                        <li><a href="#approach">My Approach</a></li>
-                        <li><a href="#sketches">Sketches</a></li>
-                        <li><a href="#redesign">Final Redesign</a></li>
-                        <li><a href="#role">My Role</a></li>
+                        <li><a href="#scope">Role &amp; Scope</a></li>
+                        <li><a href="#problem">Problem</a></li>
+                        <li><a href="#website">Website</a></li>
+                        <li><a href="#live">Live Read</a></li>
+                        <li><a href="#companion">Companion</a></li>
+                        <li><a href="#decisions">Decisions</a></li>
+                        <li><a href="#design">Process Shift</a></li>
                         <li><a href="#reflection">Reflection</a></li>
                     </ul>
-                    <p class="reading-time">About 5 min read</p>
+                    <p class="reading-time">About 4 min read</p>
                 </nav>
             </aside>
         </div>

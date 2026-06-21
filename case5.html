@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Exhausted AI. A research prototype exploring how an AI assistant visibly changes as conversation fatigue builds over time.">
+    <title>Exhausted AI | Elijah Oliver Larsson</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Figtree:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="case-styles.css">
+</head>
+<body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+
+    <header class="site-header" role="banner">
+        <div class="header-inner">
+            <a class="brand" href="index.html" aria-label="Back to portfolio home">
+                <img src="loggos.png" alt="Elijah Oliver Larsson logo" width="56" height="56">
+                <span class="brand-copy">
+                    <span class="brand-name">Elijah Oliver Larsson</span>
+                    <span class="brand-role">UI/UX and Interaction Designer</span>
+                </span>
+            </a>
+            <a class="header-link" href="index.html">Back to Portfolio</a>
+        </div>
+    </header>
+
+    <nav class="breadcrumb page-shell" aria-label="Breadcrumb">
+        <ol>
+            <li><a href="index.html">Portfolio</a></li>
+            <li><span aria-current="page">Exhausted AI</span></li>
+        </ol>
+    </nav>
+
+    <main id="main-content" class="page-shell">
+        <div class="case-grid">
+            <div class="content-column">
+                <section class="hero-card" id="overview">
+                    <h1>Exhausted AI</h1>
+                    <p class="subtitle">A research prototype about AI fatigue, tone, and interaction pressure</p>
+                    <p>Exhausted AI is a solo research prototype I built to explore a question that came out of earlier discussions about AI and consciousness. If people keep describing AI in human terms, why is it so often designed around positive traits while more difficult ones like stress, fatigue, or decline are left out?</p>
+                    <p>I turned that question into a testable interface. Instead of presenting the assistant as endlessly capable, I designed a chatbot whose condition becomes visible over time. As the user keeps pushing for more iterations, the assistant slows down, degrades, and begins to feel more strained.</p>
+                    <figure>
+                        <img src="exhausted-ai-cover.png" alt="Exhausted AI interface with chat, fatigue meter, and condition panel" class="interactive-image">
+                        <figcaption>The interface makes the assistant's condition part of the experience instead of hiding it behind a normal chat box.</figcaption>
+                    </figure>
+                </section>
+
+                <section class="content-card" id="problem">
+                    <h2>Research Question</h2>
+                    <p>Most AI tools are designed to feel neutral, efficient, and permanently available. This project challenges that assumption by asking what happens when an AI visibly carries pressure, fatigue, and decline instead of appearing endlessly stable.</p>
+                    <p>This question is grounded in earlier HCI work showing that people often respond to computers socially, even when they know the system is not human. At the same time, later research on conversational agents and voice assistants suggests that personification is inconsistent, shaped by context, and often sits in tension with what the system can actually do.</p>
+                    <div class="issue-list">
+                        <article class="issue-item">
+                            <h3>AI usually feels frictionless by default</h3>
+                            <p>That makes the interaction feel abstract. Users rarely see how repeated demands might shape the system or the tone of the exchange.</p>
+                        </article>
+                        <article class="issue-item">
+                            <h3>Tone is part of the interface</h3>
+                            <p>The wording of a prompt changes the relationship with the assistant, but most products do not surface that in a visible way.</p>
+                        </article>
+                        <article class="issue-item">
+                            <h3>Behavior can be designed, not just generated</h3>
+                            <p>This prototype treats delay, visual condition, and response quality as connected parts of one behavioral system.</p>
+                        </article>
+                    </div>
+                </section>
+
+                <section class="content-card" id="grounding">
+                    <h2>Research Grounding</h2>
+                    <p>The project draws from the idea that people regularly treat digital systems as social actors. Nass, Steuer, and Tauber (1994), along with Nass and Moon (2000), showed that users often apply social rules and expectations to computers in surprisingly automatic ways. That made it reasonable to ask whether a deliberately fatigued AI interface could change not just what users saw, but how they behaved toward the system.</p>
+                    <p>It is also grounded in work showing that conversational systems often create a gap between what users expect and what they actually experience. Luger and Sellen (2016) describe that mismatch clearly, while later studies on voice assistants show that people can personify these systems as companions, helpers, or social entities without fully believing they are human. That tension is central to Exhausted AI: the prototype is not trying to convince people the assistant is alive, but to test whether visible vulnerability changes the way they prompt, judge, or care.</p>
+                    <p>The user-testing outcome also fits that literature. Some participants treated the prototype mostly as a tool, some reflected on it without changing much, and a smaller group adjusted how they wrote to it. That spread aligns with research suggesting that social responses to AI are real but uneven, and that age, context, and framing all affect how strongly people anthropomorphize or empathize with a system.</p>
+                </section>
+
+                <section class="content-card" id="system">
+                    <h2>Research Through Design</h2>
+                    <p>Rather than treating the question as purely theoretical, I used research through design to make it observable. I built a working prototype where users could experience the assistant's condition changing in real time, then reflect on how that changed their own behavior.</p>
+                    <p>The prototype tracks fatigue across a session. Each prompt shifts the score up or down depending on tone and demand. As fatigue rises, response delay increases, visible condition changes, and the assistant's output becomes less steady. Resetting the session clears the history and returns the assistant to its initial state.</p>
+                </section>
+
+                <section class="content-card" id="states">
+                    <h2>Visible Condition States</h2>
+                    <p>A big part of the prototype is that the assistant's condition is not hidden. I designed a series of visible mascot states so users could immediately feel that the system was changing, not just read a number in a meter.</p>
+                    <p>The progression moves from a fresh baseline into visible wear, then overloaded, and finally near burnout. That visual system works together with delay, tone, and message quality so the prototype communicates fatigue in more than one way.</p>
+                    <div class="image-gallery">
+                        <figure>
+                            <img src="exhausted-state-bright.png" alt="Exhausted AI bright condition state" class="interactive-image">
+                            <figcaption>Fresh baseline state before the session pressure builds.</figcaption>
+                        </figure>
+                        <figure>
+                            <img src="exhausted-state-strained.png" alt="Exhausted AI strained condition state" class="interactive-image">
+                            <figcaption>Early visible wear while the assistant still appears mostly stable.</figcaption>
+                        </figure>
+                        <figure>
+                            <img src="exhausted-state-overloaded.png" alt="Exhausted AI overloaded condition state" class="interactive-image">
+                            <figcaption>Overloaded state where decline becomes more obvious.</figcaption>
+                        </figure>
+                        <figure>
+                            <img src="exhausted-state-burnout.png" alt="Exhausted AI near burnout condition state" class="interactive-image">
+                            <figcaption>Near-burnout state used to make the system's condition hard to ignore.</figcaption>
+                        </figure>
+                    </div>
+                </section>
+
+                <section class="content-card" id="testing">
+                    <h2>Testing Without Researcher Pressure</h2>
+                    <p>To support testing, I designed a dedicated feedback form inside the prototype flow so participants could reflect on the experience without being shaped too much by the researcher's presence in the room. That was important because the project is about subtle changes in behavior, empathy, and prompt tone.</p>
+                    <p>The form captured how users perceived the assistant, whether they felt responsible for its condition, what moment changed their view most, and whether the degrading interface changed how they wrote prompts. Responses were sent to email, then reviewed and summarized by me afterward.</p>
+                    <figure>
+                        <img src="exhausted-feedback-form.png" alt="Exhausted AI research feedback form" class="interactive-image">
+                        <figcaption>The feedback form was designed to reduce observer influence and capture more reflective answers after the interaction.</figcaption>
+                    </figure>
+                </section>
+
+                <section class="content-card" id="findings">
+                    <h2>User Testing and Findings</h2>
+                    <p>I tested the prototype with 10 people from design and programming backgrounds. The results were useful because they showed that the concept did change awareness, but did not affect everyone in the same way.</p>
+                    <ul>
+                        <li><strong>5 participants</strong> did not care much about the assistant's visible fatigue.</li>
+                        <li><strong>3 participants</strong> said it made them think, but not enough to treat the AI like a human with limitations or feel strong empathy toward it.</li>
+                        <li><strong>2 participants</strong> found it genuinely thought provoking and said it changed how they phrased prompts, even if it did not fully change their overall approach to AI.</li>
+                    </ul>
+                    <p>The clearest insight was that visible fatigue changed perception more than behavior. A second insight was that empathy would likely increase if the conversation context felt more personal rather than task-focused around programming. That fits well with prior work on personification and social response in AI systems: people may recognize human-like cues without fully changing how they relate to the system in practice.</p>
+                </section>
+
+                <section class="content-card" id="stack">
+                    <h2>Build and Delivery</h2>
+                    <p>I built the prototype as a lightweight web experience and hosted it through Vercel. I used Codex as a development assistant during implementation, then edited, fixed, and shaped the final experience myself so the interaction matched the research goal rather than just functioning technically.</p>
+                    <p>The system combines a visible UI state, browser session logic, response delay, and OpenAI-based behavior shaping so the prototype can make fatigue feel experiential rather than purely conceptual.</p>
+                    <ul>
+                        <li><strong>Hosting:</strong> Vercel</li>
+                        <li><strong>Build:</strong> HTML, CSS, JavaScript, and OpenAI integration</li>
+                        <li><strong>Implementation approach:</strong> Codex-assisted build, then refined and corrected by me</li>
+                        <li><strong>Core interaction:</strong> fatigue score, visible state system, prompt-tone effects, and delay-based feedback</li>
+                    </ul>
+                </section>
+
+                <section class="content-card" id="reflection">
+                    <h2>Why This Matters</h2>
+                    <p>From a portfolio point of view, Exhausted AI shows more than interface styling. It shows that I can take an abstract question, turn it into a testable prototype, design a behavioral system around it, and run user testing that produces usable insight.</p>
+                    <p>For recruiters, I think the strongest part of this case is that it combines concept development, prototype building, research thinking, and synthesis. It is speculative, but it is still grounded in a clear method and real findings.</p>
+                </section>
+
+                <section class="content-card" id="references">
+                    <h2>Selected References</h2>
+                    <ul>
+                        <li>Nass, C., Steuer, J., &amp; Tauber, E. R. (1994). <em>Computers are social actors.</em></li>
+                        <li>Nass, C., &amp; Moon, Y. (2000). <em>Machines and mindlessness: Social responses to computers.</em></li>
+                        <li>Luger, E., &amp; Sellen, A. (2016). <em>Like having a really bad PA: The gulf between user expectation and experience of conversational agents.</em></li>
+                        <li>Pradhan, A., Findlater, L., &amp; Lazar, A. (2019). <em>Phantom friend or just a box with information: Personification and ontological categorization of smart speaker-based voice assistants by older adults.</em></li>
+                        <li>Purington, A., Taft, J. G., Sannon, S., Bazarova, N. N., &amp; Taylor, S. H. (2017). <em>Alexa is my new BFF: Social roles, user satisfaction, and personification of the Amazon Echo.</em></li>
+                        <li>Zhou, J., Porat, T., &amp; van Zalk, N. (2024). <em>Humans mindlessly treat AI virtual agents as social beings, but this tendency diminishes among the young.</em></li>
+                    </ul>
+                </section>
+
+                <div class="back-to-top-container">
+                    <button id="back-to-top" class="back-to-top-btn" type="button">Back to Top</button>
+                </div>
+
+                <nav class="case-nav" aria-label="Other case studies">
+                    <h2>Explore Other Projects</h2>
+                    <ul>
+                        <li><a href="case4.html">AfterKöp</a></li>
+                        <li><a href="case2.html">EloEcho</a></li>
+                        <li><a href="case1.html">Coffee Machine - Done Right</a></li>
+                        <li><a href="case3.html">Scent-Driven Storytelling</a></li>
+                        <li><a href="index.html">Back to Portfolio</a></li>
+                    </ul>
+                </nav>
+
+                <section class="contact-card" id="contact">
+                    <h2>Let's Connect</h2>
+                    <p>I'm interested in products where interface behavior itself becomes part of the concept, not just the container around it.</p>
+                    <p class="contact-detail"><strong>Email</strong><a href="mailto:Elijaholiverlarsson@gmail.com">Elijaholiverlarsson@gmail.com</a></p>
+                </section>
+            </div>
+
+            <aside class="sidebar">
+                <section class="meta-card" aria-labelledby="project-meta-title">
+                    <h2 id="project-meta-title">Project Snapshot</h2>
+                    <dl>
+                        <div>
+                            <dt>Role</dt>
+                            <dd>Solo project: research, prototyping, and research through prototyping</dd>
+                        </div>
+                        <div>
+                            <dt>Project type</dt>
+                            <dd>Solo research prototype</dd>
+                        </div>
+                        <div>
+                            <dt>Focus</dt>
+                            <dd>AI behavior, visible fatigue, research through design, and user-testing synthesis</dd>
+                        </div>
+                        <div>
+                            <dt>Stack</dt>
+                            <dd>Vercel, OpenAI, HTML, CSS, JavaScript, and Codex-assisted implementation refined by me</dd>
+                        </div>
+                    </dl>
+                </section>
+
+                <nav class="toc-card" aria-labelledby="toc-title">
+                    <h2 id="toc-title">On This Page</h2>
+                    <ul>
+                        <li><a href="#overview">Overview</a></li>
+                        <li><a href="#problem">Question</a></li>
+                        <li><a href="#grounding">Grounding</a></li>
+                        <li><a href="#system">Method</a></li>
+                        <li><a href="#states">States</a></li>
+                        <li><a href="#testing">Testing</a></li>
+                        <li><a href="#findings">Findings</a></li>
+                        <li><a href="#stack">Build</a></li>
+                        <li><a href="#reflection">Why It Matters</a></li>
+                        <li><a href="#references">References</a></li>
+                    </ul>
+                    <p class="reading-time">About 5 min read</p>
+                </nav>
+            </aside>
+        </div>
+    </main>
+
+    <div id="lightbox" class="lightbox" role="dialog" aria-modal="true" aria-labelledby="lightbox-title" aria-hidden="true">
+        <div class="lightbox-dialog">
+            <h2 id="lightbox-title" class="sr-only">Expanded project image</h2>
+            <button class="lightbox-close" type="button" aria-label="Close image viewer">&times;</button>
+            <img id="lightbox-img" alt="">
+            <p class="lightbox-hint">Press Escape to close or click outside the image.</p>
+        </div>
+    </div>
+
+    <script src="case-script.js"></script>
+</body>
+</html>
