@@ -39,8 +39,8 @@
                 <section class="hero-card" id="overview">
                     <h1>EloEcho</h1>
                     <p class="subtitle">A solo concept prototype for clearer League coaching</p>
-                    <p>EloEcho is a solo concept prototype for clearer League of Legends coaching. I designed it around one question: after a ranked loss, how can a player understand the most important reason they lost without being buried in stats?</p>
-                    <p>This case explores a landing page, a speculative live overlay, and a companion dashboard built around one core principle: less feedback, but better feedback. The current version uses mocked and redacted match examples to show the coaching flow clearly. It is not yet a live Riot-integrated product.</p>
+                    <p>EloEcho started with a question I kept coming back to: after a bad ranked game, why is it still so hard to understand the one thing that actually mattered? Players get stats, graphs, and timelines, but that does not always turn into useful feedback.</p>
+                    <p>I built this concept around one principle: less feedback, but better feedback. The case includes a landing page, a speculative live overlay, and a companion dashboard. The current version uses mocked and redacted examples to make the flow clear, not to pretend it is already a fully integrated Riot product.</p>
                     <figure>
                         <img src="eloecho-cover-real.png" alt="EloEcho website landing page" class="interactive-image">
                         <figcaption>The landing page frames EloEcho as a focused tool for understanding losses instead of just collecting more stats.</figcaption>
@@ -49,40 +49,40 @@
 
                 <section class="content-card" id="scope">
                     <h2>My Role and Scope</h2>
-                    <p>I defined the product direction, wrote the framing, designed the landing page, shaped the live overlay concept, and built the companion dashboard layout and feedback hierarchy. I used Codex to speed up parts of the prototype build, then edited and tightened the result myself.</p>
-                    <p>The value of the project is not that it is fully shipped. It is that it shows how I think through product scope, feedback design, interface hierarchy, and tradeoffs across multiple surfaces.</p>
+                    <p>I defined the product direction, wrote the framing, designed the landing page, shaped the live overlay concept, and built the companion dashboard layout and feedback hierarchy. I used Codex to speed up parts of the build, then went back through it myself to tighten the result.</p>
+                    <p>What matters most in this case is not that it is finished and shipped. It is that it shows how I think about product scope, feedback design, hierarchy, and tradeoffs across different surfaces.</p>
                 </section>
 
                 <section class="content-card" id="problem">
                     <h2>Design Challenge</h2>
-                    <p>A lot of gaming tools show huge amounts of data, but that does not always help the player understand what actually went wrong. League players often leave a loss with numbers, graphs, and timelines, but still no clear sense of what they should fix first.</p>
-                    <p>The design question became: how might I reduce post-match analysis into one useful takeaway and one next action while the game is still fresh in the player's mind?</p>
+                    <p>A lot of gaming tools are great at collecting data, but much worse at turning that data into direction. After a loss, players often know a lot about the match and still do not know what to fix first.</p>
+                    <p>So the design question became: how could I reduce all of that post-game information into one useful takeaway and one next action while the game is still fresh?</p>
                     <div class="issue-list">
                         <article class="issue-item">
                             <h3>Too much data, not enough direction</h3>
-                            <p>Players often get plenty of numbers but not a clear read on which mistake mattered most.</p>
+                            <p>Players often get plenty of numbers, but not much help deciding which mistake actually mattered.</p>
                         </article>
                         <article class="issue-item">
                             <h3>Post-game learning fades fast</h3>
-                            <p>If feedback comes too late or feels too abstract, it is easy to queue again without learning anything useful.</p>
+                            <p>If feedback shows up too late or feels too abstract, it is easy to queue again without learning much from the loss.</p>
                         </article>
                         <article class="issue-item">
                             <h3>Coaching needs focus</h3>
-                            <p>The strongest version of this product is not about saying everything. It is about surfacing one clear thing to fix while the game is still fresh.</p>
+                            <p>The best version of this product is not the one that says the most. It is the one that helps the player act on one clear thing.</p>
                         </article>
                     </div>
                 </section>
 
                 <section class="content-card" id="website">
                     <h2>Website Direction</h2>
-                    <p>The site leads with a very direct promise: stop guessing why you lost. I wanted the product to feel specific from the first screen, not like another generic AI helper or stat tracker.</p>
-                    <p>Visually, I leaned into contrast, atmosphere, and a more serious competitive tone. The goal was to make it feel native to the game space while keeping the layout readable enough that the product message stayed clear.</p>
+                    <p>The site leads with a very direct promise: stop guessing why you lost. I wanted that clarity right away, because otherwise it would just feel like another vague AI helper or stat tracker.</p>
+                    <p>Visually, I leaned into a darker, more competitive tone, but I tried not to let the atmosphere take over. The product still needed to read clearly before it looked cool.</p>
                 </section>
 
                 <section class="content-card" id="live">
                     <h2>Live Read and In-Game Feedback</h2>
-                    <p>I explored the live overlay as a speculative direction for faster feedback. During or around the match, the player sees a lightweight read of what is happening: champion, timing, core stats, warnings, and one coaching note that points to the most relevant problem.</p>
-                    <p>The idea is interesting, but it also comes with real product questions around distraction, usefulness, and feasibility. Because of that, I see the overlay as the riskier direction and the post-game companion as the stronger product path, where the feedback can be more reflective and less disruptive.</p>
+                    <p>I explored the live overlay as a speculative direction for faster feedback. The idea was to give the player a lightweight read of what is happening: champion, timing, a few core stats, and one coaching note that points to the main problem.</p>
+                    <p>At the same time, I do not think this is automatically the best product direction. It raises real questions about distraction, usefulness, and whether live feedback actually helps in the moment. That is why I see the overlay as the riskier idea and the post-game companion as the stronger one.</p>
                     <figure>
                         <img src="eloecho-live-overlay.png" alt="EloEcho live overlay with in-game read and coaching note" class="interactive-image">
                         <figcaption>The live overlay explores how little feedback is needed before the player can act on it.</figcaption>
@@ -91,8 +91,8 @@
 
                 <section class="content-card" id="companion">
                     <h2>Companion App and Command Deck</h2>
-                    <p>The companion view pushes the idea further by gathering match context into one command deck. It shows key stats, the current read on the player, an enemy dossier, lightweight rules, and a coaching panel that turns the analysis into one practical instruction.</p>
-                    <p>This became the strongest part of the concept for me. Instead of acting like a full analysis suite, the interface tries to connect raw match information to one coaching takeaway, which makes it feel more purposeful than a standard stat tracker.</p>
+                    <p>The companion view is where the concept really clicked for me. It gathers match context into one command deck with key stats, a read on the player, an enemy dossier, a few lightweight rules, and one coaching panel that turns the analysis into something practical.</p>
+                    <p>What I like about it is that it does not try to become a massive analysis suite. It stays focused on turning raw match information into one useful coaching read.</p>
                     <figure>
                         <img src="eloecho-companion-redacted.png" alt="EloEcho companion command deck with redacted summoner feed" class="interactive-image">
                         <figcaption>The companion dashboard pulls together context, opponent signals, and one focused coaching read.</figcaption>
@@ -119,14 +119,14 @@
 
                 <section class="content-card" id="design">
                     <h2>What Changed During the Process</h2>
-                    <p>The main shift was moving away from the idea of giving the player more information and toward giving them less, but better. Early on, the concept risked becoming another dense analysis tool. The stronger direction was reducing everything into one useful next action.</p>
-                    <p>That decision affected the whole case: the website became sharper, the overlay became lighter, and the companion dashboard became more about prioritization than completeness.</p>
+                    <p>The biggest shift in the process was realizing that more information was not the answer. Early on, the concept was drifting toward another dense analysis tool. The stronger direction was cutting things back until the feedback felt genuinely useful.</p>
+                    <p>Once that became clear, the whole project got better. The website got sharper, the overlay got lighter, and the companion dashboard stopped trying to be complete and started trying to be helpful.</p>
                 </section>
 
                 <section class="content-card" id="reflection">
                     <h2>Reflection</h2>
-                    <p>EloEcho earns its place in the portfolio because it shows product thinking, interface direction, and information hierarchy in a space that is easy to overdesign. The challenge was not adding more features. It was deciding what to leave out so the player gets one clear read instead of a wall of analysis.</p>
-                    <p>For recruiters, I think the strongest part of the case is the judgment behind it: choosing one useful takeaway over more data, separating live feedback from post-game review, and shaping a concept that feels specific instead of generic.</p>
+                    <p>I keep this project in the portfolio because it shows how I think when a space is easy to overdesign. The hard part was not inventing more features. It was deciding what to leave out so the player gets one clear read instead of a wall of analysis.</p>
+                    <p>To me, the strongest part of the case is the judgment behind it: choosing one useful takeaway over more data, separating live feedback from post-game review, and keeping the concept specific instead of vague.</p>
                 </section>
 
                 <div class="back-to-top-container">
@@ -146,7 +146,7 @@
 
                 <section class="contact-card" id="contact">
                     <h2>Let's Connect</h2>
-                    <p>I'm interested in products where interface clarity and strong feedback can genuinely change how people perform or decide.</p>
+                    <p>I'm interested in products where clear interfaces and good feedback can genuinely change how people learn, perform, or decide.</p>
                     <p class="contact-detail"><strong>Email</strong><a href="mailto:Elijaholiverlarsson@gmail.com">Elijaholiverlarsson@gmail.com</a></p>
                 </section>
             </div>
