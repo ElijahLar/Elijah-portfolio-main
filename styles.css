@@ -526,6 +526,144 @@ button:focus-visible {
     padding-top: 2rem;
 }
 
+.toolkit-shell {
+    padding-top: 1rem;
+}
+
+.toolkit-intro {
+    width: min(100%, 640px);
+    margin: 0 auto 2.5rem;
+    text-align: center;
+    color: var(--text-soft);
+    line-height: 1.8;
+    font-weight: 300;
+}
+
+.toolkit-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.75rem;
+}
+
+.toolkit-card,
+.toolkit-education {
+    position: relative;
+    border: 1px solid var(--line);
+    background: #fff;
+}
+
+.toolkit-card::before,
+.toolkit-card::after,
+.toolkit-education::before,
+.toolkit-education::after {
+    content: "+";
+    position: absolute;
+    bottom: 0;
+    color: #9ca3af;
+    font-family: monospace;
+    font-size: 0.95rem;
+    line-height: 1;
+}
+
+.toolkit-card::before,
+.toolkit-education::before {
+    left: 0;
+    transform: translate(-50%, 50%);
+}
+
+.toolkit-card::after,
+.toolkit-education::after {
+    right: 0;
+    transform: translate(50%, 50%);
+}
+
+.toolkit-card {
+    padding: 2rem;
+}
+
+.toolkit-card--wide {
+    grid-column: 1 / -1;
+}
+
+.toolkit-label {
+    margin: 0 0 0.9rem;
+    color: #7f8590;
+    font-size: 0.78rem;
+    font-weight: 600;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+}
+
+.toolkit-card h3,
+.toolkit-education h3 {
+    margin: 0 0 1rem;
+    font-family: "Outfit", sans-serif;
+    font-size: clamp(1.5rem, 3vw, 2rem);
+    font-weight: 300;
+    letter-spacing: -0.05em;
+}
+
+.toolkit-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.65rem;
+}
+
+.toolkit-list li {
+    padding: 0.55rem 0.8rem;
+    border: 1px solid var(--line);
+    color: #595d66;
+    font-size: 0.95rem;
+    line-height: 1.2;
+    background: #fcfcfd;
+}
+
+.toolkit-education {
+    display: grid;
+    grid-template-columns: minmax(0, 1.2fr) minmax(280px, 0.8fr);
+    gap: 2rem;
+    margin-top: 0.75rem;
+    padding: 2rem;
+    align-items: center;
+}
+
+.toolkit-education__copy p:last-child {
+    margin: 0;
+    max-width: 34rem;
+    color: var(--text-soft);
+    line-height: 1.8;
+    font-weight: 300;
+}
+
+.toolkit-education__list {
+    display: grid;
+    gap: 0.75rem;
+}
+
+.credential-item {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    padding: 1rem 1.1rem;
+    border: 1px solid var(--line);
+    background: #fcfcfd;
+}
+
+.credential-title {
+    font-family: "Outfit", sans-serif;
+    font-size: 1.1rem;
+    font-weight: 500;
+    letter-spacing: -0.03em;
+}
+
+.credential-meta {
+    color: var(--text-soft);
+    font-size: 0.95rem;
+}
+
 .gallery-grid {
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -698,6 +836,11 @@ button:focus-visible {
         grid-column: span 2;
     }
 
+    .toolkit-grid,
+    .toolkit-education {
+        grid-template-columns: 1fr;
+    }
+
     .footer-bottom {
         flex-direction: column;
     }
@@ -769,6 +912,15 @@ button:focus-visible {
 
     .work-card__text h3 {
         font-size: 2rem;
+    }
+
+    .toolkit-card,
+    .toolkit-education {
+        padding: 1.5rem;
+    }
+
+    .toolkit-list li {
+        width: 100%;
     }
 
     .work-card__meta {
