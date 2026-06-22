@@ -121,11 +121,11 @@ button:focus-visible {
 
 .hero {
     position: relative;
-    min-height: 100vh;
+    min-height: 86vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 6rem 1.5rem 4rem;
+    padding: 5.5rem 1.5rem 2.5rem;
     overflow: hidden;
 }
 
@@ -194,7 +194,7 @@ button:focus-visible {
 .hero-mark {
     width: 44px;
     opacity: 0.48;
-    margin-bottom: 3rem;
+    margin-bottom: 1.85rem;
 }
 
 .hero-title {
@@ -215,6 +215,34 @@ button:focus-visible {
     margin-right: 0.18em;
 }
 
+.hero-role,
+.hero-specialties,
+.hero-positioning {
+    margin: 0;
+}
+
+.hero-role {
+    font-family: "Outfit", sans-serif;
+    font-size: clamp(1.05rem, 2.1vw, 1.25rem);
+    font-weight: 500;
+    letter-spacing: 0.02em;
+}
+
+.hero-specialties {
+    color: #70747d;
+    font-size: 0.92rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+}
+
+.hero-positioning {
+    width: min(100%, 700px);
+    color: #2a2c31;
+    font-size: clamp(1rem, 2vw, 1.08rem);
+    line-height: 1.7;
+    font-weight: 400;
+}
+
 .hero-copy {
     width: min(100%, 560px);
     margin: 0;
@@ -224,13 +252,37 @@ button:focus-visible {
     font-weight: 300;
 }
 
+.hero-actions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
 .mail-wrap {
     position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 0;
-    margin-top: 1rem;
+}
+
+.hero-cta {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 44px;
+    padding: 0.72rem 1.2rem;
+    border: 1px solid #161616;
+    font-family: "Outfit", sans-serif;
+    font-size: 0.9rem;
+    transition: background-color 0.2s ease, color 0.2s ease, transform 0.2s ease;
+}
+
+.hero-cta:hover {
+    background: #111;
+    color: #fff;
+    transform: translateY(-1px);
 }
 
 .mail-vine {
@@ -802,7 +854,8 @@ button:focus-visible {
 
 @media (max-width: 900px) {
     .hero {
-        padding-top: 7rem;
+        min-height: auto;
+        padding-top: 6.75rem;
     }
 
     .hero-angel {
@@ -858,7 +911,7 @@ button:focus-visible {
 
     .hero {
         min-height: auto;
-        padding: 7.5rem 1rem 3.5rem;
+        padding: 7rem 1rem 3rem;
     }
 
     .hero::before,
@@ -873,6 +926,11 @@ button:focus-visible {
 
     .mail-wrap {
         width: 100%;
+    }
+
+    .hero-specialties {
+        font-size: 0.8rem;
+        letter-spacing: 0.09em;
     }
 
     .mail-vine {
