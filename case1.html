@@ -13,13 +13,13 @@
 <body>
     <a class="skip-link" href="#main-content">Skip to main content</a>
 
-    <header class="site-header" role="banner">
+    <header class="site-header">
         <div class="header-inner">
             <a class="brand" href="index.html" aria-label="Back to portfolio home">
                 <img src="loggos.png" alt="Elijah Oliver Larsson logo" width="56" height="56">
                 <span class="brand-copy">
                     <span class="brand-name">Elijah Oliver Larsson</span>
-                    <span class="brand-role">UI/UX and Interaction Designer</span>
+                    <span class="brand-role">Product and Interaction Designer</span>
                 </span>
             </a>
             <a class="header-link" href="index.html">Back to Portfolio</a>
@@ -41,8 +41,8 @@
                     <p class="subtitle">A coffee-machine redesign focused on clearer choices and less second-guessing</p>
                     <p>I used this project to rethink how a coffee-machine interface could feel calmer and easier to trust. My starting point was simple: small screens like this often make people pause, guess, and double-check themselves. I wanted to keep the machine capable, but make the flow much more obvious.</p>
                     <figure>
-                        <img src="yest3.png" alt="Complete redesign of the coffee machine interface" class="interactive-image">
-                        <figcaption>Final redesign showing a clearer, more guided interface flow.</figcaption>
+                        <img src="cof.png" alt="Final coffee machine start screen with a single primary action" class="interactive-image">
+                        <figcaption>The final visual direction starts with one obvious action before asking for drink details.</figcaption>
                     </figure>
                 </section>
 
@@ -91,10 +91,10 @@
                     <h2>Design Decisions</h2>
                     <p>The final direction came from the versions that felt easiest to understand at a glance. I kept coming back to the same idea: if someone walks up to the machine for the first time, they should not have to decode it.</p>
                     <ul>
-                        <li><strong>Visibility of system status:</strong> The interface communicates choices and progress clearly so users know where they are in the flow.</li>
-                        <li><strong>User control and freedom:</strong> Essential actions such as canceling or going back remain available and visible.</li>
-                        <li><strong>Aesthetic and minimalist design:</strong> The layout removes noise and lets the primary choice stand out.</li>
-                        <li><strong>Consistency and standards:</strong> Typography, spacing, and layout patterns stay predictable throughout the interaction.</li>
+                        <li><strong>One decision at a time:</strong> The start screen leads with one action, then introduces drink, size, extras, and payment in sequence.</li>
+                        <li><strong>Visible escape routes:</strong> Back and cancel stay available before payment, so a wrong choice never traps the user.</li>
+                        <li><strong>Recognition over memory:</strong> Drink images, names, sizes, and prices appear together instead of relying on hidden codes.</li>
+                        <li><strong>Progress during brewing:</strong> The fill animation gives the waiting state a clear beginning and end.</li>
                     </ul>
 
                     <div class="image-gallery">
@@ -109,9 +109,9 @@
                     </div>
                 </section>
 
-                <section class="content-card" id="outcome">
-                    <h2>Outcome</h2>
-                    <p>What I like about this redesign is that it shows how much difference small interface decisions can make on a compact device. The result is not flashy, but it feels clearer, easier to read, and easier to trust. For me, that was the point.</p>
+                <section class="content-card" id="final-direction">
+                    <h2>Final Direction</h2>
+                    <p>The result is a visual and interaction direction, not a validated outcome. I did not test it with participants, so the next step would be to watch first-time users choose a drink, correct a mistake, and understand the brewing state without help.</p>
                     <a class="button" href="case1.pdf" target="_blank" rel="noopener noreferrer">Open Full Case Study PDF</a>
                 </section>
 
@@ -122,7 +122,7 @@
                 <nav class="case-nav" aria-label="Other case studies">
                     <h2>Explore Other Projects</h2>
                     <ul>
-                        <li><a href="case4.html">AfterKöp</a></li>
+                        <li><a href="case6.html">Viabol</a></li>
                         <li><a href="case5.html">Exhausted AI</a></li>
                         <li><a href="case2.html">EloEcho</a></li>
                         <li><a href="case3.html">Scent-Driven Storytelling</a></li>
@@ -143,7 +143,7 @@
                     <dl>
                         <div>
                             <dt>Role</dt>
-                            <dd>UI/UX designer</dd>
+                            <dd>Product and interaction designer</dd>
                         </div>
                         <div>
                             <dt>Project type</dt>
@@ -167,7 +167,7 @@
                         <li><a href="#challenge">Challenge</a></li>
                         <li><a href="#process">Process</a></li>
                         <li><a href="#solution">Solution</a></li>
-                        <li><a href="#outcome">Outcome</a></li>
+                        <li><a href="#final-direction">Final Direction</a></li>
                     </ul>
                     <p class="reading-time">About 3 min read</p>
                 </nav>
@@ -175,11 +175,11 @@
         </div>
     </main>
 
-    <div id="lightbox" class="lightbox" role="dialog" aria-modal="true" aria-labelledby="lightbox-title" aria-hidden="true">
+    <div id="lightbox" class="lightbox" role="dialog" aria-modal="true" aria-labelledby="lightbox-title">
         <div class="lightbox-dialog">
             <h2 id="lightbox-title" class="sr-only">Expanded project image</h2>
             <button class="lightbox-close" type="button" aria-label="Close image viewer">&times;</button>
-            <img id="lightbox-img" alt="">
+            <img id="lightbox-img" src="yest3.png" alt="">
             <p class="lightbox-hint">Press Escape to close or click outside the image.</p>
         </div>
     </div>

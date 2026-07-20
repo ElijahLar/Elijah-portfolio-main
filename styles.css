@@ -1,7 +1,7 @@
 :root {
     --bg: #ffffff;
     --text: #111111;
-    --text-soft: #8f8f93;
+    --text-soft: #62656c;
     --line: #e6e7eb;
     --line-strong: #d0d3da;
     --panel: rgba(255, 255, 255, 0.86);
@@ -569,9 +569,106 @@ button:focus-visible {
     background: #07111c;
 }
 
+.work-card__media--viabol {
+    background: #0f0f0f;
+}
+
 .work-card:hover .work-card__media img,
 .gallery-tile:hover img {
     transform: scale(1.02);
+}
+
+.work-cluster-heading {
+    margin: 1rem 0 -2.25rem;
+    padding-left: clamp(0.25rem, 3vw, 2rem);
+    font-family: "Outfit", sans-serif;
+    font-size: clamp(1.35rem, 2.5vw, 1.75rem);
+    font-weight: 500;
+    letter-spacing: -0.035em;
+}
+
+.more-work {
+    margin-top: 5rem;
+}
+
+.more-work__intro {
+    max-width: 34rem;
+    margin-bottom: 1.5rem;
+}
+
+.more-work__intro h3 {
+    margin: 0 0 0.4rem;
+    font-family: "Outfit", sans-serif;
+    font-size: clamp(1.6rem, 3vw, 2.15rem);
+    font-weight: 400;
+    letter-spacing: -0.045em;
+}
+
+.more-work__intro p {
+    margin: 0;
+    color: var(--text-soft);
+    line-height: 1.6;
+}
+
+.more-work-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.75rem;
+}
+
+.more-work-card {
+    display: grid;
+    grid-template-columns: 160px minmax(0, 1fr);
+    min-height: 190px;
+    overflow: hidden;
+    border: 1px solid var(--line);
+    background: #fff;
+    transition: border-color 0.2s ease, transform 0.2s ease;
+}
+
+.more-work-card:hover {
+    border-color: #b9bdc5;
+    transform: translateY(-2px);
+}
+
+.more-work-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background: #f4f4f4;
+}
+
+.more-work-card__copy {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1.35rem;
+    color: var(--text-soft);
+    line-height: 1.5;
+}
+
+.more-work-card__copy strong {
+    margin: 0.35rem 0 0.65rem;
+    color: var(--text);
+    font-family: "Outfit", sans-serif;
+    font-size: 1.3rem;
+    font-weight: 500;
+    line-height: 1.15;
+    letter-spacing: -0.035em;
+}
+
+.more-work-card__meta {
+    color: #70747d;
+    font-size: 0.75rem;
+}
+
+.more-work-card__link {
+    margin-top: auto;
+    padding-top: 1rem;
+    color: var(--text);
+    font-size: 0.83rem;
+    text-decoration: underline;
+    text-underline-offset: 0.2em;
 }
 
 .gallery-shell {
@@ -589,6 +686,88 @@ button:focus-visible {
     color: var(--text-soft);
     line-height: 1.8;
     font-weight: 300;
+}
+
+.capability-list {
+    border-top: 1px solid var(--line-strong);
+}
+
+.capability-row {
+    display: grid;
+    grid-template-columns: minmax(210px, 0.9fr) minmax(280px, 1.35fr) minmax(150px, 0.55fr);
+    gap: clamp(1.5rem, 4vw, 3rem);
+    align-items: start;
+    padding: 2rem 0;
+    border-bottom: 1px solid var(--line);
+}
+
+.capability-row h3 {
+    margin: 0;
+    font-family: "Outfit", sans-serif;
+    font-size: clamp(1.35rem, 2.5vw, 1.75rem);
+    font-weight: 400;
+    line-height: 1.15;
+    letter-spacing: -0.04em;
+}
+
+.capability-row p {
+    margin: 0;
+    color: var(--text-soft);
+    line-height: 1.7;
+    font-weight: 300;
+}
+
+.capability-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem 1rem;
+}
+
+.capability-links a {
+    color: #4f535b;
+    font-size: 0.86rem;
+    text-decoration: underline;
+    text-underline-offset: 0.22em;
+}
+
+.capability-links a:hover {
+    color: var(--text);
+}
+
+.core-tools {
+    display: grid;
+    grid-template-columns: minmax(210px, 0.9fr) minmax(0, 1.9fr);
+    gap: clamp(1.5rem, 4vw, 3rem);
+    align-items: start;
+    padding: 2rem 0;
+    border-bottom: 1px solid var(--line-strong);
+}
+
+.core-tools h3 {
+    margin: 0;
+    font-family: "Outfit", sans-serif;
+    font-size: clamp(1.35rem, 2.5vw, 1.75rem);
+    font-weight: 400;
+    line-height: 1.15;
+    letter-spacing: -0.04em;
+}
+
+.core-tools ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.55rem;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.core-tools li {
+    padding: 0.5rem 0.7rem;
+    border: 1px solid var(--line);
+    background: #fcfcfd;
+    color: #50535a;
+    font-size: 0.86rem;
+    line-height: 1.2;
 }
 
 .toolkit-grid {
@@ -677,7 +856,7 @@ button:focus-visible {
     display: grid;
     grid-template-columns: minmax(0, 1.2fr) minmax(280px, 0.8fr);
     gap: 2rem;
-    margin-top: 0.75rem;
+    margin-top: 2rem;
     padding: 2rem;
     align-items: center;
 }
@@ -693,6 +872,9 @@ button:focus-visible {
 .toolkit-education__list {
     display: grid;
     gap: 0.75rem;
+    margin: 0;
+    padding: 0;
+    list-style: none;
 }
 
 .credential-item {
@@ -723,9 +905,29 @@ button:focus-visible {
 }
 
 .gallery-tile {
+    position: relative;
+    display: grid;
+    grid-template-rows: minmax(0, 1fr) auto;
+    margin: 0;
     min-height: 260px;
     overflow: hidden;
     background: #f5f5f5;
+}
+
+.gallery-tile img {
+    min-height: 0;
+}
+
+.gallery-tile figcaption {
+    position: relative;
+    z-index: 1;
+    margin: 0;
+    padding: 0.8rem 0.9rem;
+    border-top: 1px solid var(--line);
+    background: #ffffff;
+    color: var(--text-soft);
+    font-size: 0.78rem;
+    line-height: 1.4;
 }
 
 .gallery-tile--wide {
@@ -741,6 +943,10 @@ button:focus-visible {
 
 .work-card--single .work-card__media {
     aspect-ratio: 4 / 3;
+}
+
+.work-card--single .work-card__text p + p {
+    margin-top: 1rem;
 }
 
 .site-footer {
@@ -876,6 +1082,10 @@ button:focus-visible {
         grid-template-columns: 1fr;
     }
 
+    .more-work-grid {
+        grid-template-columns: 1fr;
+    }
+
     .work-card__media {
         order: -1;
         aspect-ratio: 4 / 3;
@@ -892,6 +1102,16 @@ button:focus-visible {
     .toolkit-grid,
     .toolkit-education {
         grid-template-columns: 1fr;
+    }
+
+    .capability-row {
+        grid-template-columns: 1fr;
+        gap: 0.85rem;
+    }
+
+    .core-tools {
+        grid-template-columns: 1fr;
+        gap: 0.85rem;
     }
 
     .footer-bottom {
@@ -970,6 +1190,29 @@ button:focus-visible {
 
     .work-card__text h3 {
         font-size: 2rem;
+    }
+
+    .work-cluster-heading {
+        margin-bottom: -2.5rem;
+        padding-left: 0;
+    }
+
+    .more-work {
+        margin-top: 3.5rem;
+    }
+
+    .more-work-card {
+        grid-template-columns: 110px minmax(0, 1fr);
+        min-height: 175px;
+    }
+
+    .more-work-card__copy {
+        padding: 1.1rem;
+        font-size: 0.9rem;
+    }
+
+    .more-work-card__copy strong {
+        font-size: 1.12rem;
     }
 
     .toolkit-card,

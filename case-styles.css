@@ -1,7 +1,7 @@
 :root {
     --bg: #ffffff;
     --text: #111111;
-    --text-soft: #8f8f93;
+    --text-soft: #62656c;
     --line: #e6e7eb;
     --line-strong: #d0d3da;
     --panel: rgba(255, 255, 255, 0.88);
@@ -325,6 +325,26 @@ figcaption,
     margin-top: 1rem;
 }
 
+.case-highlight {
+    display: grid;
+    grid-template-columns: minmax(155px, 0.55fr) minmax(0, 1.45fr);
+    gap: 1rem;
+    margin-top: 1.25rem;
+    padding: 1rem 0;
+    border-top: 1px solid var(--line-strong);
+    border-bottom: 1px solid var(--line-strong);
+}
+
+.case-highlight strong {
+    color: var(--text);
+    font-family: "Outfit", sans-serif;
+    font-weight: 500;
+}
+
+.case-highlight span {
+    color: var(--text-soft);
+}
+
 .hero-card figure,
 .content-card figure {
     margin: 1.5rem 0 0;
@@ -379,6 +399,23 @@ figcaption,
 
 .content-card li + li {
     margin-top: 0.5rem;
+}
+
+.reference-disclosure {
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: 1px solid var(--line);
+}
+
+.reference-disclosure summary {
+    color: #4f535b;
+    cursor: pointer;
+    font-family: "Outfit", sans-serif;
+    font-weight: 500;
+}
+
+.reference-disclosure[open] summary {
+    color: var(--text);
 }
 
 .issue-list {
@@ -659,6 +696,11 @@ figcaption {
 
     .image-gallery {
         grid-template-columns: 1fr;
+    }
+
+    .case-highlight {
+        grid-template-columns: 1fr;
+        gap: 0.35rem;
     }
 }
 

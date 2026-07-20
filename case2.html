@@ -13,13 +13,13 @@
 <body>
     <a class="skip-link" href="#main-content">Skip to main content</a>
 
-    <header class="site-header" role="banner">
+    <header class="site-header">
         <div class="header-inner">
             <a class="brand" href="index.html" aria-label="Back to portfolio home">
                 <img src="loggos.png" alt="Elijah Oliver Larsson logo" width="56" height="56">
                 <span class="brand-copy">
                     <span class="brand-name">Elijah Oliver Larsson</span>
-                    <span class="brand-role">UI/UX and Interaction Designer</span>
+                    <span class="brand-role">Product and Interaction Designer</span>
                 </span>
             </a>
             <a class="header-link" href="index.html">Back to Portfolio</a>
@@ -49,8 +49,8 @@
 
                 <section class="content-card" id="scope">
                     <h2>My Role and Scope</h2>
-                    <p>I defined the product direction, wrote the framing, designed the landing page, shaped the live overlay concept, and built the companion dashboard layout and feedback hierarchy. I used Codex to speed up parts of the build, then went back through it myself to tighten the result.</p>
-                    <p>What matters most in this case is not that it is finished and shipped. It is that it shows how I think about product scope, feedback design, hierarchy, and tradeoffs across different surfaces.</p>
+                    <p>I defined the product direction, wrote the framing, designed the landing page, shaped the live overlay, and built the companion dashboard and feedback hierarchy.</p>
+                    <p>This is a concept prototype, not a shipped Riot integration. The match examples are mocked or redacted, and the main output is the product direction and interaction model.</p>
                 </section>
 
                 <section class="content-card" id="problem">
@@ -119,14 +119,22 @@
 
                 <section class="content-card" id="design">
                     <h2>What Changed During the Process</h2>
-                    <p>The biggest shift in the process was realizing that more information was not the answer. Early on, the concept was drifting toward another dense analysis tool. The stronger direction was cutting things back until the feedback felt genuinely useful.</p>
-                    <p>Once that became clear, the whole project got better. The website got sharper, the overlay got lighter, and the companion dashboard stopped trying to be complete and started trying to be helpful.</p>
+                    <p>The concept improved when I stopped treating more information as the answer.</p>
+                    <div class="issue-list">
+                        <article class="issue-item">
+                            <h3>Early direction: explain the whole match</h3>
+                            <p>The dashboard was drifting toward another dense analysis tool, with too many signals competing for attention.</p>
+                        </article>
+                        <article class="issue-item">
+                            <h3>Final direction: choose one coaching read</h3>
+                            <p>I reduced the overlay, sharpened the website promise, and made the post-game takeaway the center of the companion.</p>
+                        </article>
+                    </div>
                 </section>
 
                 <section class="content-card" id="reflection">
                     <h2>Reflection</h2>
-                    <p>I keep this project in the portfolio because it shows how I think when a space is easy to overdesign. The hard part was not inventing more features. It was deciding what to leave out so the player gets one clear read instead of a wall of analysis.</p>
-                    <p>To me, the strongest part of the case is the judgment behind it: choosing one useful takeaway over more data, separating live feedback from post-game review, and keeping the concept specific instead of vague.</p>
+                    <p>The hard part was not inventing more features. It was deciding what to leave out. The strongest direction separates lightweight live feedback from deeper post-game review and gives the player one useful next action.</p>
                 </section>
 
                 <div class="back-to-top-container">
@@ -136,7 +144,7 @@
                 <nav class="case-nav" aria-label="Other case studies">
                     <h2>Explore Other Projects</h2>
                     <ul>
-                        <li><a href="case4.html">AfterKöp</a></li>
+                        <li><a href="case6.html">Viabol</a></li>
                         <li><a href="case5.html">Exhausted AI</a></li>
                         <li><a href="case1.html">Coffee Machine - Done Right</a></li>
                         <li><a href="case3.html">Scent-Driven Storytelling</a></li>
@@ -197,11 +205,11 @@
         </div>
     </main>
 
-    <div id="lightbox" class="lightbox" role="dialog" aria-modal="true" aria-labelledby="lightbox-title" aria-hidden="true">
+    <div id="lightbox" class="lightbox" role="dialog" aria-modal="true" aria-labelledby="lightbox-title">
         <div class="lightbox-dialog">
             <h2 id="lightbox-title" class="sr-only">Expanded project image</h2>
             <button class="lightbox-close" type="button" aria-label="Close image viewer">&times;</button>
-            <img id="lightbox-img" alt="">
+            <img id="lightbox-img" src="eloecho-cover-real.png" alt="">
             <p class="lightbox-hint">Press Escape to close or click outside the image.</p>
         </div>
     </div>

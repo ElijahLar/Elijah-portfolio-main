@@ -1,0 +1,368 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Viabol case study — how Elijah Oliver Larsson designed and built a reviewable automation product for small service businesses.">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Viabol — Product design case study">
+  <meta property="og:description" content="Making business automation understandable without a workflow builder.">
+  <meta property="og:image" content="assets/viabol-hero.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <title>Viabol case study | Elijah Oliver Larsson</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="viabol-case.css">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="site-header__inner">
+      <a class="identity" href="index.html" aria-label="Back to portfolio home">
+        <span class="identity__name">Elijah Oliver Larsson</span>
+        <span class="identity__role">Product &amp; Interaction Designer</span>
+      </a>
+      <a class="text-link text-link--boxed" href="index.html">Back to portfolio</a>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="case-hero" id="overview">
+      <div class="case-shell case-hero__grid">
+        <div class="case-hero__copy">
+          <p class="eyebrow">Live early-stage product · Solo ownership</p>
+          <h1>Viabol</h1>
+          <p class="hero-statement">Making business automation understandable without a workflow builder.</p>
+          <p class="hero-description">Viabol is a lightweight automation product for small service businesses. It turns recurring tasks such as quote follow-up into guided, reviewable workflows—without asking users to build automations from nodes, triggers, or field mappings.</p>
+
+          <div class="hero-actions" aria-label="Project links">
+            <a class="button button--primary" href="https://viabol.se" target="_blank" rel="noopener noreferrer">View live product</a>
+            <a class="button button--secondary" href="#demo">Watch demo</a>
+          </div>
+
+          <dl class="project-facts" aria-label="Project facts">
+            <div>
+              <dt>Role</dt>
+              <dd>Founder, Product Designer &amp; Builder</dd>
+            </div>
+            <div>
+              <dt>Timeline</dt>
+              <dd>May 2026–present</dd>
+            </div>
+            <div>
+              <dt>Release</dt>
+              <dd>First public release and marketing in July 2026</dd>
+            </div>
+            <div>
+              <dt>Team</dt>
+              <dd>Solo project with AI-assisted development</dd>
+            </div>
+          </dl>
+        </div>
+
+        <figure class="hero-visual media-frame media-frame--hero">
+          <button class="media-button" type="button" data-lightbox-src="assets/viabol-hero.png" aria-label="Open the Viabol hero visual">
+            <img src="assets/viabol-hero.png" alt="Viabol case study hero showing the quote follow-up product and project details" width="1672" height="941">
+          </button>
+          <figcaption>A live product shaped from product direction and interface design through implementation and deployment.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <nav class="section-nav" aria-label="Case study sections">
+      <div class="case-shell section-nav__inner">
+        <a href="#demo">Demo</a>
+        <a href="#challenge">Challenge</a>
+        <a href="#decision">Decision</a>
+        <a href="#trust">Trust</a>
+        <a href="#system">System</a>
+        <a href="#iterations">Iterations</a>
+        <a href="#evidence">Evidence</a>
+      </div>
+    </nav>
+
+    <section class="section section--demo" id="demo">
+      <div class="case-shell">
+        <div class="section-heading section-heading--split">
+          <div>
+            <p class="eyebrow">The product in use</p>
+            <h2>One task, end to end</h2>
+          </div>
+          <p>The fastest way to understand Viabol is to watch a business set up an automation, run it, and see the result arrive outside the product.</p>
+        </div>
+
+        <div class="video-shell">
+          <video controls preload="metadata" poster="assets/viabol-demo-poster.jpg" aria-label="Viabol product demo">
+            <source src="assets/Viabol.mp4" type="video/mp4">
+            Your browser does not support the video element.
+          </video>
+        </div>
+
+        <ol class="demo-steps" aria-label="Main moments in the demo">
+          <li>
+            <span class="step-number">01</span>
+            <div><h3>Choose the task</h3><p>Start with a familiar business outcome instead of a technical canvas.</p></div>
+          </li>
+          <li>
+            <span class="step-number">02</span>
+            <div><h3>Review the action</h3><p>Check the details, message, timing, and recipient before anything runs.</p></div>
+          </li>
+          <li>
+            <span class="step-number">03</span>
+            <div><h3>Follow the result</h3><p>See the run history and confirm the real outcome outside the system.</p></div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="section section--scan" aria-labelledby="scan-title">
+      <div class="case-shell">
+        <div class="section-heading section-heading--compact">
+          <p class="eyebrow">Recruiter scan</p>
+          <h2 id="scan-title">The case at a glance</h2>
+        </div>
+        <div class="scan-cards">
+          <article>
+            <p class="scan-label">Problem</p>
+            <h3>Automation tools often make the user design the system.</h3>
+            <p>Triggers, nodes, field mappings, and error paths create work before the user reaches the business task.</p>
+          </article>
+          <article>
+            <p class="scan-label">Product bet</p>
+            <h3>Start from the task, then keep every important action reviewable.</h3>
+            <p>Templates reduce setup work while clear states and history make the automation easier to trust.</p>
+          </article>
+          <article>
+            <p class="scan-label">My scope</p>
+            <h3>Product direction, UX/UI, copy, architecture decisions, and final build.</h3>
+            <p>I used Codex for code support and debugging, then reviewed and adapted the work before shipping.</p>
+          </article>
+          <article>
+            <p class="scan-label">Current state</p>
+            <h3>Working production product; activation and paid value still need validation.</h3>
+            <p>I separate what is already real from the claims I have not earned yet.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="challenge">
+      <div class="case-shell">
+        <div class="section-heading section-heading--split">
+          <div>
+            <p class="eyebrow">Design challenge</p>
+            <h2>Automation is difficult to trust because most of it happens out of view.</h2>
+          </div>
+          <p>I reviewed existing workflow tools and tested real automation runs during development, paying particular attention to failure states and the risk of sending messages to someone else’s customers.</p>
+        </div>
+
+        <blockquote class="design-question">How might I let someone set up, approve, and trust an automation without making them learn the engine behind it?</blockquote>
+
+        <div class="risk-grid">
+          <article><span>01</span><h3>Actions happen out of view</h3><p>People need a clear record of what happened and when.</p></article>
+          <article><span>02</span><h3>Emails reach real customers</h3><p>A wrong follow-up can damage an existing relationship.</p></article>
+          <article><span>03</span><h3>Success is not one state</h3><p>Accepted, scheduled, delivered, and failed cannot look identical.</p></article>
+          <article><span>04</span><h3>Flexibility adds work</h3><p>A blank canvas makes the user design the automation system themselves.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--tinted" id="decision">
+      <div class="case-shell">
+        <div class="section-heading section-heading--split">
+          <div>
+            <p class="eyebrow">Core product decision</p>
+            <h2>Templates instead of a blank canvas</h2>
+          </div>
+          <p>Tools such as Zapier and n8n are powerful because users can build almost anything. I deliberately accepted less flexibility so Viabol could ask less from the user up front.</p>
+        </div>
+
+        <div class="decision-comparison" role="group" aria-label="Comparison between rejected and chosen product directions">
+          <article class="decision-card decision-card--rejected">
+            <p class="decision-card__label">Direction dropped</p>
+            <h3>Build the workflow yourself</h3>
+            <p>Choose triggers, actions, connections, mappings, conditions, and error paths.</p>
+            <dl>
+              <div><dt>Benefit</dt><dd>Almost anything is possible.</dd></div>
+              <div><dt>Cost</dt><dd>The user has to design the system.</dd></div>
+            </dl>
+          </article>
+          <article class="decision-card decision-card--chosen">
+            <p class="decision-card__label">Direction kept</p>
+            <h3>Choose the business task</h3>
+            <p>Pick a template, finish a short setup, test it, and review the result.</p>
+            <dl>
+              <div><dt>Benefit</dt><dd>Less to understand before reaching value.</dd></div>
+              <div><dt>Cost</dt><dd>Viabol supports fewer use cases.</dd></div>
+            </dl>
+          </article>
+        </div>
+
+        <p class="decision-takeaway"><strong>Product principle:</strong> expose the decision the user needs to make, not the machinery required to execute it.</p>
+      </div>
+    </section>
+
+    <section class="section" id="trust">
+      <div class="case-shell">
+        <div class="section-heading section-heading--split">
+          <div>
+            <p class="eyebrow">Interaction design</p>
+            <h2>Making quote follow-up reviewable</h2>
+          </div>
+          <p>A quote can be entered directly or imported from a business-owned Google Sheet. Both paths create something to review; neither path silently schedules or sends anything.</p>
+        </div>
+
+        <ol class="state-journey" aria-label="Quote follow-up state journey">
+          <li><span>01</span><h3>Entered or imported</h3><p>The quote comes from Viabol or the connected spreadsheet.</p></li>
+          <li><span>02</span><h3>Owner reviewed</h3><p>The owner checks the details, message, tone, and delay.</p></li>
+          <li><span>03</span><h3>Scheduled</h3><p>Nothing moves forward until the owner chooses when it should run.</p></li>
+          <li><span>04</span><h3>Engine accepted</h3><p>A run exists, but Viabol does not call it delivered yet.</p></li>
+          <li><span>05</span><h3>Delivered or failed</h3><p>The final outcome stays visible in the history.</p></li>
+        </ol>
+
+        <div class="trust-layout">
+          <div>
+            <p class="eyebrow">Designing for trust</p>
+            <h3>Trust had to appear in the flow itself—not just in landing-page copy.</h3>
+            <div class="principle-list">
+              <article><h4>Review before action</h4><p>Importing data never sends an email. Scheduling always requires a clear choice.</p></article>
+              <article><h4>Precise status language</h4><p>An accepted request is separated from confirmed delivery and failure.</p></article>
+              <article><h4>Readable recovery</h4><p>The error explains what failed, while the original run stays available.</p></article>
+              <article><h4>Traceable history</h4><p>The input, result, engine response, and timeline can be checked later.</p></article>
+            </div>
+          </div>
+          <aside class="status-callout" aria-label="Important system status distinction">
+            <p class="status-callout__symbol">≠</p>
+            <p class="status-callout__title">Engine accepted is not delivered.</p>
+            <p>A technically successful handoff is not presented as customer delivery. That distinction required more state design and logging, but prevents misleading success messages.</p>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--dark" id="system">
+      <div class="case-shell">
+        <div class="section-heading section-heading--split section-heading--light">
+          <div>
+            <p class="eyebrow">Behind the interface</p>
+            <h2>The simple setup hides a real multi-step workflow.</h2>
+          </div>
+          <p>The underlying system receives the quote, waits for the selected delay, drafts the message, sends it, notifies the owner, and records the result.</p>
+        </div>
+
+        <figure class="media-frame media-frame--dark">
+          <button class="media-button" type="button" data-lightbox-src="assets/viabol-annotated-flow.png" aria-label="Open the annotated Viabol automation flow">
+            <img src="assets/viabol-annotated-flow.png" alt="Annotated Activepieces workflow showing the quote follow-up automation from webhook to delivery and logging" width="1672" height="941" loading="lazy">
+          </button>
+          <figcaption>The user sees a guided business task. The system handles timing, content generation, delivery, notification, and logging behind it.</figcaption>
+        </figure>
+
+        <div class="system-list">
+          <article><h3>Interface</h3><p class="system-tools">Next.js · React · Tailwind CSS</p><p>Turns the workflow into a task people can set up, review, schedule, and follow.</p></article>
+          <article><h3>Product data</h3><p class="system-tools">Supabase Auth · Postgres · Row Level Security</p><p>Keeps records separated by account and protects connection details behind server-side access rules.</p></article>
+          <article><h3>Automation &amp; services</h3><p class="system-tools">Activepieces · OpenAI API · Google Sheets · Resend · Stripe</p><p>Runs the workflow, drafts content, imports familiar data, sends email, and handles billing states.</p></article>
+          <article><h3>Delivery &amp; measurement</h3><p class="system-tools">GitHub · Coolify · Self-managed VPS · GA4</p><p>Supports controlled deployment and rollback, while analytics load only after consent.</p></article>
+        </div>
+
+        <p class="ownership-note"><strong>Ownership:</strong> I made the product, interaction, visual, copy, and final build decisions. I used Codex for code support, debugging, and review, then checked and adapted the work before shipping.</p>
+      </div>
+    </section>
+
+    <section class="section" id="iterations">
+      <div class="case-shell">
+        <div class="section-heading section-heading--split">
+          <div>
+            <p class="eyebrow">Iteration without fake before screens</p>
+            <h2>What changed as I built it</h2>
+          </div>
+          <p>I did not preserve polished screenshots of every early version, so I show the decisions, reasons, and trade-offs instead of reconstructing a false process story.</p>
+        </div>
+
+        <div class="iteration-table">
+          <article>
+            <div><p class="iteration-index">01</p><h3>Direct entry became two paths</h3></div>
+            <div><p><strong>Started with</strong> entering each quote inside Viabol.</p><p><strong>Changed to</strong> keeping that path while adding a business-owned Google Sheet for recurring lists.</p><p><strong>Trade-off</strong> less typing, but another connection to maintain.</p></div>
+          </article>
+          <article>
+            <div><p class="iteration-index">02</p><h3>Email extraction stayed experimental</h3></div>
+            <div><p><strong>Explored</strong> forwarding sent quotes to an inbox so Viabol could extract the details.</p><p><strong>Held back because</strong> uncertain fields added risk before the core review flow was proven.</p><p><strong>Trade-off</strong> a spreadsheet feels less automatic, but is easier to understand and recover.</p></div>
+          </article>
+          <article>
+            <div><p class="iteration-index">03</p><h3>Success became several states</h3></div>
+            <div><p><strong>Problem</strong> an engine accepting a job does not mean the customer received the email.</p><p><strong>Changed to</strong> separate scheduling, engine response, confirmed delivery, and failure.</p><p><strong>Trade-off</strong> more state design and logging, but fewer misleading success messages.</p></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--evidence" id="evidence">
+      <div class="case-shell">
+        <div class="section-heading section-heading--split">
+          <div>
+            <p class="eyebrow">Evidence and next step</p>
+            <h2>A working product, not a finished success story</h2>
+          </div>
+          <p>The most credible version of this case separates what exists in production from the product value I still need to validate.</p>
+        </div>
+
+        <div class="evidence-columns">
+          <article>
+            <p class="evidence-label">What is real today</p>
+            <ul>
+              <li>The product is public and works in production.</li>
+              <li>Direct quote entry and optional Google Sheets intake both work.</li>
+              <li>Imports create something to review; they do not send an email.</li>
+              <li>Scheduled, accepted, delivered, and failed are distinct states.</li>
+              <li>A failed run keeps its error details when someone retries.</li>
+            </ul>
+          </article>
+          <article>
+            <p class="evidence-label">The next validation</p>
+            <ul>
+              <li>Watch five service businesses explain the product in their own words.</li>
+              <li>See whether they can finish setup and understand each state without help.</li>
+              <li>Test whether review creates enough trust to justify the extra step.</li>
+              <li>Measure whether the task is useful often enough to pay for.</li>
+            </ul>
+          </article>
+        </div>
+
+        <div class="next-decision">
+          <p class="eyebrow">What I would not do yet</p>
+          <p>Add more templates before the current activation flow is clear without me explaining it.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--closing">
+      <div class="case-shell closing-card">
+        <div>
+          <p class="eyebrow">Reflection</p>
+          <h2>Simplifying automation is not mainly about hiding controls.</h2>
+          <p>It is about making every action, status, and failure understandable enough for someone to trust the system with a real customer relationship.</p>
+        </div>
+        <div class="closing-actions">
+          <a class="button button--primary" href="https://viabol.se" target="_blank" rel="noopener noreferrer">View Viabol</a>
+          <a class="button button--secondary" href="index.html">Back to portfolio</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="case-shell site-footer__inner">
+      <p>Elijah Oliver Larsson · Product &amp; Interaction Designer</p>
+      <a href="mailto:Elijaholiverlarsson@gmail.com">Elijaholiverlarsson@gmail.com</a>
+    </div>
+  </footer>
+
+  <dialog class="lightbox" id="image-lightbox" aria-label="Expanded project image">
+    <button class="lightbox__close" type="button" aria-label="Close image">×</button>
+    <img id="lightbox-image" src="assets/viabol-hero.png" alt="">
+  </dialog>
+
+  <script src="viabol-case.js"></script>
+</body>
+</html>

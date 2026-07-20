@@ -13,13 +13,13 @@
 <body>
     <a class="skip-link" href="#main-content">Skip to main content</a>
 
-    <header class="site-header" role="banner">
+    <header class="site-header">
         <div class="header-inner">
             <a class="brand" href="index.html" aria-label="Back to portfolio home">
                 <img src="loggos.png" alt="Elijah Oliver Larsson logo" width="56" height="56">
                 <span class="brand-copy">
                     <span class="brand-name">Elijah Oliver Larsson</span>
-                    <span class="brand-role">UI/UX and Interaction Designer</span>
+                    <span class="brand-role">Product and Interaction Designer</span>
                 </span>
             </a>
             <a class="header-link" href="index.html">Back to Portfolio</a>
@@ -58,7 +58,7 @@
     <p>This video shows how the prototype works in practice, from scent activation to the shift into journaling.</p>
 
     <div class="video-container">
-    <video controls>
+    <video controls preload="metadata" poster="IMG_1331.jpg" playsinline aria-label="Scent-driven storytelling prototype demonstration">
         <source src="Img4.mp4" type="video/mp4">
         Your browser does not support the video tag.
     </video>
@@ -105,6 +105,11 @@
                         <li>Implemented NFC linking from the physical journal to the website</li>
                         <li>Contributed to the final physical-digital interaction flow</li>
                     </ul>
+
+                    <div class="case-highlight">
+                        <strong>How we worked together</strong>
+                        <span>Another group member shaped the journal and web concept while I focused on making the enclosure, electronics, NFC handoff, and website work as one experience.</span>
+                    </div>
                 </section>
 
                 <section class="content-card" id="decisions">
@@ -194,7 +199,7 @@
                 <nav class="case-nav" aria-label="Other case studies">
                     <h2>Explore Other Projects</h2>
                     <ul>
-                        <li><a href="case4.html">AfterKöp</a></li>
+                        <li><a href="case6.html">Viabol</a></li>
                         <li><a href="case1.html">Coffee Machine - Done Right</a></li>
                         <li><a href="case5.html">Exhausted AI</a></li>
                         <li><a href="case2.html">EloEcho</a></li>
@@ -251,11 +256,11 @@
         </div>
     </main>
 
-    <div id="lightbox" class="lightbox" role="dialog" aria-modal="true" aria-labelledby="lightbox-title" aria-hidden="true">
+    <div id="lightbox" class="lightbox" role="dialog" aria-modal="true" aria-labelledby="lightbox-title">
         <div class="lightbox-dialog">
             <h2 id="lightbox-title" class="sr-only">Expanded project image</h2>
             <button class="lightbox-close" type="button" aria-label="Close image viewer">&times;</button>
-            <img id="lightbox-img" alt="">
+            <img id="lightbox-img" src="IMG_1331.jpg" alt="">
             <p class="lightbox-hint">Press Escape to close or click outside the image.</p>
         </div>
     </div>
