@@ -3,19 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="RepQuest is a private fitness RPG for iOS where real training grows a companion, shapes readiness, and unlocks campaign progress.">
+    <meta name="description" content="RepQuest is a fitness app for iOS that unifies training, activity, nutrition, recovery, and insights, then turns consistency into RPG progression.">
     <meta name="theme-color" content="#07121b">
     <meta property="og:title" content="RepQuest | Elijah Oliver Larsson">
-    <meta property="og:description" content="A product design, game systems, and Flutter case study connecting real fitness habits to companion progression.">
+    <meta property="og:description" content="A fitness product and Flutter case study connecting training, activity, nutrition, recovery, and insights to a motivating RPG loop.">
     <meta property="og:type" content="website">
     <meta property="og:image" content="public/assets/repquest/repquest-og.png">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="RepQuest | Elijah Oliver Larsson">
-    <meta name="twitter:description" content="A fitness RPG for iOS, designed and built as one connected product loop.">
+    <meta name="twitter:description" content="A complete fitness system for iOS, with an RPG layer that turns consistency into visible progress.">
     <title>RepQuest | Elijah Oliver Larsson</title>
     <link rel="icon" href="public/assets/repquest/app-icon.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" href="public/assets/repquest/hero-background.webp" as="image" type="image/webp" fetchpriority="high">
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Figtree:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="repquest-case.css">
 </head>
@@ -34,8 +35,8 @@
                 <div class="project-hero__copy">
                     <p class="project-eyebrow">Featured project / 2026</p>
                     <h1 id="project-title">RepQuest</h1>
-                    <p class="project-type">Fitness RPG for iOS</p>
-                    <p class="project-intro">Real training grows your companion, shapes readiness, and unlocks a turn-based campaign built around consistent habits.</p>
+                    <p class="project-type">A complete fitness system, powered by play</p>
+                    <p class="project-intro">Track training, activity, nutrition, and recovery in one place. Every healthy action powers the adventure.</p>
                 </div>
 
                 <div class="hero-product">
@@ -49,22 +50,22 @@
                             </div>
                         </div>
                     </div>
-                    <div class="hero-device hero-device--companion">
+                    <div class="hero-device hero-device--training">
                         <div class="device-shell">
                             <div class="device-speaker" aria-hidden="true"></div>
-                            <div class="screen-placeholder" role="img" aria-label="Placeholder for the RepQuest Companion screen">
+                            <div class="screen-placeholder" role="img" aria-label="Placeholder for the RepQuest Training screen">
                                 <span>Screenshot placeholder</span>
-                                <strong>Companion</strong>
+                                <strong>Training</strong>
                                 <small>Portrait capture</small>
                             </div>
                         </div>
                     </div>
-                    <div class="hero-device hero-device--campaign">
+                    <div class="hero-device hero-device--insights">
                         <div class="device-shell">
                             <div class="device-speaker" aria-hidden="true"></div>
-                            <div class="screen-placeholder" role="img" aria-label="Placeholder for the RepQuest Campaign screen">
+                            <div class="screen-placeholder" role="img" aria-label="Placeholder for the RepQuest Insights screen">
                                 <span>Screenshot placeholder</span>
-                                <strong>Campaign</strong>
+                                <strong>Insights</strong>
                                 <small>Portrait capture</small>
                             </div>
                         </div>
@@ -78,7 +79,8 @@
             <div class="project-facts__shell">
                 <ul class="project-tags">
                     <li>Product design</li>
-                    <li>UX/UI</li>
+                    <li>Fitness UX</li>
+                    <li>HealthKit</li>
                     <li>Game systems</li>
                     <li>Flutter</li>
                     <li>iOS</li>
@@ -90,10 +92,84 @@
             </div>
         </section>
 
+        <section class="case-section fitness-section" aria-labelledby="fitness-title">
+            <header class="section-intro section-intro--compact">
+                <h2 id="fitness-title">One fitness system for the whole day</h2>
+                <p>Training, movement, meals, recovery, and useful trends share one daily rhythm.</p>
+            </header>
+
+            <div class="fitness-foundation">
+                <p class="fitness-foundation__lead"><strong>The fitness product is the foundation.</strong> The RPG layer adds motivation, but the everyday value comes from logging, understanding, and improving health.</p>
+                <dl class="fitness-pillars">
+                    <div><dt>Training</dt><dd>Strength and cardio logs</dd></div>
+                    <div><dt>Activity</dt><dd>HealthKit movement and energy</dd></div>
+                    <div><dt>Nutrition</dt><dd>Meals, calories, and macros</dd></div>
+                    <div><dt>Recovery</dt><dd>Sleep, readiness, and trends</dd></div>
+                </dl>
+            </div>
+
+            <div class="phone-gallery">
+                <article class="phone-story">
+                    <div class="device-shell device-shell--gallery">
+                        <div class="device-speaker" aria-hidden="true"></div>
+                        <div class="screen-placeholder screen-placeholder--light" role="img" aria-label="Placeholder for the Today screen">
+                            <span>Screenshot placeholder</span><strong>Today</strong><small>1179 × 2556</small>
+                        </div>
+                    </div>
+                    <h3>Today</h3>
+                    <p>See readiness, key health signals, and the next useful action at a glance.</p>
+                </article>
+
+                <article class="phone-story">
+                    <div class="device-shell device-shell--gallery">
+                        <div class="device-speaker" aria-hidden="true"></div>
+                        <div class="screen-placeholder screen-placeholder--light" role="img" aria-label="Placeholder for the Training screen">
+                            <span>Screenshot placeholder</span><strong>Training</strong><small>1179 × 2556</small>
+                        </div>
+                    </div>
+                    <h3>Training</h3>
+                    <p>Log strength or cardio sessions, follow the timer, and review completed work.</p>
+                </article>
+
+                <article class="phone-story">
+                    <div class="device-shell device-shell--gallery">
+                        <div class="device-speaker" aria-hidden="true"></div>
+                        <div class="screen-placeholder screen-placeholder--light" role="img" aria-label="Placeholder for the Activity screen">
+                            <span>Screenshot placeholder</span><strong>Activity</strong><small>1179 × 2556</small>
+                        </div>
+                    </div>
+                    <h3>Activity</h3>
+                    <p>Bring steps, active energy, and workouts into view through HealthKit.</p>
+                </article>
+
+                <article class="phone-story">
+                    <div class="device-shell device-shell--gallery">
+                        <div class="device-speaker" aria-hidden="true"></div>
+                        <div class="screen-placeholder screen-placeholder--light" role="img" aria-label="Placeholder for the Nutrition screen">
+                            <span>Screenshot placeholder</span><strong>Nutrition</strong><small>1179 × 2556</small>
+                        </div>
+                    </div>
+                    <h3>Nutrition</h3>
+                    <p>Track meals, calories, and macros alongside the rest of the day.</p>
+                </article>
+
+                <article class="phone-story">
+                    <div class="device-shell device-shell--gallery">
+                        <div class="device-speaker" aria-hidden="true"></div>
+                        <div class="screen-placeholder screen-placeholder--light" role="img" aria-label="Placeholder for the Insights screen">
+                            <span>Screenshot placeholder</span><strong>Insights</strong><small>1179 × 2556</small>
+                        </div>
+                    </div>
+                    <h3>Insights</h3>
+                    <p>Start with the essential signal, then explore deeper trends when they matter.</p>
+                </article>
+            </div>
+        </section>
+
         <section class="case-section evolution-section" aria-labelledby="evolution-title">
             <header class="section-intro">
-                <h2 id="evolution-title">Growth through real-world habits</h2>
-                <p>RepQuest turns consistency into a companion you can see changing. Progress is earned through the fitness loop, not bought as a shortcut.</p>
+                <h2 id="evolution-title">Fitness progress you can see</h2>
+                <p>The companion is the motivation layer. Consistent training and recovery turn healthy behavior into visible long-term progress.</p>
             </header>
 
             <div class="evolution-grid">
@@ -140,83 +216,19 @@
                     <p><strong>A system that rewards balance.</strong> RepQuest is designed around showing up, building consistency, and making progress visible over time.</p>
                 </div>
                 <dl class="project-metrics">
-                    <div><dt>4</dt><dd>Progression forms</dd></div>
+                    <div><dt>4</dt><dd>Fitness pillars</dd></div>
                     <div><dt>4</dt><dd>Mastery stats</dd></div>
-                    <div><dt>6</dt><dd>Story bosses</dd></div>
+                    <div><dt>4</dt><dd>Progression forms</dd></div>
                     <div><dt>1</dt><dd>Connected loop</dd></div>
                 </dl>
-            </div>
-        </section>
-
-        <section class="case-section fitness-section" aria-labelledby="fitness-title">
-            <header class="section-intro section-intro--compact">
-                <h2 id="fitness-title">The fitness experience</h2>
-                <p>Training, activity, nutrition, recovery, and insights live in one product instead of becoming separate dashboards.</p>
-            </header>
-
-            <div class="phone-gallery">
-                <article class="phone-story">
-                    <div class="device-shell device-shell--gallery">
-                        <div class="device-speaker" aria-hidden="true"></div>
-                        <div class="screen-placeholder screen-placeholder--light" role="img" aria-label="Placeholder for the Today screen">
-                            <span>Screenshot placeholder</span><strong>Today</strong><small>1179 × 2556</small>
-                        </div>
-                    </div>
-                    <h3>Today</h3>
-                    <p>See the day’s recommendation, key signals, and next action at a glance.</p>
-                </article>
-
-                <article class="phone-story">
-                    <div class="device-shell device-shell--gallery">
-                        <div class="device-speaker" aria-hidden="true"></div>
-                        <div class="screen-placeholder screen-placeholder--light" role="img" aria-label="Placeholder for the Training screen">
-                            <span>Screenshot placeholder</span><strong>Training</strong><small>1179 × 2556</small>
-                        </div>
-                    </div>
-                    <h3>Training</h3>
-                    <p>Log sessions, use the timer, and turn completed work into progression.</p>
-                </article>
-
-                <article class="phone-story">
-                    <div class="device-shell device-shell--gallery">
-                        <div class="device-speaker" aria-hidden="true"></div>
-                        <div class="screen-placeholder screen-placeholder--light" role="img" aria-label="Placeholder for the Activity screen">
-                            <span>Screenshot placeholder</span><strong>Activity</strong><small>1179 × 2556</small>
-                        </div>
-                    </div>
-                    <h3>Activity</h3>
-                    <p>Bring steps, active energy, and workouts into view through HealthKit.</p>
-                </article>
-
-                <article class="phone-story">
-                    <div class="device-shell device-shell--gallery">
-                        <div class="device-speaker" aria-hidden="true"></div>
-                        <div class="screen-placeholder screen-placeholder--light" role="img" aria-label="Placeholder for the Nutrition screen">
-                            <span>Screenshot placeholder</span><strong>Nutrition</strong><small>1179 × 2556</small>
-                        </div>
-                    </div>
-                    <h3>Nutrition</h3>
-                    <p>Track meals and daily targets without breaking the larger product loop.</p>
-                </article>
-
-                <article class="phone-story">
-                    <div class="device-shell device-shell--gallery">
-                        <div class="device-speaker" aria-hidden="true"></div>
-                        <div class="screen-placeholder screen-placeholder--light" role="img" aria-label="Placeholder for the Insights screen">
-                            <span>Screenshot placeholder</span><strong>Insights</strong><small>1179 × 2556</small>
-                        </div>
-                    </div>
-                    <h3>Insights</h3>
-                    <p>Start with the essential signal, then open deeper trends when they matter.</p>
-                </article>
             </div>
         </section>
 
         <section class="case-section battle-section" aria-labelledby="battle-title">
             <div class="battle-heading">
                 <div>
-                    <h2 id="battle-title">Battle and adventure</h2>
-                    <p>Fitness progress unlocks strategic play. Companions bring different strengths, while enemies ask for different responses.</p>
+                    <h2 id="battle-title">The game is the reward layer</h2>
+                    <p>Training earns progression, companions turn it into identity, and battles give players a reason to return.</p>
                 </div>
                 <div class="battle-creatures" aria-hidden="true">
                     <img class="battle-creature battle-creature--enemy" src="public/assets/repquest/dreadveil-divine.webp" alt="">
@@ -260,7 +272,7 @@
                 <img src="public/assets/repquest/groveguard-growth.webp" alt="Groveguard companion" loading="lazy">
                 <img src="public/assets/repquest/emberbill.webp" alt="Emberbill companion" loading="lazy">
                 <img src="public/assets/repquest/nymbloom.webp" alt="Nymbloom companion" loading="lazy">
-                <p><strong>From health data to meaningful feedback.</strong> The game layer is not a separate reward screen. It gives everyday training a character, a consequence, and a reason to return.</p>
+                <p><strong>Fitness remains the source of progress.</strong> The game gives everyday training a character, a consequence, and a reason to return.</p>
             </div>
         </section>
 
@@ -269,8 +281,8 @@
                 <div class="closing-summary__lead">
                     <img src="public/assets/repquest/app-icon.png" alt="RepQuest app icon">
                     <div>
-                        <h2 id="closing-title">From habits to hero</h2>
-                        <p>RepQuest is my largest product build to date, combining fitness, behavior design, systems thinking, and game mechanics.</p>
+                        <h2 id="closing-title">Fitness first, game powered</h2>
+                        <p>RepQuest is my largest product build to date, combining a practical fitness system with a motivating RPG loop.</p>
                     </div>
                 </div>
                 <dl class="closing-facts">
