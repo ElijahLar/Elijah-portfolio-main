@@ -434,22 +434,27 @@ a:focus-visible {
 }
 
 .evolution-image-wrap {
+    position: relative;
     display: grid;
     place-items: end center;
     height: clamp(210px, 21vw, 320px);
     margin-bottom: 1.5rem;
+    overflow: hidden;
 }
 
 .evolution-image-wrap img {
+    position: absolute;
+    inset: 0;
     width: 100%;
-    max-width: 285px;
-    max-height: 100%;
+    height: 100%;
+    max-width: none;
     object-fit: contain;
+    object-position: center bottom;
     filter: drop-shadow(0 17px 16px rgba(42, 67, 43, 0.16));
 }
 
 .evolution-step--divine .evolution-image-wrap img {
-    max-width: 330px;
+    max-width: none;
 }
 
 .evolution-step h3,
