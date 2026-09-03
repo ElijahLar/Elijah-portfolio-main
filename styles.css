@@ -573,96 +573,9 @@ button:focus-visible {
     background: #07121b;
 }
 
-.repquest-cover {
-    position: absolute;
-    inset: 0;
-    display: block;
-    isolation: isolate;
-    overflow: hidden;
-    color: #f5f2e9;
-}
-
-.work-card__media .repquest-cover__world {
-    position: absolute;
-    inset: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    opacity: 0.82;
-    filter: saturate(0.85) brightness(0.72);
-}
-
-.repquest-cover::after {
-    content: "";
-    position: absolute;
-    inset: 0;
-    z-index: 1;
-    background:
-        linear-gradient(90deg, rgba(5, 15, 22, 0.92) 0%, rgba(5, 15, 22, 0.18) 52%, rgba(5, 15, 22, 0.32) 100%),
-        linear-gradient(0deg, rgba(5, 15, 22, 0.68) 0%, transparent 48%);
-}
-
-.repquest-cover__glow {
-    position: absolute;
-    right: 8%;
-    bottom: 8%;
-    z-index: 2;
-    width: 52%;
-    aspect-ratio: 1;
-    border-radius: 50%;
-    background: rgba(157, 183, 83, 0.2);
-    filter: blur(38px);
-}
-
-.work-card__media .repquest-cover__creature {
-    position: absolute;
-    right: -3%;
-    bottom: -2%;
-    z-index: 3;
-    width: 68%;
-    height: 78%;
-    object-fit: contain;
-    object-position: right bottom;
-    filter: drop-shadow(0 1.2rem 1.6rem rgba(0, 0, 0, 0.46));
-}
-
-.repquest-cover__wordmark,
-.repquest-cover__caption {
-    position: absolute;
-    left: 7%;
-    z-index: 4;
-}
-
-.repquest-cover__wordmark {
-    top: 8%;
-    max-width: 52%;
-    font-family: "Outfit", sans-serif;
-    font-size: clamp(2.2rem, 5vw, 4.6rem);
-    font-weight: 600;
-    letter-spacing: -0.065em;
-    line-height: 0.9;
-}
-
-.repquest-cover__caption {
-    bottom: 8%;
-    color: #dce5c2;
-    font-size: 0.72rem;
-    font-weight: 600;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-}
-
 .work-card:hover .work-card__media img,
 .gallery-tile:hover img {
     transform: scale(1.02);
-}
-
-.work-card:hover .work-card__media .repquest-cover__world {
-    transform: scale(1.035);
-}
-
-.work-card:hover .work-card__media .repquest-cover__creature {
-    transform: translateY(-0.5%) scale(1.025);
 }
 
 .work-cluster-heading {
