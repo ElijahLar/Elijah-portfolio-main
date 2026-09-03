@@ -217,7 +217,7 @@ a:focus-visible {
     transform: rotate(1deg);
 }
 
-.hero-device--companion {
+.hero-device--battle {
     left: 54%;
     bottom: 9%;
     transform: rotate(1.8deg);
@@ -260,25 +260,6 @@ a:focus-visible {
     user-select: none;
 }
 
-.landscape-placeholder span {
-    color: rgba(237, 241, 233, 0.5);
-    font-size: 0.64rem;
-    letter-spacing: 0.05em;
-}
-
-.landscape-placeholder strong {
-    margin-top: 0.45rem;
-    font-family: "Outfit", sans-serif;
-    font-size: 1.12rem;
-    font-weight: 600;
-}
-
-.landscape-placeholder small {
-    margin-top: 0.3rem;
-    color: var(--accent);
-    font-size: 0.68rem;
-}
-
 .hero-companion {
     position: absolute;
     right: -3%;
@@ -289,6 +270,8 @@ a:focus-visible {
     opacity: 0.8;
     filter: drop-shadow(0 30px 38px rgba(1, 6, 8, 0.58));
     pointer-events: none;
+    transform: scaleX(-1);
+    transform-origin: center;
 }
 
 .project-facts {
@@ -443,7 +426,7 @@ a:focus-visible {
 
 .evolution-step h3,
 .phone-story h3,
-.landscape-story h3 {
+.game-story h3 {
     margin: 0;
     font-family: "Outfit", sans-serif;
     font-size: 1.24rem;
@@ -453,7 +436,7 @@ a:focus-visible {
 
 .evolution-step p,
 .phone-story p,
-.landscape-story p {
+.game-story p {
     margin: 0.55rem 0 0;
     color: var(--ink-soft);
     font-size: 0.88rem;
@@ -628,7 +611,7 @@ a:focus-visible {
 }
 
 .phone-story h3,
-.landscape-story h3 {
+.game-story h3 {
     margin-top: 1.4rem;
 }
 
@@ -676,48 +659,29 @@ a:focus-visible {
     width: 48%;
 }
 
-.landscape-gallery {
+.game-gallery {
     display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-    gap: 1.5rem;
+    grid-template-columns: repeat(3, minmax(0, 300px));
+    align-items: start;
+    justify-content: space-between;
+    max-width: 1100px;
+    margin-inline: auto;
+    gap: clamp(1.5rem, 5vw, 4.5rem);
 }
 
-.landscape-device {
-    position: relative;
-    padding: 8px;
-    aspect-ratio: 19.5 / 9;
-    border: 2px solid rgba(16, 26, 21, 0.62);
-    border-radius: 28px;
-    background: #05090b;
-    box-shadow: 0 18px 34px rgba(20, 32, 25, 0.18);
+.game-story {
+    min-width: 0;
 }
 
-.landscape-device::before {
-    content: "";
-    position: absolute;
-    top: 50%;
-    left: 13px;
-    z-index: 3;
-    width: 8px;
-    height: 22%;
-    border-radius: 8px;
-    background: #05090b;
-    transform: translateY(-50%);
+.game-story:nth-child(2) {
+    margin-top: clamp(2rem, 4vw, 4rem);
 }
 
-.landscape-placeholder {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 100%;
-    border-radius: 20px;
-    background:
-        linear-gradient(125deg, rgba(184, 207, 115, 0.12), transparent 46%),
-        #102128;
-    color: #edf1e9;
-    text-align: center;
+.device-shell--game {
+    padding: 7px;
+    border-color: rgba(16, 26, 21, 0.62);
+    border-radius: 34px;
+    box-shadow: 0 22px 44px rgba(20, 32, 25, 0.2), inset 0 0 0 1px rgba(245, 247, 241, 0.18);
 }
 
 .team-lineup {
@@ -923,7 +887,7 @@ a:focus-visible {
 
     .hero-device--today { left: 5%; bottom: 2%; }
     .hero-device--training { left: 31%; top: 0; }
-    .hero-device--companion { left: 57%; bottom: 2%; }
+    .hero-device--battle { left: 57%; bottom: 2%; }
 
     .hero-companion {
         right: 0;
@@ -975,13 +939,9 @@ a:focus-visible {
         grid-template-columns: 0.8fr 1.2fr;
     }
 
-    .landscape-gallery {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-    }
-
-    .landscape-story:last-child {
-        grid-column: 1 / -1;
-        width: calc(50% - 0.75rem);
+    .game-gallery {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 1.5rem;
     }
 
     .team-lineup {
@@ -1053,7 +1013,7 @@ a:focus-visible {
     }
 
     .hero-device--training,
-    .hero-device--companion {
+    .hero-device--battle {
         display: none;
     }
 
@@ -1176,13 +1136,24 @@ a:focus-visible {
         width: 62%;
     }
 
-    .landscape-gallery {
-        grid-template-columns: 1fr;
+    .game-gallery {
+        display: flex;
+        max-width: none;
+        margin-inline: -1rem;
+        padding-inline: 1rem;
+        gap: 1.25rem;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        scrollbar-width: thin;
     }
 
-    .landscape-story:last-child {
-        grid-column: auto;
-        width: auto;
+    .game-story {
+        flex: 0 0 min(78vw, 280px);
+        scroll-snap-align: start;
+    }
+
+    .game-story:nth-child(2) {
+        margin-top: 0;
     }
 
     .team-lineup {
