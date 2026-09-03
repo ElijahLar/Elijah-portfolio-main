@@ -19,6 +19,7 @@
     <link rel="preload" href="public/assets/repquest/hero-background.webp" as="image" type="image/webp" fetchpriority="high">
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Figtree:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="repquest-case.css">
+    <script src="repquest-case.js" defer></script>
 </head>
 <body>
     <a class="skip-link" href="#main-content">Skip to main content</a>
@@ -42,32 +43,17 @@
                 <div class="hero-product">
                     <div class="hero-device hero-device--today">
                         <div class="device-shell">
-                            <div class="device-speaker" aria-hidden="true"></div>
-                            <div class="screen-placeholder" role="img" aria-label="Placeholder for the RepQuest Today screen">
-                                <span>Screenshot placeholder</span>
-                                <strong>Today</strong>
-                                <small>Portrait capture</small>
-                            </div>
+                            <img class="product-still" src="public/assets/repquest/demos/today-poster.webp" alt="RepQuest Today screen showing daily fitness actions and companion progress" width="480" height="1044">
                         </div>
                     </div>
                     <div class="hero-device hero-device--training">
                         <div class="device-shell">
-                            <div class="device-speaker" aria-hidden="true"></div>
-                            <div class="screen-placeholder" role="img" aria-label="Placeholder for the RepQuest Training screen">
-                                <span>Screenshot placeholder</span>
-                                <strong>Training</strong>
-                                <small>Portrait capture</small>
-                            </div>
+                            <img class="product-still" src="public/assets/repquest/demos/training-poster.webp" alt="RepQuest Training screen showing an active strength workout" width="480" height="1044">
                         </div>
                     </div>
-                    <div class="hero-device hero-device--insights">
+                    <div class="hero-device hero-device--companion">
                         <div class="device-shell">
-                            <div class="device-speaker" aria-hidden="true"></div>
-                            <div class="screen-placeholder" role="img" aria-label="Placeholder for the RepQuest Insights screen">
-                                <span>Screenshot placeholder</span>
-                                <strong>Insights</strong>
-                                <small>Portrait capture</small>
-                            </div>
+                            <img class="product-still" src="public/assets/repquest/demos/companion-poster.webp" alt="RepQuest Companion screen showing Aurexion and its fitness-powered progression" width="480" height="1044">
                         </div>
                     </div>
                     <img class="hero-companion" src="public/assets/repquest/groveguard-divine.webp" alt="Groveguard in its luminous divine form">
@@ -95,7 +81,7 @@
         <section class="case-section fitness-section" aria-labelledby="fitness-title">
             <header class="section-intro section-intro--compact">
                 <h2 id="fitness-title">One fitness system for the whole day</h2>
-                <p>Training, movement, meals, recovery, and useful trends share one daily rhythm.</p>
+                <p>Training, movement, meals, recovery, and companion progress share one daily rhythm.</p>
             </header>
 
             <div class="fitness-foundation">
@@ -111,10 +97,9 @@
             <div class="phone-gallery">
                 <article class="phone-story">
                     <div class="device-shell device-shell--gallery">
-                        <div class="device-speaker" aria-hidden="true"></div>
-                        <div class="screen-placeholder screen-placeholder--light" role="img" aria-label="Placeholder for the Today screen">
-                            <span>Screenshot placeholder</span><strong>Today</strong><small>1179 × 2556</small>
-                        </div>
+                        <video class="product-demo" muted loop playsinline preload="metadata" poster="public/assets/repquest/demos/today-poster.webp" aria-hidden="true">
+                            <source src="public/assets/repquest/demos/today.mp4" type="video/mp4">
+                        </video>
                     </div>
                     <h3>Today</h3>
                     <p>See readiness, key health signals, and the next useful action at a glance.</p>
@@ -122,10 +107,9 @@
 
                 <article class="phone-story">
                     <div class="device-shell device-shell--gallery">
-                        <div class="device-speaker" aria-hidden="true"></div>
-                        <div class="screen-placeholder screen-placeholder--light" role="img" aria-label="Placeholder for the Training screen">
-                            <span>Screenshot placeholder</span><strong>Training</strong><small>1179 × 2556</small>
-                        </div>
+                        <video class="product-demo" muted loop playsinline preload="metadata" poster="public/assets/repquest/demos/training-poster.webp" aria-hidden="true">
+                            <source src="public/assets/repquest/demos/training.mp4" type="video/mp4">
+                        </video>
                     </div>
                     <h3>Training</h3>
                     <p>Log strength or cardio sessions, follow the timer, and review completed work.</p>
@@ -133,10 +117,9 @@
 
                 <article class="phone-story">
                     <div class="device-shell device-shell--gallery">
-                        <div class="device-speaker" aria-hidden="true"></div>
-                        <div class="screen-placeholder screen-placeholder--light" role="img" aria-label="Placeholder for the Activity screen">
-                            <span>Screenshot placeholder</span><strong>Activity</strong><small>1179 × 2556</small>
-                        </div>
+                        <video class="product-demo" muted loop playsinline preload="metadata" poster="public/assets/repquest/demos/activity-poster.webp" aria-hidden="true">
+                            <source src="public/assets/repquest/demos/activity.mp4" type="video/mp4">
+                        </video>
                     </div>
                     <h3>Activity</h3>
                     <p>Bring steps, active energy, and workouts into view through HealthKit.</p>
@@ -144,10 +127,9 @@
 
                 <article class="phone-story">
                     <div class="device-shell device-shell--gallery">
-                        <div class="device-speaker" aria-hidden="true"></div>
-                        <div class="screen-placeholder screen-placeholder--light" role="img" aria-label="Placeholder for the Nutrition screen">
-                            <span>Screenshot placeholder</span><strong>Nutrition</strong><small>1179 × 2556</small>
-                        </div>
+                        <video class="product-demo" muted loop playsinline preload="metadata" poster="public/assets/repquest/demos/nutrition-poster.webp" aria-hidden="true">
+                            <source src="public/assets/repquest/demos/nutrition.mp4" type="video/mp4">
+                        </video>
                     </div>
                     <h3>Nutrition</h3>
                     <p>Track meals, calories, and macros alongside the rest of the day.</p>
@@ -155,13 +137,12 @@
 
                 <article class="phone-story">
                     <div class="device-shell device-shell--gallery">
-                        <div class="device-speaker" aria-hidden="true"></div>
-                        <div class="screen-placeholder screen-placeholder--light" role="img" aria-label="Placeholder for the Insights screen">
-                            <span>Screenshot placeholder</span><strong>Insights</strong><small>1179 × 2556</small>
-                        </div>
+                        <video class="product-demo" muted loop playsinline preload="metadata" poster="public/assets/repquest/demos/companion-poster.webp" aria-hidden="true">
+                            <source src="public/assets/repquest/demos/companion.mp4" type="video/mp4">
+                        </video>
                     </div>
-                    <h3>Insights</h3>
-                    <p>Start with the essential signal, then explore deeper trends when they matter.</p>
+                    <h3>Companion</h3>
+                    <p>See your companion grow, manage the team, and connect fitness progress to play.</p>
                 </article>
             </div>
         </section>
