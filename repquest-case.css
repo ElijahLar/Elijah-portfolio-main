@@ -217,7 +217,7 @@ a:focus-visible {
     transform: rotate(1deg);
 }
 
-.hero-device--insights {
+.hero-device--companion {
     left: 54%;
     bottom: 9%;
     transform: rotate(1.8deg);
@@ -245,42 +245,27 @@ a:focus-visible {
     pointer-events: none;
 }
 
-.device-speaker {
-    position: absolute;
-    top: 13px;
-    left: 50%;
-    z-index: 4;
-    width: 38%;
-    height: 17px;
-    border-radius: 20px;
-    background: #05090b;
-    transform: translateX(-50%);
-}
-
-.screen-placeholder {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+.product-demo,
+.product-still {
+    display: block;
     width: 100%;
     height: 100%;
-    padding: 1.25rem;
     border-radius: 26px;
-    background:
-        linear-gradient(150deg, rgba(184, 207, 115, 0.12), transparent 48%),
-        #102128;
-    color: #edf1e9;
-    text-align: center;
+    background: var(--night);
+    object-fit: cover;
 }
 
-.screen-placeholder span,
+.product-demo {
+    pointer-events: none;
+    user-select: none;
+}
+
 .landscape-placeholder span {
     color: rgba(237, 241, 233, 0.5);
     font-size: 0.64rem;
     letter-spacing: 0.05em;
 }
 
-.screen-placeholder strong,
 .landscape-placeholder strong {
     margin-top: 0.45rem;
     font-family: "Outfit", sans-serif;
@@ -288,7 +273,6 @@ a:focus-visible {
     font-weight: 600;
 }
 
-.screen-placeholder small,
 .landscape-placeholder small {
     margin-top: 0.3rem;
     color: var(--accent);
@@ -639,20 +623,8 @@ a:focus-visible {
     border-radius: 23px;
 }
 
-.screen-placeholder--light {
+.device-shell--gallery .product-demo {
     border-radius: 22px;
-    background:
-        linear-gradient(145deg, rgba(184, 207, 115, 0.2), transparent 52%),
-        #eef2e8;
-    color: var(--ink);
-}
-
-.screen-placeholder--light span {
-    color: rgba(20, 32, 25, 0.48);
-}
-
-.screen-placeholder--light small {
-    color: var(--accent-dark);
 }
 
 .phone-story h3,
@@ -951,7 +923,7 @@ a:focus-visible {
 
     .hero-device--today { left: 5%; bottom: 2%; }
     .hero-device--training { left: 31%; top: 0; }
-    .hero-device--insights { left: 57%; bottom: 2%; }
+    .hero-device--companion { left: 57%; bottom: 2%; }
 
     .hero-companion {
         right: 0;
@@ -1081,7 +1053,7 @@ a:focus-visible {
     }
 
     .hero-device--training,
-    .hero-device--insights {
+    .hero-device--companion {
         display: none;
     }
 
