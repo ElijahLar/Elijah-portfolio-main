@@ -80,19 +80,19 @@
 
         <section class="case-section rationale-section" aria-labelledby="rationale-title">
             <div class="rationale-intro">
-                <h2 id="rationale-title">Why I built RepQuest</h2>
-                <p>Fitness data is useful while you log it, but it often ends in a chart or streak. I built RepQuest to give that progress another use: developing a companion and supporting a separate RPG.</p>
+                <h2 id="rationale-title">The design problem</h2>
+                <p>I wanted fitness progress to have a second life beyond charts and streaks. But combining a practical fitness tool with an RPG creates a tension: if the game appears inside every health flow, logging becomes slower; if it sits too far away, the connection to real activity stops feeling meaningful.</p>
             </div>
             <div class="rationale-constraint">
-                <h3>Keeping fitness useful</h3>
-                <p>Starting a workout, checking activity, logging a meal, or reviewing recovery has to stay quick. Those actions live in the main navigation; the companion and battle systems respond without taking over the fitness flow.</p>
+                <h3>A rule for the product</h3>
+                <p>The fitness app should still make sense if the game disappeared. Workouts, activity, meals, and recovery stay familiar and useful on their own. The RPG reacts to those actions instead of interrupting them.</p>
             </div>
         </section>
 
         <section class="case-section fitness-section" aria-labelledby="fitness-title">
             <header class="section-intro section-intro--compact">
-                <h2 id="fitness-title">The fitness app comes first</h2>
-                <p>RepQuest combines workouts, movement, meals, recovery, and insights in one app. Each tool remains useful even if you ignore the RPG.</p>
+                <h2 id="fitness-title">Designing fitness first, game second</h2>
+                <p>The most frequent actions had to stay close to familiar fitness patterns. Starting a workout, checking activity, logging food, or reviewing recovery should not require understanding the RPG first.</p>
             </header>
 
             <div class="fitness-foundation">
@@ -112,8 +112,8 @@
                             <source src="public/assets/repquest/demos/today.mp4" type="video/mp4">
                         </video>
                     </div>
-                    <h3>Today</h3>
-                    <p>Review today’s workout, activity, nutrition, recovery, and next action in one view.</p>
+                    <h3>Today as the entry point</h3>
+                    <p>I brought workout, activity, nutrition, recovery, and the next useful action into one view so the user can understand the day before deciding where to go deeper.</p>
                 </article>
 
                 <article class="phone-story">
@@ -122,8 +122,8 @@
                             <source src="public/assets/repquest/demos/training.mp4" type="video/mp4">
                         </video>
                     </div>
-                    <h3>Training</h3>
-                    <p>Create workouts, log sets and reps, use the rest timer, and review completed sessions.</p>
+                    <h3>Keep workouts direct</h3>
+                    <p>Set and rep logging, rest timing, and workout history stay focused on the session itself. Game progression happens around the workout rather than competing for attention during it.</p>
                 </article>
 
                 <article class="phone-story">
@@ -132,8 +132,8 @@
                             <source src="public/assets/repquest/demos/activity.mp4" type="video/mp4">
                         </video>
                     </div>
-                    <h3>Activity</h3>
-                    <p>View steps, workouts, and active energy from Apple Health.</p>
+                    <h3>Reuse activity already captured</h3>
+                    <p>Steps, workouts, and active energy come from Apple Health, so movement can contribute to RepQuest without turning every activity into another manual logging task.</p>
                 </article>
 
                 <article class="phone-story">
@@ -142,8 +142,8 @@
                             <source src="public/assets/repquest/demos/nutrition.mp4" type="video/mp4">
                         </video>
                     </div>
-                    <h3>Nutrition</h3>
-                    <p>Log meals and track calories, protein, and other macros alongside the rest of the day.</p>
+                    <h3>Keep health data legible</h3>
+                    <p>Meals, calories, protein, and macros remain standard fitness information instead of being rewritten entirely as game stats. The screen needs to be useful on its own.</p>
                 </article>
 
                 <article class="phone-story">
@@ -152,16 +152,16 @@
                             <source src="public/assets/repquest/demos/companion.mp4" type="video/mp4">
                         </video>
                     </div>
-                    <h3>Companion</h3>
-                    <p>See how fitness activity affects your companion, its stats, and the current team.</p>
+                    <h3>Show the consequence later</h3>
+                    <p>The companion is where the two systems meet. Fitness activity becomes visible as XP, mastery, and team progress after the underlying health actions have already made sense on their own.</p>
                 </article>
             </div>
         </section>
 
         <section class="case-section evolution-section" aria-labelledby="evolution-title">
             <header class="section-intro">
-                <h2 id="evolution-title">Your companion grows with your training</h2>
-                <p>Fitness activity earns XP and develops Power, Agility, Recovery, and Focus. Levels unlock new forms; balanced mastery unlocks the Divine form.</p>
+                <h2 id="evolution-title">Turning different kinds of progress into one system</h2>
+                <p>A single XP bar would make “do more” the dominant strategy. I split progression across Power, Agility, Recovery, and Focus so different parts of fitness can matter without pretending they are the same thing.</p>
             </header>
 
             <div class="evolution-grid">
@@ -170,7 +170,7 @@
                         <img src="public/assets/repquest/dreadveil-foundation.webp" alt="Dreadveil in its starter form" loading="lazy">
                     </div>
                     <h3>Dreadveil</h3>
-                    <p>The companion you begin training with.</p>
+                    <p>The baseline form before training begins to change the companion.</p>
                     <span class="evolution-rule">Starter form</span>
                 </article>
 
@@ -179,7 +179,7 @@
                         <img src="public/assets/repquest/dreadveil-warden.webp" alt="Dreadveil Warden evolution" loading="lazy">
                     </div>
                     <h3>Dreadveil Warden</h3>
-                    <p>The first evolution earned through accumulated XP.</p>
+                    <p>The first evolution rewards accumulated progress without requiring a specific training style.</p>
                     <span class="evolution-rule">Unlocks at level 16</span>
                 </article>
 
@@ -188,7 +188,7 @@
                         <img src="public/assets/repquest/dreadveil-crown.webp" alt="Dreadveil Crown evolution" loading="lazy">
                     </div>
                     <h3>Dreadveil Crown</h3>
-                    <p>The final level-based evolution.</p>
+                    <p>The final level-based evolution keeps the main progression path understandable and predictable.</p>
                     <span class="evolution-rule">Unlocks at level 36</span>
                 </article>
 
@@ -197,7 +197,7 @@
                         <img src="public/assets/repquest/dreadveil-divine-evolution.webp" alt="Dreadveil in its final divine form" loading="lazy">
                     </div>
                     <h3>Divine form</h3>
-                    <p>A separate final state earned through balanced mastery.</p>
+                    <p>The end state is different: it requires balanced mastery instead of simply earning more XP.</p>
                     <span class="evolution-rule">Power, Agility, Recovery, Focus</span>
                 </article>
             </div>
@@ -205,7 +205,7 @@
             <div class="principle-band">
                 <div class="principle-band__copy">
                     <img src="public/assets/repquest/app-icon.png" alt="" aria-hidden="true">
-                    <p><strong>Progress is not based on one metric.</strong> Power, Agility, Recovery, and Focus represent different parts of fitness and health, so developing every path matters.</p>
+                    <p><strong>The endgame rewards balance, not just volume.</strong> Levels give the player a clear progression path, while the Divine form asks them to develop Power, Agility, Recovery, and Focus together.</p>
                 </div>
                 <dl class="project-metrics">
                     <div><dt>4</dt><dd>Fitness pillars</dd></div>
@@ -219,8 +219,8 @@
         <section class="case-section battle-section" aria-labelledby="battle-title">
             <div class="battle-heading">
                 <div>
-                    <h2 id="battle-title">How fitness powers the RPG</h2>
-                    <p>XP and mastery stats carry into a turn-based campaign. I designed battles to give fitness progress a playable outcome beyond another chart, streak, or badge.</p>
+                    <h2 id="battle-title">Giving fitness progress somewhere to go</h2>
+                    <p>I did not want the reward for exercising to be another badge. The RPG is a separate play space where accumulated progress becomes decisions through abilities, team composition, and campaign routes.</p>
                 </div>
                 <div class="battle-creatures" aria-hidden="true">
                     <img class="battle-creature battle-creature--enemy" src="public/assets/repquest/dreadveil-divine.webp" alt="" loading="lazy">
@@ -233,24 +233,24 @@
                     <div class="device-shell device-shell--game">
                         <img class="product-still" src="public/assets/repquest/screens/battle-turn.webp" alt="RepQuest turn-based battle showing enemy intent, health, focus, and four abilities" width="720" height="1566" loading="lazy">
                     </div>
-                    <h3>Choose a move</h3>
-                    <p>Enemy intent appears before each turn, so you can attack, heal, buff, or debuff based on what comes next.</p>
+                    <h3>Make each turn readable</h3>
+                    <p>Enemy intent appears before the player acts. That creates a useful decision — attack, heal, buff, or debuff — without requiring a large set of controls.</p>
                 </article>
 
                 <article class="game-story">
                     <div class="device-shell device-shell--game">
                         <img class="product-still" src="public/assets/repquest/screens/battle-home.webp" alt="RepQuest battle home showing Aurexion, core stats, team slots, and battle controls" width="720" height="1566" loading="lazy">
                     </div>
-                    <h3>Prepare your team</h3>
-                    <p>Choose your active companion and team before starting an encounter.</p>
+                    <h3>Make progression matter</h3>
+                    <p>Choosing an active companion and team gives fitness-driven growth a use beyond cosmetic evolution. Stats and abilities affect how the player prepares for an encounter.</p>
                 </article>
 
                 <article class="game-story">
                     <div class="device-shell device-shell--game">
                         <img class="product-still" src="public/assets/repquest/screens/campaign-route.webp" alt="RepQuest campaign map with branching battle and camp routes" width="720" height="1566" loading="lazy">
                     </div>
-                    <h3>Choose a route</h3>
-                    <p>Campaign routes branch between battles, camps, and elite encounters before reaching a boss.</p>
+                    <h3>Break the campaign into choices</h3>
+                    <p>Branching routes turn the campaign into a sequence of short decisions between battles, camps, elite encounters, and bosses instead of one linear grind.</p>
                 </article>
             </div>
 
@@ -258,7 +258,7 @@
                 <img src="public/assets/repquest/groveguard-growth.webp" alt="Groveguard companion" loading="lazy">
                 <img src="public/assets/repquest/emberbill.webp" alt="Emberbill companion" loading="lazy">
                 <img src="public/assets/repquest/nymbloom.webp" alt="Nymbloom companion" loading="lazy">
-                <p><strong>Fitness drives character progression.</strong> Battles turn XP, stats, team composition, and abilities into playable decisions.</p>
+                <p><strong>Train → develop → prepare → battle → progress.</strong> Fitness creates progression; the game gives it somewhere to go without sitting inside the workout itself.</p>
             </div>
         </section>
 
@@ -269,12 +269,13 @@
                     <div>
                         <h2 id="closing-title">Where RepQuest is now</h2>
                         <p>RepQuest is the most complete product I have built so far. I designed the fitness experience, progression, and battle systems, then developed the iOS app in Flutter.</p>
+                        <p>The hardest design problem was not adding game mechanics; it was deciding where they should stop. Keeping the fitness layer clear while giving the RPG enough depth became the main constraint across the product.</p>
                     </div>
                 </div>
                 <dl class="closing-facts">
                     <div><dt>Built with</dt><dd>Flutter, Riverpod, Drift, HealthKit, StoreKit, Codemagic</dd></div>
                     <div><dt>Current status</dt><dd>Live on TestFlight</dd></div>
-                    <div><dt>Next focus</dt><dd>User testing, progression balance, visual consistency</dd></div>
+                    <div><dt>Next focus</dt><dd>Usability testing, progression balance, visual consistency</dd></div>
                 </dl>
             </div>
 
