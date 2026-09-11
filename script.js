@@ -47,7 +47,7 @@ document.addEventListener("DOMContentLoaded", () => {
                             <h3>VENT</h3>
                             <p>
                                 A small web app where you type a thought, send it into a black hole, and it disappears.
-                                No history, account, or AI response.
+                                Nothing is saved, and there's no account or AI response.
                             </p>
                         </div>
                         <div class="work-card__meta">
