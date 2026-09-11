@@ -26,7 +26,7 @@ document.addEventListener("DOMContentLoaded", () => {
                         </div>
                     </div>
                     <a class="work-card__media" href="vent-case.html" aria-label="Open Vent case study" style="background:#0c0e13;">
-                        <img src="https://ventinto.space/icon-512.png" alt="Vent black hole app icon" loading="lazy" style="object-fit:cover;">
+                        <img src="vent-black-hole.svg" alt="Vent black hole artwork" loading="lazy" style="object-fit:contain;">
                     </a>
                 </article>
             `
