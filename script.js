@@ -3,6 +3,36 @@ document.addEventListener("DOMContentLoaded", () => {
     const sections = Array.from(document.querySelectorAll("main section[id], footer[id]"));
     const mailButton = document.querySelector("[data-copy-email]");
 
+    // Keep the portfolio copy aligned with the current state of RepQuest.
+    const repQuestHeading = Array.from(document.querySelectorAll(".work-card h3"))
+        .find((heading) => heading.textContent?.trim().toLowerCase().startsWith("repquest"));
+    const repQuestCardFromMarkup = repQuestHeading?.closest(".work-card");
+
+    if (repQuestHeading) {
+        repQuestHeading.textContent = "RepQuest";
+    }
+
+    if (repQuestCardFromMarkup) {
+        const repQuestMeta = repQuestCardFromMarkup.querySelector(".work-card__meta span");
+        const repQuestMedia = repQuestCardFromMarkup.querySelector(".work-card__media--repquest");
+
+        if (repQuestMeta) {
+            repQuestMeta.textContent = "Work in progress · TestFlight";
+        }
+
+        if (repQuestMedia) {
+            repQuestMedia.setAttribute("aria-label", "Open RepQuest case study");
+        }
+    }
+
+    // EloEcho is no longer part of the public portfolio.
+    document.querySelector('a.more-work-card[href="case2.html"]')?.remove();
+
+    const moreWorkDescription = document.querySelector(".more-work__intro p");
+    if (moreWorkDescription?.textContent?.includes("Two smaller cases")) {
+        moreWorkDescription.textContent = "A smaller case focused on interface clarity and product thinking.";
+    }
+
     // Add VENT to Selected Work while keeping the existing portfolio markup untouched.
     const selectedWork = document.querySelector(".card-stack");
     const repQuestCard = selectedWork?.querySelector(":scope > .work-card");
