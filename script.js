@@ -30,7 +30,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const moreWorkDescription = document.querySelector(".more-work__intro p");
     if (moreWorkDescription?.textContent?.includes("Two smaller cases")) {
-        moreWorkDescription.textContent = "A smaller case focused on interface clarity and product thinking.";
+        moreWorkDescription.textContent = "A smaller interface redesign.";
     }
 
     // Add VENT to Selected Work while keeping the existing portfolio markup untouched.
@@ -46,8 +46,8 @@ document.addEventListener("DOMContentLoaded", () => {
                         <div>
                             <h3>VENT</h3>
                             <p>
-                                A deliberately temporary web experience where a thought is typed, pulled into a black hole,
-                                and gone — with no journal history, account, or AI response waiting on the other side.
+                                A small web app where you type a thought, send it into a black hole, and it disappears.
+                                No history, account, or AI response.
                             </p>
                         </div>
                         <div class="work-card__meta">
