@@ -21,6 +21,22 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Figtree:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="vent-case.css">
+    <style>
+        .reflection-note img {
+            width: 88px;
+            height: 88px;
+            aspect-ratio: 1 / 1;
+            object-fit: cover;
+            align-self: center;
+        }
+
+        @media (max-width: 520px) {
+            .reflection-note img {
+                width: 70px;
+                height: 70px;
+            }
+        }
+    </style>
 </head>
 <body>
     <a class="skip-link" href="#main-content">Skip to main content</a>
@@ -246,7 +262,7 @@
             </div>
 
             <aside class="reflection-note">
-                <img src="https://ventinto.space/icon-512.png" alt="Vent app icon" width="512" height="512" loading="lazy">
+                <img src="vent-black-hole.svg" alt="Vent black hole artwork" width="500" height="500" loading="lazy">
                 <p><strong>Vent v1</strong><br>Free, no account, no ads, and live on the web.</p>
                 <a href="https://ventinto.space" target="_blank" rel="noopener noreferrer">Try Vent ↗</a>
             </aside>
