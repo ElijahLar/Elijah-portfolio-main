@@ -25,8 +25,8 @@ document.addEventListener("DOMContentLoaded", () => {
                             <a href="vent-case.html">View Work</a>
                         </div>
                     </div>
-                    <a class="work-card__media" href="vent-case.html" aria-label="Open VENT case study" style="background:#0c0e13;">
-                        <img src="vent-black-hole-v3.jpg" alt="VENT black hole artwork" loading="lazy" style="object-fit:contain;object-position:center;width:100%;height:100%;display:block;background:#0c0e13;">
+                    <a class="work-card__media" href="vent-case.html" aria-label="Open VENT case study" style="background:#080b12;">
+                        <img src="vent-black-hole.svg?v=4" alt="VENT black hole artwork" loading="lazy" style="object-fit:contain;object-position:center;width:100%;height:100%;display:block;background:#080b12;">
                     </a>
                 </article>
             `
