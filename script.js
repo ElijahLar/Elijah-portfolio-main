@@ -3,6 +3,36 @@ document.addEventListener("DOMContentLoaded", () => {
     const sections = Array.from(document.querySelectorAll("main section[id], footer[id]"));
     const mailButton = document.querySelector("[data-copy-email]");
 
+    // Add Vent to Selected Work while keeping the existing portfolio markup untouched.
+    const selectedWork = document.querySelector(".card-stack");
+    const repQuestCard = selectedWork?.querySelector(":scope > .work-card");
+
+    if (selectedWork && repQuestCard && !document.querySelector("[data-vent-work]")) {
+        repQuestCard.insertAdjacentHTML(
+            "afterend",
+            `
+                <article class="work-card" data-vent-work>
+                    <div class="work-card__text">
+                        <div>
+                            <h3>Vent</h3>
+                            <p>
+                                A deliberately temporary web experience where a thought is typed, pulled into a black hole,
+                                and gone — with no journal history, account, or AI response waiting on the other side.
+                            </p>
+                        </div>
+                        <div class="work-card__meta">
+                            <span>Independent product, live on the web</span>
+                            <a href="vent-case.html">View Work</a>
+                        </div>
+                    </div>
+                    <a class="work-card__media" href="vent-case.html" aria-label="Open Vent case study" style="background:#0c0e13;">
+                        <img src="https://ventinto.space/og-image.png" alt="Vent interface with a glowing black hole at the center" loading="lazy" style="object-fit:cover;">
+                    </a>
+                </article>
+            `
+        );
+    }
+
     const setCurrentLink = (id) => {
         navLinks.forEach((link) => {
             const isCurrent = link.getAttribute("href") === `#${id}`;
