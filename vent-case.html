@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="VENT is a deliberately temporary web experience for getting a thought out of your head: type it, send it into a black hole, and it disappears without history or analysis.">
+    <meta name="description" content="VENT is a temporary web experience for getting a thought out of your head: type it, send it into a black hole, and it disappears without history or analysis.">
     <meta name="theme-color" content="#11131a">
     <link rel="canonical" href="https://elijahlarsson.com/vent-case.html">
     <meta property="og:title" content="VENT | Elijah Oliver Larsson">
-    <meta property="og:description" content="An interaction design case about restraint, motion, privacy, and turning one small action into a satisfying ritual of letting go.">
+    <meta property="og:description" content="An interaction design project about making one small action feel satisfying, private, and final.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://elijahlarsson.com/vent-case.html">
     <meta property="og:image" content="https://elijahlarsson.com/vent-black-hole.svg?v=4">
@@ -58,7 +58,7 @@
                     <h1 id="project-title">VENT</h1>
                     <p class="project-type">A place for thoughts you do not want to keep</p>
                     <p class="project-intro">
-                        I designed and built VENT around one deliberately temporary interaction: write something, send it into a black hole, and watch it disappear. There is no journal history, no AI reply, and no account waiting on the other side.
+                        I designed and built VENT around a simple interaction: write something, send it into a black hole, and watch it disappear. There is no history, no AI response, and no account. Once something is sent, it is gone.
                     </p>
                     <div class="hero-actions">
                         <a class="button button--primary" href="https://ventinto.space" target="_blank" rel="noopener noreferrer">Open VENT</a>
@@ -109,15 +109,15 @@
         <section class="case-section rationale-section" aria-labelledby="why-title">
             <div class="rationale-intro">
                 <p class="section-kicker">Why I built it</p>
-                <h2 id="why-title">Not every thought needs to become a record.</h2>
+                <h2 id="why-title">Sometimes writing something down is enough.</h2>
                 <p>
-                    I often feel better after saying something out loud or writing it down, even when nobody responds. The useful part is getting the thought out of my head for a moment. Most digital tools turn that moment into something persistent: a journal entry, a chat history, a mood log, or another thing to revisit.
+                    I often feel better after saying something out loud or writing it down, even when nobody responds. Sometimes the useful part is simply getting the thought out of my head. Most digital tools keep whatever you write and turn it into a journal entry, chat history, mood log, or something else you can return to later. I wanted to explore the opposite: a place where writing something could be temporary.
                 </p>
             </div>
             <div class="rationale-constraint">
-                <h3>The design constraint</h3>
+                <h3>The main constraint</h3>
                 <p>
-                    VENT had to feel complete without storing anything. The interaction needed enough weight and finality that pressing send felt different from simply clearing a text field.
+                    VENT had to feel complete without saving anything. Simply clearing a text field felt too insignificant, so the send interaction needed enough movement and finality to make it feel like the thought had actually gone somewhere.
                 </p>
                 <div class="constraint-line">
                     <span>Input</span><span>→</span><span>Release</span><span>→</span><span>Gone</span>
@@ -128,9 +128,9 @@
         <section class="case-section interaction-section" id="interaction" aria-labelledby="interaction-title">
             <header class="section-intro">
                 <p class="section-kicker">The core interaction</p>
-                <h2 id="interaction-title">The void is the product.</h2>
+                <h2 id="interaction-title">Write it, send it, move on.</h2>
                 <p>
-                    The interface is intentionally sparse because nearly all of the experience is concentrated in the transition between typing and letting go.
+                    The interface is deliberately minimal. Most of the experience happens in the few seconds between writing something and watching it disappear.
                 </p>
             </header>
 
@@ -141,8 +141,8 @@
                         <span>I am so tired of this.</span>
                         <span class="step-caret"></span>
                     </div>
-                    <h3>Type without framing it</h3>
-                    <p>The input does not ask for a mood, category, explanation, or goal. The user can write exactly what they need to write.</p>
+                    <h3>Write whatever you need to</h3>
+                    <p>The input does not ask for a mood, category, explanation, or goal. You just write whatever you want to get out of your head.</p>
                 </article>
 
                 <article class="interaction-step">
@@ -151,8 +151,8 @@
                         <span class="flying-copy">I am so tired of this.</span>
                         <span class="mini-void"></span>
                     </div>
-                    <h3>Make sending physical</h3>
-                    <p>The text detaches from the input, curves toward the void, accelerates near the event horizon, stretches, compresses, and disappears.</p>
+                    <h3>Send it into the void</h3>
+                    <p>The text leaves the input and moves toward the black hole. It accelerates as it gets closer, distorts around the edge, and disappears.</p>
                 </article>
 
                 <article class="interaction-step">
@@ -160,8 +160,8 @@
                     <div class="step-visual step-visual--gone" aria-hidden="true">
                         <span class="mini-void mini-void--pulse"></span>
                     </div>
-                    <h3>Return to quiet</h3>
-                    <p>The halo and particles react briefly, then the screen settles back to its idle state. There is no history to pull the user back into the thought.</p>
+                    <h3>Reset</h3>
+                    <p>The black hole reacts briefly before returning to its idle state. There is no confirmation screen or history. The interface simply becomes ready for the next thought.</p>
                 </article>
             </div>
         </section>
@@ -169,41 +169,41 @@
         <section class="case-section decisions-section" aria-labelledby="decisions-title">
             <header class="section-intro section-intro--wide">
                 <p class="section-kicker">Design decisions</p>
-                <h2 id="decisions-title">Restraint became the feature set.</h2>
+                <h2 id="decisions-title">What I left out</h2>
                 <p>
-                    The easiest way to weaken VENT was to make it more useful in conventional product terms. I kept asking whether a feature supported the act of letting go or quietly turned the app into something else.
+                    A lot of obvious product features made VENT less interesting. Whenever I considered adding something, I asked whether it supported the main interaction or turned VENT into a different kind of product.
                 </p>
             </header>
 
             <div class="decision-list">
                 <article>
                     <h3>No history</h3>
-                    <p>A sent VENT is not added to a feed, timeline, archive, or review screen. The absence of retrieval is part of the interaction.</p>
+                    <p>Sent messages are not added to a feed, timeline, archive, or review screen. Being unable to retrieve them is intentional.</p>
                 </article>
                 <article>
                     <h3>No AI response</h3>
-                    <p>Advice, interpretation, and reassurance would change the experience from monologue to conversation. VENT intentionally does not answer back.</p>
+                    <p>VENT does not give advice, reassurance, or interpretation. Adding a response would turn the interaction into a conversation, which is not what I wanted the product to be.</p>
                 </article>
                 <article>
                     <h3>No emotional scoring</h3>
-                    <p>There are no streaks, mood ratings, dashboards, or progress systems. A difficult moment does not become another metric to manage.</p>
+                    <p>There are no streaks, mood ratings, dashboards, or progress systems. VENT is not meant to measure how someone feels.</p>
                 </article>
                 <article>
-                    <h3>No interruption</h3>
-                    <p>Support links and information live away from the main interaction. Nothing competes with the input and the void.</p>
+                    <h3>No interruptions</h3>
+                    <p>Information and support links are kept outside the main interaction so the screen can stay focused on the input and the black hole.</p>
                 </article>
             </div>
         </section>
 
         <section class="case-section motion-section" aria-labelledby="motion-title">
             <div class="motion-copy">
-                <p class="section-kicker">Motion as meaning</p>
-                <h2 id="motion-title">A fade would have been technically enough. It was not experientially enough.</h2>
+                <p class="section-kicker">Making send feel physical</p>
+                <h2 id="motion-title">A simple fade felt too weak.</h2>
                 <p>
-                    The animation had to communicate increasing gravitational pull. I tuned the movement to begin calmly and accelerate sharply near the void, with subtle distortion close to the event horizon and a crisp disappearance rather than a slow dissolve.
+                    A fade technically communicated that the text was gone, but it did not feel particularly satisfying. I experimented with the timing and movement so the text starts slowly and accelerates as it approaches the black hole. Close to the centre it stretches and distorts slightly before disappearing.
                 </p>
                 <p>
-                    The black hole itself is drawn on Canvas with a dark event horizon, cool lensing halo, sparse orbiting particles, and a short impact ripple. Idle motion stays quiet; the scene only becomes more active when the user sends something.
+                    The black hole itself is drawn using Canvas. It has a dark event horizon, a subtle halo, orbiting particles, and a short reaction when something enters it. When nothing is happening, the animation stays deliberately quiet.
                 </p>
             </div>
 
@@ -219,15 +219,15 @@
         <section class="case-section privacy-section" aria-labelledby="privacy-title">
             <div class="privacy-card">
                 <div>
-                    <p class="section-kicker">Privacy as product behavior</p>
-                    <h2 id="privacy-title">The interface promises disappearance, so the implementation should behave the same way.</h2>
+                    <p class="section-kicker">Privacy</p>
+                    <h2 id="privacy-title">If the interface says it disappears, the implementation should follow through.</h2>
                 </div>
                 <div class="privacy-copy">
                     <p>
-                        VENT does not intentionally upload or persist VENT content. Draft text lives in browser memory while the user is typing. On send, the text moves into temporary animation state and is removed once the animation finishes.
+                        VENT does not intentionally upload or store the text a user enters. While typing, the draft exists in browser memory. When it is sent, it temporarily becomes part of the animation and is removed once the animation finishes.
                     </p>
                     <p>
-                        I also avoided storing VENT content in localStorage, sessionStorage, IndexedDB, cookies, analytics, or a backend. The privacy copy stays precise rather than claiming control over things outside the app itself, such as a user's keyboard, browser extensions, or operating system.
+                        VENT content is not written to localStorage, sessionStorage, IndexedDB, cookies, analytics, or a backend. I have also tried to keep the privacy wording specific: VENT can control what the application itself stores, but not external software such as keyboards, browser extensions, or the operating system.
                     </p>
                 </div>
             </div>
@@ -236,9 +236,9 @@
         <section class="case-section technical-section" aria-labelledby="technical-title">
             <header class="section-intro">
                 <p class="section-kicker">Build and delivery</p>
-                <h2 id="technical-title">Small product, real implementation.</h2>
+                <h2 id="technical-title">A small product did not need a big stack.</h2>
                 <p>
-                    I kept the architecture intentionally light. The product does not need a database or account system, so there is no backend in the core VENT flow.
+                    I kept the technical setup small because the product itself is small. There is no need for accounts, a database, or a backend in the main VENT interaction.
                 </p>
             </header>
 
@@ -255,12 +255,12 @@
         <section class="case-section reflection-section" aria-labelledby="reflection-title">
             <div class="reflection-copy">
                 <p class="section-kicker">Reflection</p>
-                <h2 id="reflection-title">The useful lesson was knowing when to stop.</h2>
+                <h2 id="reflection-title">Keeping it small was the point.</h2>
                 <p>
-                    VENT became a useful exercise in designing around one emotional moment instead of a long feature list. The difficult work was not adding functionality; it was making a tiny interaction feel deliberate enough that the product did not need anything around it.
+                    VENT was a useful exercise in seeing how little a product actually needs. Most of the work went into the interaction itself: the timing, movement, feedback, and deciding what not to add.
                 </p>
                 <p>
-                    If real use shows a recurring need, I can revisit the product. Until then, keeping it small is part of the design rather than a missing roadmap.
+                    Normally, adding functionality makes a product feel more complete. With VENT, most additions moved it further away from the original idea. For now, I think keeping it small is the right decision. If people actually use it and recurring needs start to appear, those would be a better reason to expand it than adding features just because I can.
                 </p>
             </div>
 
