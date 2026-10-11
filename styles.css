@@ -1266,3 +1266,41 @@ button:focus-visible {
         animation: none !important;
     }
 }
+
+
+/* -------------------------------------------------------------
+   Unfinished Thoughts: a small editorial extension to the portfolio
+   ------------------------------------------------------------- */
+.floating-nav-wrap { width: min(calc(100% - 1.5rem), 520px); }
+.thoughts-preview { padding-top: 1.4rem; }
+.thoughts-preview .section-heading { margin-bottom: 2rem; }
+.thoughts-preview__intro { display:flex;justify-content:space-between;align-items:flex-end;gap:2.5rem;margin-bottom:2rem; }
+.thoughts-preview__intro > div { max-width:620px; }
+.thoughts-eyebrow { display:inline-flex;align-items:center;gap:.6rem;color:#797979;font-family:"Outfit",sans-serif;font-size:.69rem;letter-spacing:.16em;font-weight:600; }
+.thoughts-spark { color:#191919;font-size:1.25rem;line-height:1; }
+.thoughts-preview__intro p {margin:1.1rem 0 0;max-width:630px;color:#505050;font-size:clamp(1.05rem,2vw,1.38rem);font-weight:300;line-height:1.55;letter-spacing:-.018em; }
+.thoughts-view-all {white-space:nowrap;display:inline-flex;align-items:center;gap:1rem;border-bottom:1px solid #111;padding-bottom:.45rem;font-family:"Outfit",sans-serif;font-size:.87rem;transition:gap .2s ease;}
+.thoughts-view-all:hover {gap:1.45rem;}
+.thoughts-card-grid {display:grid;grid-template-columns:1.16fr 1fr 1fr;gap:14px;}
+.thought-card { min-width:0;min-height:340px;display:flex;flex-direction:column;justify-content:space-between;padding:1.45rem;background:#f5f5f2;border:1px solid #e2e2df;transition:transform .25s ease,box-shadow .25s ease,background .25s ease; }
+.thought-card:hover { transform:translateY(-5px);box-shadow:0 14px 34px rgba(17,17,17,.08); }
+.thought-card--feature { background:#151515;border-color:#151515;color:#f8f8f5;}
+.thought-card__top,.thought-card__bottom {display:flex;align-items:center;justify-content:space-between;gap:1rem;font-family:"Outfit",sans-serif;font-size:.63rem;letter-spacing:.12em;color:#757575;}
+.thought-card--feature .thought-card__top,.thought-card--feature .thought-card__bottom {color:#aaa;}
+.thought-card__mark {font-size:1.4rem;letter-spacing:0;line-height:1;color:#2a2a2a;transition:transform .2s ease;}
+.thought-card--feature .thought-card__mark {color:#fff;}
+.thought-card:hover .thought-card__mark {transform:translate(3px,-3px);}
+.thought-card__body {display:flex;flex-direction:column;gap:.9rem;margin:2.3rem 0;}
+.thought-card__topic {font-family:"Outfit",sans-serif;font-size:.66rem;letter-spacing:.14em;color:#767676;font-weight:600;}
+.thought-card--feature .thought-card__topic {color:#bfbfbf;}
+.thought-card__title {font-family:"Outfit",sans-serif;font-weight:400;letter-spacing:-.055em;line-height:1.14;font-size:clamp(1.3rem,2vw,1.85rem);}
+.thought-card--feature .thought-card__title {font-size:clamp(1.55rem,2.5vw,2.25rem);font-weight:300;}
+.thought-card__summary {color:#646464;font-size:.83rem;line-height:1.7;}
+.thought-card--feature .thought-card__summary {color:#b8b8b8;}
+.thought-card__bottom {border-top:1px solid #dddcd7;padding-top:1rem;font-size:.59rem;}
+.thought-card--feature .thought-card__bottom {border-color:#494949;}
+.thoughts-preview__footer {display:flex;align-items:center;justify-content:space-between;gap:1rem;margin-top:1.2rem;color:#858585;font-family:"Outfit",sans-serif;font-size:.7rem;letter-spacing:.07em;}
+.thoughts-preview__footer a {color:#222;font-weight:500;}
+.thoughts-preview__footer a:hover {text-decoration:underline;text-underline-offset:.25em;}
+@media(max-width:900px) { .thoughts-card-grid {grid-template-columns:repeat(2,minmax(0,1fr));} .thought-card--feature {grid-column:span 2;min-height:280px;} .thought-card--feature .thought-card__body {max-width:650px;} }
+@media(max-width:640px) { .floating-nav-wrap {width:min(calc(100% - .6rem),520px);} .floating-nav {gap:.42rem;padding-inline:.45rem;} .floating-nav a {font-size:clamp(.65rem,2.45vw,.83rem);} .nav-home {width:18px;} .nav-home img {width:16px;} .thoughts-preview__intro {display:block;} .thoughts-view-all {margin-top:1.5rem;} .thoughts-card-grid {grid-template-columns:1fr;} .thought-card,.thought-card--feature {grid-column:auto;min-height:300px;} .thought-card__body {margin:1.8rem 0;} .thoughts-preview__footer {font-size:.59rem;} }
