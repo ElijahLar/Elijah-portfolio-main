@@ -38,6 +38,7 @@
           </div>
         </div>
         <div class="hero__art">
+          <img class="real-shot hero__shot" src="passiton-assets/passiton-home.webp" alt="Passiton homepage showing the Swedish headline Köp mer. Betala mindre. and a browsable gift card marketplace" onload="this.parentElement.classList.add('has-shot')" loading="eager" fetchpriority="high">
           <!-- IMAGE SLOT 01: Replace the editorial interface illustration with an approved Passiton marketplace screenshot. -->
           <div class="browser" role="img" aria-label="Editorial illustration based on the Passiton marketplace layout, including filters and gift card listings">
             <div class="browser__chrome"><span></span><span></span><span></span><small>passiton.nu</small></div>
@@ -54,7 +55,7 @@
               </div>
             </div>
           </div>
-          <span class="hero__art-note">INTERFACE STUDY / BASED ON THE MVP</span>
+          <span class="hero__art-note">PASSITON / LIVE MVP SCREEN</span>
         </div>
       </div>
       <div class="hero__index wrap"><span>01 / PRODUCT CASE</span><span>SCROLL TO EXPLORE &nbsp; ↓</span></div>
@@ -106,6 +107,10 @@
           </div>
           <!-- IMAGE SLOT 02: Replace the pricing study with marketplace / product-detail screenshots. -->
           <figure class="study study--price">
+            <div class="shot-stack">
+              <img class="real-shot" src="passiton-assets/passiton-marketplace.webp" alt="Passiton marketplace showing category filters and nine example gift card listings" loading="lazy" onload="this.closest('.study').classList.add('has-shot')">
+              <img class="real-shot" src="passiton-assets/passiton-product.webp" alt="IKEA gift card detail page with visible price, face value, 12 percent saving, expiry information and demo notice" loading="lazy">
+            </div>
             <span class="study__eyebrow">PRICE HIERARCHY / EXAMPLE LISTING</span>
             <div class="price-card">
               <div class="price-card__art"><span>IKEA</span><small>GIFT CARD</small></div>
@@ -128,6 +133,7 @@
           </div>
           <!-- IMAGE SLOT 03: Replace with the sell form and live preview screenshots. -->
           <figure class="study study--payout">
+            <img class="real-shot" src="passiton-assets/passiton-sell.webp" alt="Passiton selling form showing brand and price inputs beside a live example payout of 855 kr after a 5 percent fee" loading="lazy" onload="this.closest('.study').classList.add('has-shot')">
             <span class="study__eyebrow">SELLER PREVIEW / EXAMPLE</span>
             <div class="payout">
               <div class="payout__card"><span>DIN ANNONS</span><strong>IKEA</strong><small>Presentkort</small></div>
@@ -151,6 +157,7 @@
           </div>
           <!-- IMAGE SLOT 04: Replace with the verification code, upload and pending-state screenshots. -->
           <figure class="study study--proof">
+            <img class="real-shot" src="passiton-assets/passiton-verification.webp" alt="Photo-proof upload step showing a short-lived seller challenge code and countdown timer" loading="lazy" onload="this.closest('.study').classList.add('has-shot')">
             <span class="study__eyebrow">THE SELLER'S PROOF JOURNEY</span>
             <ol class="step-track">
               <li><span>01</span><div><strong>Generate</strong><small>A time-limited, server-issued code</small></div></li>
@@ -158,7 +165,7 @@
               <li><span>03</span><div><strong>Submit privately</strong><small>Image and card code are kept separate</small></div></li>
               <li><span>04</span><div><strong>Wait for review</strong><small>Not visible in the marketplace until approved</small></div></li>
             </ol>
-            <figcaption>A review step adds friction. It also gives the waiting state a reason to exist.</figcaption>
+            <figcaption>The code expires after 30 minutes. A human review of this evidence is narrower than proof of the card’s actual balance or validity.</figcaption>
           </figure>
         </article>
 
@@ -171,6 +178,7 @@
           </div>
           <!-- IMAGE SLOT 05: Replace with the buyer order and dispute screens. -->
           <figure class="study study--flow">
+            <img class="real-shot" src="passiton-assets/passiton-disputes-empty.webp" alt="Order and disputes dashboard in the empty state, showing no demo orders yet" loading="lazy" onload="this.closest('.study').classList.add('has-shot')">
             <span class="study__eyebrow">DEMO ORDER / STATE MODEL</span>
             <div class="flow-state"><small>START</small><strong>Demo order created</strong><span>48-hour review window</span></div>
             <div class="flow-split" aria-hidden="true"><span></span><span></span></div>
@@ -178,7 +186,7 @@
               <div><small>PATH A</small><strong>Buyer confirms</strong><span>Simulated completion</span></div>
               <div><small>PATH B</small><strong>Problem reported</strong><span>Private discussion → escalation</span></div>
             </div>
-            <figcaption>The resolution flow is a prototype of the operational logic, not a payment service.</figcaption>
+            <figcaption>Shown here: the empty state of the disputes dashboard. The dispute and resolution mechanics exist in the prototype, but this screenshot does not show a completed case.</figcaption>
           </figure>
         </article>
       </div>
