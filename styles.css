@@ -1304,3 +1304,22 @@ button:focus-visible {
 .thoughts-preview__footer a:hover {text-decoration:underline;text-underline-offset:.25em;}
 @media(max-width:900px) { .thoughts-card-grid {grid-template-columns:repeat(2,minmax(0,1fr));} .thought-card--feature {grid-column:span 2;min-height:280px;} .thought-card--feature .thought-card__body {max-width:650px;} }
 @media(max-width:640px) { .floating-nav-wrap {width:min(calc(100% - .6rem),520px);} .floating-nav {gap:.42rem;padding-inline:.45rem;} .floating-nav a {font-size:clamp(.65rem,2.45vw,.83rem);} .nav-home {width:18px;} .nav-home img {width:16px;} .thoughts-preview__intro {display:block;} .thoughts-view-all {margin-top:1.5rem;} .thoughts-card-grid {grid-template-columns:1fr;} .thought-card,.thought-card--feature {grid-column:auto;min-height:300px;} .thought-card__body {margin:1.8rem 0;} .thoughts-preview__footer {font-size:.59rem;} }
+
+
+/* Passiton: HTML-built marketplace cover, to be replaced with final project imagery. */
+.work-card__media--passiton{background:#e1ebe3}
+.passiton-thumb{height:100%;display:flex;flex-direction:column;justify-content:flex-start;overflow:hidden;padding:5.5% 6%;background:#edf3ec;color:#17392d;font-family:"Figtree",sans-serif}
+.passiton-thumb__top{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:8px;font-size:clamp(7px,.8vw,11px);padding-bottom:5%;border-bottom:1px solid #c9d9cd}
+.passiton-thumb__top strong{font-family:"Outfit",sans-serif;font-size:clamp(17px,2.2vw,30px);letter-spacing:-.055em}
+.passiton-thumb__top span:last-child{text-align:right}
+.passiton-thumb__intro{display:grid;gap:8px;padding:7% 0 5%;border-bottom:1px solid #c9d9cd}
+.passiton-thumb__intro strong{font-family:"Outfit",sans-serif;font-size:clamp(27px,4.2vw,66px);line-height:.95;letter-spacing:-.065em;font-weight:600}
+.passiton-thumb__intro span{font-size:clamp(8px,.94vw,13px);color:#607869}
+.passiton-thumb__catalog{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:3.5%;padding-top:5%}
+.passiton-thumb__item{display:grid;gap:8px;font-size:clamp(7px,.77vw,11px);font-weight:600;white-space:nowrap}
+.passiton-thumb__art{display:flex;align-items:center;justify-content:center;aspect-ratio:1.13;font:600 clamp(15px,2.2vw,32px) "Outfit",sans-serif;letter-spacing:-.045em}
+.passiton-thumb__art--one{color:#1150b7;background:#f1d836}
+.passiton-thumb__art--two{color:#fff;background:#252726}
+.passiton-thumb__art--three{color:#30302c;background:#d8ded7}
+.passiton-thumb__footer{margin-top:auto;padding-top:5%;font-family:"Outfit",sans-serif;font-size:clamp(8px,.83vw,11px);letter-spacing:.14em;color:#64816d}
+@media(max-width:660px){.passiton-thumb{padding:6%}.passiton-thumb__intro strong{font-size:clamp(28px,8vw,48px)}.passiton-thumb__top strong{font-size:clamp(18px,4.5vw,28px)}.passiton-thumb__art{font-size:clamp(15px,4.2vw,27px)}.passiton-thumb__item{font-size:clamp(7px,2vw,10px)}}
