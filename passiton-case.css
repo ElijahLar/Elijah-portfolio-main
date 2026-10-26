@@ -55,3 +55,19 @@ h1,h2,h3,h4{font-family:'Outfit',Arial,sans-serif;font-weight:500}
 @media(max-width:740px){.wrap{width:min(calc(100% - 36px),var(--max))}.topbar{min-height:62px;padding-inline:18px}.topbar__descriptor{display:none}.topbar__back{font-size:.78rem}.hero__inner{display:block;padding-block:76px 70px;min-height:0}.hero__copy{max-width:620px}.hero h1{font-size:clamp(4.1rem,16vw,7rem)}.hero__statement{font-size:clamp(1.75rem,7vw,2.6rem)}.hero__intro{font-size:1rem}.hero__art{max-width:580px;margin:65px auto 15px;transform:rotate(-1deg)}.hero__index{font-size:.55rem}.browser__catalog{margin-top:15px}.browser__headline{font-size:clamp(2rem,6vw,3rem)}.facts__grid{gap:24px;padding-block:25px}.facts strong{font-size:.85rem}.two-col,.build-grid,.closing-grid,.principle,.section-heading{display:block}.section__label{margin-bottom:32px}.principle blockquote{font-size:clamp(3rem,12vw,5.5rem)}.section{padding:82px 0}.section-heading{margin-bottom:35px}.section-heading h2{font-size:clamp(2.5rem,9vw,4rem)}.story,.story--reverse{display:flex;flex-direction:column;align-items:stretch;gap:30px;padding:58px 0}.story--reverse .story__text,.story--reverse .study{order:initial}.story__text{max-width:620px}.study{min-height:400px}.constraint-list>div{grid-template-columns:1fr;gap:5px}.section--closing{padding-block:85px}}
 @media(max-width:430px){.browser__grid{gap:6px}.browser__page{padding:0 10px 14px}.browser__nav{font-size:.48rem}.browser__nav strong{font-size:.9rem}.browser__headline{font-size:2.1rem}.browser__card-art{font-size:.76rem}.browser__card b{font-size:.46rem}.browser__card span{font-size:.45rem}.study{padding:20px;min-height:0}.price-card,.payout{padding:15px}.price-card__values strong{font-size:1.4rem}.flow-state{width:95%}.flow-branches{gap:8px}.flow-branches>div{padding:10px 5px}.flow-branches strong{font-size:.95rem}.facts__grid{grid-template-columns:1fr 1fr}.facts__grid>div{padding-left:12px}.closing-actions{align-items:flex-start;flex-direction:column;gap:20px}.hero__actions{align-items:flex-start;flex-direction:column;gap:20px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.button{transition:none}}
+
+/* Real Passiton screenshots; existing interface studies remain as fallbacks until assets are uploaded. */
+.real-shot{display:none;width:100%;height:auto;object-fit:contain;border:1px solid #e0e7df;background:#fff}
+.hero__art.has-shot{transform:rotate(-1.5deg)}
+.hero__art.has-shot .hero__shot{display:block;box-shadow:0 35px 80px rgba(0,0,0,.28)}
+.hero__art.has-shot .browser{display:none}
+.study.has-shot{min-height:0}
+.study.has-shot>.real-shot,.study.has-shot>.shot-stack{display:block}
+.study.has-shot>.study__eyebrow{margin-top:18px}
+.study.has-shot>.price-card,.study.has-shot>.payout,.study.has-shot>.step-track,.study.has-shot>.flow-state,.study.has-shot>.flow-split,.study.has-shot>.flow-branches{display:none}
+.shot-stack{display:none}
+.shot-stack .real-shot{display:block;margin-bottom:13px}
+.study.has-shot>.real-shot{display:block}
+.study--price.has-shot .shot-stack{display:block}
+.study--price.has-shot .shot-stack img+img{margin-top:14px}
+@media(max-width:740px){.hero__art.has-shot{transform:none}}
