@@ -1,0 +1,39 @@
+name: Copy Passiton screenshots into portfolio
+
+on:
+  push:
+    paths:
+      - .github/workflows/copy-passiton-screenshots.yml
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  copy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout portfolio
+        uses: actions/checkout@v4
+      - name: Download existing screenshots from Passiton
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p passiton-assets
+          for name in passiton-home passiton-marketplace passiton-product passiton-sell passiton-verification passiton-disputes-empty; do
+            curl --fail --location --retry 3 --silent --show-error \
+              "https://raw.githubusercontent.com/ElijahLar/Passiton/main/${name}.webp" \
+              --output "passiton-assets/${name}.webp"
+            test -s "passiton-assets/${name}.webp"
+            file "passiton-assets/${name}.webp" | grep -q 'Web/P image'
+          done
+      - name: Commit screenshots to portfolio
+        shell: bash
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add passiton-assets/*.webp
+          if ! git diff --cached --quiet; then
+            git commit -m "Copy Passiton screenshots from source repository"
+            git push
+          fi
