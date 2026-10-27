@@ -56,18 +56,86 @@ h1,h2,h3,h4{font-family:'Outfit',Arial,sans-serif;font-weight:500}
 @media(max-width:430px){.browser__grid{gap:6px}.browser__page{padding:0 10px 14px}.browser__nav{font-size:.48rem}.browser__nav strong{font-size:.9rem}.browser__headline{font-size:2.1rem}.browser__card-art{font-size:.76rem}.browser__card b{font-size:.46rem}.browser__card span{font-size:.45rem}.study{padding:20px;min-height:0}.price-card,.payout{padding:15px}.price-card__values strong{font-size:1.4rem}.flow-state{width:95%}.flow-branches{gap:8px}.flow-branches>div{padding:10px 5px}.flow-branches strong{font-size:.95rem}.facts__grid{grid-template-columns:1fr 1fr}.facts__grid>div{padding-left:12px}.closing-actions{align-items:flex-start;flex-direction:column;gap:20px}.hero__actions{align-items:flex-start;flex-direction:column;gap:20px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.button{transition:none}}
 
-/* Real Passiton screenshots; existing interface studies remain as fallbacks until assets are uploaded. */
-.real-shot{display:none;width:100%;height:auto;object-fit:contain;border:1px solid #e0e7df;background:#fff}
-.hero__art.has-shot{transform:rotate(-1.5deg)}
-.hero__art.has-shot .hero__shot{display:block;box-shadow:0 35px 80px rgba(0,0,0,.28)}
-.hero__art.has-shot .browser{display:none}
-.study.has-shot{min-height:0}
-.study.has-shot>.real-shot,.study.has-shot>.shot-stack{display:block}
-.study.has-shot>.study__eyebrow{margin-top:18px}
-.study.has-shot>.price-card,.study.has-shot>.payout,.study.has-shot>.step-track,.study.has-shot>.flow-state,.study.has-shot>.flow-split,.study.has-shot>.flow-branches{display:none}
-.shot-stack{display:none}
-.shot-stack .real-shot{display:block;margin-bottom:13px}
-.study.has-shot>.real-shot{display:block}
-.study--price.has-shot .shot-stack{display:block}
-.study--price.has-shot .shot-stack img+img{margin-top:14px}
-@media(max-width:740px){.hero__art.has-shot{transform:none}}
+/* Real product screenshots, rendered directly instead of waiting for an image load event. */
+.hero__shot {
+  display:block;
+  width:100%;
+  height:auto;
+  box-shadow:0 35px 80px rgba(0,0,0,.28);
+  border:1px solid rgba(255,255,255,.2);
+  background:#fff;
+}
+.real-shot {
+  display:block;
+  width:100%;
+  height:auto;
+  border:1px solid #e0e7df;
+  background:#fff;
+}
+.study {
+  min-height:0;
+  justify-content:flex-start;
+  gap:0;
+}
+.study__eyebrow {
+  order:0;
+  margin:0 0 19px;
+}
+.study>.real-shot,
+.study>.shot-stack {
+  order:1;
+}
+.shot-stack {
+  display:grid;
+  gap:16px;
+}
+.shot-stack .real-shot {
+  display:block;
+}
+.shot-link {
+  display:block;
+  position:relative;
+  overflow:hidden;
+  background:white;
+  box-shadow:0 16px 34px rgba(25,60,39,.09);
+  transition:box-shadow .2s ease,transform .2s ease;
+}
+.shot-link:hover {
+  box-shadow:0 22px 48px rgba(25,60,39,.15);
+  transform:translateY(-2px);
+}
+.shot-link:focus-visible {
+  outline:3px solid #418765;
+  outline-offset:4px;
+}
+.shot-link:after {
+  content:"↗";
+  position:absolute;
+  bottom:12px;
+  right:12px;
+  display:grid;
+  place-items:center;
+  width:34px;
+  height:34px;
+  background:rgba(255,255,255,.95);
+  color:#164831;
+  font-size:1.13rem;
+  box-shadow:0 2px 14px rgba(0,0,0,.08);
+  transition:transform .2s ease;
+}
+.shot-link:hover:after {transform:translate(2px,-2px)}
+.study figcaption {
+  order:2;
+  margin-top:18px;
+  font-size:.81rem;
+  color:#587063;
+  max-width:none;
+}
+@media(max-width:740px) {
+  .hero__art {transform:none}
+  .study {padding:18px}
+  .shot-stack {gap:12px}
+}
+@media(prefers-reduced-motion:reduce) {
+  .shot-link,.shot-link:after {transition:none}
+}
