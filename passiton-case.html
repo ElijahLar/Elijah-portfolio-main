@@ -38,23 +38,7 @@
           </div>
         </div>
         <div class="hero__art">
-          <img class="real-shot hero__shot" src="passiton-assets/passiton-home.webp" alt="Passiton homepage showing the Swedish headline Köp mer. Betala mindre. and a browsable gift card marketplace" onload="this.parentElement.classList.add('has-shot')" loading="eager" fetchpriority="high">
-          <!-- IMAGE SLOT 01: Replace the editorial interface illustration with an approved Passiton marketplace screenshot. -->
-          <div class="browser" role="img" aria-label="Editorial illustration based on the Passiton marketplace layout, including filters and gift card listings">
-            <div class="browser__chrome"><span></span><span></span><span></span><small>passiton.nu</small></div>
-            <div class="browser__page">
-              <div class="browser__nav"><span>Köp &nbsp;&nbsp; Sälj &nbsp;&nbsp; Så fungerar det</span><strong>Passiton</strong><span class="browser__icons">⌕ &nbsp; ♡ &nbsp; ◧</span></div>
-              <div class="browser__headline">Köp mer.<br>Betala mindre.<small>Köp och sälj presentkort på ett enkelt sätt.</small></div>
-              <div class="browser__catalog">
-                <div class="browser__filters"><b>Filtrera</b><span>⌕ &nbsp; Sök varumärke</span><span>☐ &nbsp; Alla</span><span>☐ &nbsp; Mode</span><span>☐ &nbsp; Hem &amp; inredning</span><span>☐ &nbsp; Elektronik</span></div>
-                <div class="browser__grid">
-                  <div class="browser__card"><div class="browser__card-art browser__card-art--blue">IKEA</div><b>IKEA presentkort</b><span><s>1 000 kr</s> &nbsp; 880 kr</span></div>
-                  <div class="browser__card"><div class="browser__card-art browser__card-art--ink">Zalando</div><b>Zalando presentkort</b><span><s>1 000 kr</s> &nbsp; 850 kr</span></div>
-                  <div class="browser__card"><div class="browser__card-art browser__card-art--rose">H&amp;M</div><b>H&amp;M presentkort</b><span><s>500 kr</s> &nbsp; 425 kr</span></div>
-                </div>
-              </div>
-            </div>
-          </div>
+          <img class="hero__shot" src="passiton-assets/passiton-home.webp" alt="Passiton marketplace homepage, with gift cards available for browsing and filtering" fetchpriority="high" width="1602" height="956">
           <span class="hero__art-note">PASSITON / LIVE MVP SCREEN</span>
         </div>
       </div>
@@ -107,20 +91,12 @@
           </div>
           <!-- IMAGE SLOT 02: Replace the pricing study with marketplace / product-detail screenshots. -->
           <figure class="study study--price">
+            <span class="study__eyebrow">MARKETPLACE / PRODUCT DETAIL</span>
             <div class="shot-stack">
-              <img class="real-shot" src="passiton-assets/passiton-marketplace.webp" alt="Passiton marketplace showing category filters and nine example gift card listings" loading="lazy" onload="this.closest('.study').classList.add('has-shot')">
-              <img class="real-shot" src="passiton-assets/passiton-product.webp" alt="IKEA gift card detail page with visible price, face value, 12 percent saving, expiry information and demo notice" loading="lazy">
+              <img class="real-shot" src="passiton-assets/passiton-marketplace.webp" alt="Marketplace view with filters, category selection and discounted gift card listings" loading="lazy" decoding="async">
+              <img class="real-shot" src="passiton-assets/passiton-product.webp" alt="IKEA gift card detail view with face value, asking price, savings, and the demo disclosure" loading="lazy" decoding="async">
             </div>
-            <span class="study__eyebrow">PRICE HIERARCHY / EXAMPLE LISTING</span>
-            <div class="price-card">
-              <div class="price-card__art"><span>IKEA</span><small>GIFT CARD</small></div>
-              <div class="price-card__meta"><span>Digital gift card</span><span class="verified">PHOTO REVIEWED</span></div>
-              <h4>IKEA presentkort</h4>
-              <div class="price-card__values"><div><small>FACE VALUE</small><s>1 000 kr</s></div><div><small>ASKING PRICE</small><strong>880 kr</strong></div></div>
-              <div class="price-card__saving">Save 120 kr <span>12% less than face value</span></div>
-              <p>Example listing from the demo. Photo review is not balance verification.</p>
-            </div>
-            <figcaption>A discount is useful only when the original value and conditions are easy to compare.</figcaption>
+            <figcaption>The catalog makes discounts scannable; the product page shows the numbers and conditions beside the buying action.</figcaption>
           </figure>
         </article>
 
@@ -133,18 +109,9 @@
           </div>
           <!-- IMAGE SLOT 03: Replace with the sell form and live preview screenshots. -->
           <figure class="study study--payout">
-            <img class="real-shot" src="passiton-assets/passiton-sell.webp" alt="Passiton selling form showing brand and price inputs beside a live example payout of 855 kr after a 5 percent fee" loading="lazy" onload="this.closest('.study').classList.add('has-shot')">
-            <span class="study__eyebrow">SELLER PREVIEW / EXAMPLE</span>
-            <div class="payout">
-              <div class="payout__card"><span>DIN ANNONS</span><strong>IKEA</strong><small>Presentkort</small></div>
-              <div class="payout__rows">
-                <div><span>Buyer pays</span><b>900 kr</b></div>
-                <div><span>Platform fee · 5%</span><b>−45 kr</b></div>
-                <div class="payout__total"><span>Seller receives</span><b>855 kr</b></div>
-              </div>
-              <div class="payout__foot"><span class="payout__dot"></span> Listing sent for manual review</div>
-            </div>
-            <figcaption>Live preview and fee disclosure reduce surprises in the seller journey.</figcaption>
+            <span class="study__eyebrow">SELLER FLOW / LIVE PREVIEW</span>
+            <img class="real-shot" src="passiton-assets/passiton-sell.webp" alt="Sell form next to a live listing preview, showing a 900 kr price and 855 kr payout after a 5% fee" loading="lazy" decoding="async">
+            <figcaption>Amount, asking price and the illustrative payout stay in view while the seller fills in the listing.</figcaption>
           </figure>
         </article>
 
@@ -157,15 +124,9 @@
           </div>
           <!-- IMAGE SLOT 04: Replace with the verification code, upload and pending-state screenshots. -->
           <figure class="study study--proof">
-            <img class="real-shot" src="passiton-assets/passiton-verification.webp" alt="Photo-proof upload step showing a short-lived seller challenge code and countdown timer" loading="lazy" onload="this.closest('.study').classList.add('has-shot')">
-            <span class="study__eyebrow">THE SELLER'S PROOF JOURNEY</span>
-            <ol class="step-track">
-              <li><span>01</span><div><strong>Generate</strong><small>A time-limited, server-issued code</small></div></li>
-              <li><span>02</span><div><strong>Photograph</strong><small>Card balance, date and written code together</small></div></li>
-              <li><span>03</span><div><strong>Submit privately</strong><small>Image and card code are kept separate</small></div></li>
-              <li><span>04</span><div><strong>Wait for review</strong><small>Not visible in the marketplace until approved</small></div></li>
-            </ol>
-            <figcaption>The code expires after 30 minutes. A human review of this evidence is narrower than proof of the card’s actual balance or validity.</figcaption>
+            <span class="study__eyebrow">VERIFICATION / TIME-LIMITED PROOF</span>
+            <img class="real-shot" src="passiton-assets/passiton-verification.webp" alt="Seller verification form with a generated 30-minute code, countdown and private photo upload" loading="lazy" decoding="async">
+            <figcaption>The short-lived challenge adds a reviewable step, but cannot verify the card's actual balance or validity.</figcaption>
           </figure>
         </article>
 
@@ -178,15 +139,9 @@
           </div>
           <!-- IMAGE SLOT 05: Replace with the buyer order and dispute screens. -->
           <figure class="study study--flow">
-            <img class="real-shot" src="passiton-assets/passiton-disputes-empty.webp" alt="Order and disputes dashboard in the empty state, showing no demo orders yet" loading="lazy" onload="this.closest('.study').classList.add('has-shot')">
-            <span class="study__eyebrow">DEMO ORDER / STATE MODEL</span>
-            <div class="flow-state"><small>START</small><strong>Demo order created</strong><span>48-hour review window</span></div>
-            <div class="flow-split" aria-hidden="true"><span></span><span></span></div>
-            <div class="flow-branches">
-              <div><small>PATH A</small><strong>Buyer confirms</strong><span>Simulated completion</span></div>
-              <div><small>PATH B</small><strong>Problem reported</strong><span>Private discussion → escalation</span></div>
-            </div>
-            <figcaption>Shown here: the empty state of the disputes dashboard. The dispute and resolution mechanics exist in the prototype, but this screenshot does not show a completed case.</figcaption>
+            <span class="study__eyebrow">ORDER &amp; DISPUTES / EMPTY STATE</span>
+            <img class="real-shot" src="passiton-assets/passiton-disputes-empty.webp" alt="Empty-state screen of the simulated order and disputes dashboard, with no orders present" loading="lazy" decoding="async">
+            <figcaption>The current empty state explains where future order cases appear. No active or resolved dispute is shown here; those flows are implemented as a simulation.</figcaption>
           </figure>
         </article>
       </div>
